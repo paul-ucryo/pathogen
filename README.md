@@ -3,6 +3,8 @@
 ## Core idea
 Program **physics over bits**, then layer **semantics** cleanly on top.
 
+This is a bad description of constraint based programming, with differential type system. but the idea is seperate the process into high level regions (ok, error, warning, idle, processing) and then construct your type system so that you encode behavior in relative position instead of global position. then you cen measure the clock energy needed for any given path. it doesn't need to increase complexity or process, the constraints can reduce to imparitive structures, but the differential type system lets you encode behavior in power spectra for storage, access, and decision.
+
 There is only:
 - a bitstream
 - a cursor (relative bit position)
