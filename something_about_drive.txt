@@ -1,0 +1,75 @@
+“Minimize surprise” is not about comfort — it’s about computational economy
+
+At a functional level, minimizing surprise means:
+
+Choose trajectories of interaction that minimize the cost of updating your internal model per unit of time.
+
+That’s it. No mysticism.
+
+Surprise = model prediction error
+Cost = energy + time + representational complexity
+Goal = keep the system viable while acting
+
+So yes — this is an informational principle, not a psychological slogan.
+
+
+
+Now translate that to information:
+
+possible interpretations = possible paths
+
+model updates = phase changes
+
+incoherent updates cancel
+
+coherent updates reinforce
+
+So the system follows paths where information integrates coherently over time.
+
+That’s very close to what you’re pointing at.
+
+The missing bridge: lookup cost
+
+You said something sharp:
+
+“chose the path of greatest change which minimizes lookup cost”
+
+That’s the right intuition.
+
+Here’s the precise version:
+
+The brain maintains a compressed generative model
+
+Acting in the world is a query against that model
+
+Updating the model is expensive (memory rewrite, re-indexing)
+
+Prediction is cheap (lookup + interpolation)
+
+So the system prefers trajectories where:
+
+change is predictable under the current indexing scheme
+
+novelty doesn’t require re-factoring the model
+
+differences bind without restructuring
+
+That’s not avoiding change — it’s choosing change that fits the address system.
+
+Surprise ≠ novelty
+
+This is where most accounts go wrong.
+
+Novelty = new data
+
+Surprise = data that cannot be indexed cheaply
+
+A game can be full of novelty and still be unsurprising, because:
+
+the state space is small
+
+the rules are fixed
+
+indexing is stable
+
+The real world is often unsurprising in content but surprising in structure.
