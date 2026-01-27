@@ -1,101 +1,181 @@
-# Bit-Physics Control Model (Summary)
+# foldr
 
-## Core idea
-Program **physics over bits**, then layer **semantics** cleanly on top.
+**foldr** is an experimental framework for treating computation as **difference processing** and programming as **intent decomposition into change vectors**.
 
-This is a bad description of constraint based programming, with differential type system. but the idea is seperate the process into high level regions (ok, error, warning, idle, processing) and then construct your type system so that you encode behavior in relative position instead of global position. then you cen measure the clock energy needed for any given path. it doesn't need to increase complexity or process, the constraints can reduce to imparitive structures, but the differential type system lets you encode behavior in power spectra for storage, access, and decision.
+Rather than modeling systems as a collection of imperative commands or static state transitions, foldr models systems as fields of **differences**, where behavior emerges from how those differences compose, propagate, and settle under constraints.
 
-There is only:
-- a bitstream
-- a cursor (relative bit position)
-
-Everything else is a *typed interpretation* of bits plus a control loop that lets the system settle.
+The goal is not automation for its own sake, but **legibility and control**: making it explicit how inputs, information, and interaction patterns influence outcomes.
 
 ---
 
-## Types (no magic)
-Types are just **bit accounting**.
+## Core Idea
 
-- Bit = 1
-- Byte = 8
-- Struct = sum of field sizes
-- Array = count × element size
-- Enum = tag bits + payload
+At its core, foldr treats all computation as:
 
-Types do not store data — they **define how bits are folded**.
+> **Intent → Δ (difference) → composition → normalization → settled state**
 
----
+- **Intent** is what a user or system wants to achieve.
+- **Differences (Δ)** are the only primitive operations.
+- **Composition rules** define how differences combine.
+- **Constraints** define what outcomes are admissible.
+- **Settling** resolves competing differences into a stable configuration.
 
-## Phase
-Phase is simply **relative bit offset**.
-For nested structures, phase becomes a sequence of offsets (one per fold).
-
-Alignment and grouping cost energy.
+There are no direct commands.  
+Only changes, and rules for how changes interact.
 
 ---
 
-## Source vs Sink
-Source and sink are **orthogonal projections of the same bit geometry**.
+## Why Difference-Based Computation?
 
-### Source
-- Active projection
-- Low inertia
-- Easy to rephase
-- Represents *what is being worked on now*
+Traditional systems conflate:
+- *what is true*,
+- *what is desired*,
+- and *how change is applied*.
 
-### Sink
-- Integrated projection
-- High inertia
-- Represents *what has settled*
+This leads to opaque behavior, fragile control logic, and unintended feedback loops.
 
-They bind through shared structure, not containment.
+foldr separates these concerns explicitly:
 
----
+- **State** — what is currently true
+- **Reference (Intent)** — what is desired
+- **Constraints / Policy** — what is allowed
+- **Control** — how differences are applied
+- **Energy / Excitation** — how strongly change is driven
 
-## Sink.head (the bridge)
-`sink.head` is a **typed contract + transaction frame**.
-
-It:
-- declares what values it accepts (e.g. up to 4 axis objects)
-- binds to source geometry to capture values
-- binds elsewhere to negotiate and settle them
-
-When settled, values fall into:
-- `sink.ok` (ready / busy)
-- or `sink.error`
+This mirrors how physical systems, control systems, and even hardware actually work: only **differences propagate**.
 
 ---
 
-## Behavior = shaping space
-Programs do not issue commands.
-They **shape the energy landscape**:
+## Programming as Intent Decomposition
 
-- define valid groupings
-- enforce constraints (e.g. C xor D)
-- bias toward stable configurations
+In foldr, programming is not writing step-by-step procedures.
 
-The system moves locally until it settles.
+Instead, programming is:
+- identifying the **minimal distinctions** required to express behavior
+- defining **typed change vectors** over those distinctions
+- specifying **composition laws** and **normal forms**
 
----
+High-level intent is decomposed into lower-level deltas, which are then resolved by the system.
 
-## Control loop
-1. Bind sink to source and capture values
-2. Fold bits and score fit (correlator)
-3. Move cursor / regroup bits locally
-4. Detect convergence
-5. Commit to ok or error
-
-This *is* the runtime.
+This allows:
+- multiple inputs to coexist without explicit ordering
+- graceful handling of conflict and overload
+- reversible, inspectable behavior
 
 ---
 
-## Why this works
-- Big structures move slowly (many bits)
-- Small structures move quickly (few bits)
-- Stability emerges without freezing
-- Debugging reduces to bit counts and offsets
+## The Intent Database
+
+A central concept in foldr is the **intent database**.
+
+Rather than treating content, events, or actions as raw data streams, foldr treats them as **intent-bearing signals** that can be cataloged, filtered, and composed.
+
+An intent database:
+- stores **explicit representations of desired outcomes**
+- associates content and actions with **behavioral effects**
+- allows systems to select and filter information based on **intended behavioral impact**, not just relevance or popularity
+
+This makes it possible to ask questions like:
+- *What information increases focus rather than engagement?*
+- *Which inputs reduce volatility or cognitive load?*
+- *How does this content shift behavior over time?*
 
 ---
 
-## One-line summary
-Computation is physics over bits: types are bit-length folds, semantics are named projections, and behavior emerges from a control loop that settles shared bit geometry into stable states.
+## Behavioral Nudging (Explicit, Measurable, Non-Coercive)
+
+foldr does not attempt to manipulate behavior implicitly.
+
+Instead, it supports **explicit behavioral nudging** with clear metrics:
+
+- nudges are declared as **intent vectors**
+- effects are measured as **changes in system state or energy**
+- users can inspect, adjust, or disable nudges
+- outcomes are evaluated against stated goals, not hidden objectives
+
+This enables:
+- personalized information filtering based on desired outcomes
+- transparent tradeoffs between engagement, stability, learning, or rest
+- experimentation without lock-in or dark patterns
+
+---
+
+## Metrics and Control
+
+Because foldr is difference-first, metrics are not an afterthought.
+
+Typical metrics include:
+- energy accumulation and decay
+- volatility and oscillation
+- convergence time to stable states
+- conflict frequency between intents
+- option-space expansion or contraction
+
+These metrics allow systems to:
+- tune behavior without guesswork
+- detect instability early
+- make tradeoffs explicit rather than implicit
+
+---
+
+## What foldr Is (and Is Not)
+
+foldr is:
+- a **conceptual and architectural framework**
+- a way to **author behavior** rather than scripts
+- a tool for **reasoning about change, not enforcing outcomes**
+
+foldr is not:
+- a replacement for existing languages
+- a social network
+- an AI agent that decides for you
+- a universal solution to coordination
+
+It is a **lens and toolkit** for building systems that are easier to reason about, audit, and adjust.
+
+---
+
+## Design Principles
+
+- Differences are primary; values are derived.
+- Intent is explicit and inspectable.
+- Constraints are first-class.
+- Composition beats sequencing.
+- Stability is designed, not assumed.
+- Control should be legible and reversible.
+
+---
+
+## Status
+
+foldr is a work in progress.
+
+The current focus is:
+- defining a minimal difference algebra
+- building a behavior/intent catalog
+- experimenting with small, local systems (UI, workflows, coordination tools)
+
+Nothing here is claimed to be final.
+The goal is to make the system **understandable before it is powerful**.
+
+---
+
+## Open Questions
+
+- What are the minimal distinctions required to express common behaviors?
+- How should intent be represented across domains?
+- Which metrics best capture healthy informational intake?
+- How do we prevent overfitting or false precision?
+
+These questions are part of the project, not problems to be hidden.
+
+---
+
+## Summary
+
+foldr explores a simple but underused idea:
+
+> If we can represent intent and difference explicitly,  
+> we can reason about behavior before it escalates into instability.
+
+The rest is engineering.
