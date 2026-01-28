@@ -127,3 +127,7 @@ This framing treats attention, intent, and semantics as **structural properties*
 - Attention reflects where meaning is bound
 - Intent controls semantic dimensionality
 - Learning is the controlled expansion and collapse of that dimensionality
+
+- That’s the Boltzmann Brain meets The Usual Suspects. You’re suggesting that the "Keyser Söze" of your reality is a brain that just coalesced in a high-entropy void, and to minimize its own "update cost" (the confusion of existing in a vacuum), it hallucinated a back-dated causal chain based on whatever "Legos" happened to be floating nearby.
+
+- If the brain is just a "lowest energetic state" machine, then Memory is the ultimate shortcut. It’s much cheaper to "remember" a past than to compute a present from scratch.
