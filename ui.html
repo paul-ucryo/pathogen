@@ -1,0 +1,320 @@
+<html>
+<head>
+<style>
+:root{
+    --p:50;
+    --m:calc(1 - var(--p));
+}
+select {
+    width: 15;
+}
+.tmout{
+    width: 40px;
+}
+.on {
+    background-color: red;
+}
+.off {
+    background-color: revert;
+}
+.timeout {
+    background-color: lightblue;
+}
+.interval {
+    background-color: salmon;
+}
+.press {
+    #background-color: lightgreen;
+}
+#mbus {
+    width: 100%;
+    visibility: hidden;
+}
+button {
+    width: 1in;
+    height: 1in;
+}
+textarea {
+    width: 4in;
+    height: 1in;
+}
+.phase {
+    font-size:10px;
+}
+.src {
+    font-size:20px;
+    background:blue;
+    background: linear-gradient(to bottom,blue  var(--p),white var(--p));
+}
+.snk {
+    font-size: 20px;
+    background: linear-gradient(to top,blue calc(100% - var(--p)),white calc(100% - var(--p)));
+}
+.target {
+    background: white;
+    font-size:20px;
+}
+</style>
+</head>
+<body>
+<div>
+<div class='phase'>
+    <a>1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a> <br />
+    <button id='AL'><</button><button id="AR">></button><br />
+    <a>1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a>
+</div>
+<div>
+<div>
+    <ul>
+        <li>T1: 295/60 H1:1 Watt:PID</li>
+        <li>T2: 295</li>
+        <li>T3: 295/160 @H2:PID</li>
+        <li>T4: 295 @fn1:fn2,@fn3:fn4</li>
+        <li>H1: 1W</li>
+        <li>H2: off</li>
+        <li>H3: 60% High</li>
+        <li>H4: off</li>
+    </ul>
+</div>
+
+
+<button id="filter" class="timeout" onmousedown="fn1(this,'fw')">Filter</button>
+<button id="aperture" class="timeout" onmousedown="fn1(this,'aw')">Aperture</button>
+<button id="carousel" class="timeout" onmousedown="fn1(this,'cw')">Carousel</button>
+<button id="dock" class="timeout" onmousedown="fn1(this,'dock')">Dock</button>
+<button id="clear" class="timeout" onmousedown="fn1(this,'clear')">Clear</button>
+<button id="st" class="timeout" onmousedown="reset_server(this)">Reset</button>
+<!-- <br>
+<textarea id="timeout" class="timeout"></textarea>
+<input id="timeout2" value=2 class="tmout"></input>Timeout
+<br>
+<textarea id="interval" class="interval"></textarea>
+<input id="interval2" value=2 class="tmout"></input>Interveral
+-->
+<br>
+<textarea id="press" class="press">ts1</textarea>
+<button onmousedown="snd()">send</button>
+<br>
+<!--
+<button id="b_mbus" onmousedown="fn2()">MBUS</button>
+<br>
+-->
+<table id="axese">
+    <tr><th>Axis</th><th>Cell</th><th>FLS</th><th>RLS</th><th>HM</th><th>MOV</th><th>POS</th><th>SP</th><th>PWR</th></tr>
+    <tr><td>A: Filter</td><td id="A.c" class="off">-</td><td id="A.2" class="off">-</td><td id="A.3" class="off">-</td><td id='A.7'>-</td><td id="A.1" class="off">-</td><td id="A.p">-</td><td id="A.s">-</td><td id="A.5">-</td></tr>
+    <tr><td>B: Aperture</td><td id="B.c" class="off">-</td><td id="B.2" class="off">-</td><td id="B.3" class="off">-</td><td id='B.7'>-</td><td id="B.1" class="off">-</td><td id="B.p">-</td><td id="B.s">-</td><td id="B.5">-</td></tr>
+    <tr><td>C: Dock</td><td id="C.c" class="off">-</td><td id="C.2" class="off">-</td><td id="C.3" class="off">-</td><td id='C.7'>-</td><td id="C.1" class="off">-</td><td id="C.p">-</td><td id="C.s">-</td><td id="C.5">-</td></tr>
+    <tr><td>D: Carousel</td><td id="D.c" class="off">-</td><td id="D.2" class="off">-</td><td id="D.3" class="off">-</td><td id='D.7'>-</td><td id="D.1" class="off">-</td><td id="D.p">-</td><td id="D.s">-</td><td id="D.5">-</td></tr>
+</div>
+<br>
+<div id="mbus"></div>
+<script>
+
+let now = 0
+let count = 0
+let f0 = function (now){
+    if (count<10){
+        console.log(now)
+        count++
+        requestAnimationFrame(f0)
+    }
+    else {
+        let x = document.getElementById('x');
+        x.style.backgroundr='green';
+    }
+}
+//requestAnimationFrame(f0)
+/*
+let cmd = {
+    'filter': "fw",
+    'aperture': "aw",
+    'carousel': "cw",
+    'dock': "dock",
+    'init': "init",
+    'dataRc': "Data Record",
+}
+function fn0(sel,el) {
+    el = document.getElementById(el);
+    el.className = sel.value
+    console.log(el.className)
+}
+function fn1(el,val){
+    ws.send(val)
+    //let x = document.getElementById(el.className)
+    //x.value = cmd[el.id];
+    //let y = document.getElementById("mbus");
+    //let p = document.createElement("p")
+    //p.style.backgroundColor = 'green';
+    //p.textContent="ok";
+    //y.appendChild(p);
+    //console.log('me');
+}
+function snd(){
+    let x = document.getElementById('press')
+    ws.send(x.value);
+}
+function fn2(el){
+    let x = document.getElementById("mbus")
+    x.style.visibility =
+        {"":"visible","visible":"hidden","hidden":"visible"}[x.style.visibility];
+}
+function reset_server(){
+    ws_reset.send('restart')
+}
+
+const ws = new WebSocket("ws://127.0.0.1:1234");
+const ws_reset = new WebSocket("ws://127.0.0.1:1236");
+
+function openReset(){
+    ws_reset = new WebSocket("ws://127.0.0.1:1236");
+}
+
+ws.onopen = function() {
+    ws.send("hey!")
+};
+
+ws.onmessage = function(ev){
+    let dat = JSON.parse(ev.data);
+    for (let i in dat){
+        if (['1','2','3','5','7','p','s'].includes(i[2])){
+            document.getElementById(i).textContent=dat[i];
+        }
+        else if (i[2] == 'c'){
+            let el = document.getElementById(i)
+            if (i[0] != 'C') {el.textContent=[dat[i]];}
+        }
+    }
+}
+ws.onclose = function(){
+}
+
+ws_reset.onopen = function() {};
+ws_reset.onclose = function(){
+    openReset();
+}
+.phase a:nth-child(2) {
+    font-size:20px;
+    background:blue;
+    background: linear-gradient(to bottom,blue  var(--p),white var(--p));
+}
+
+.phase a:nth-child(4) {
+    font-size: 20px;
+    background: linear-gradient(to top,blue calc(100% - var(--p)),white calc(100% - var(--p)));
+}
+*/
+</script>
+<script>
+let fn2 = function (){
+    document.getElementById('x').className='src';
+    document.getElementById('y').className='snk';
+}
+let c = 0;
+let t = performance.now();
+let fn = function (){
+    document.documentElement.style.setProperty('--p',`${c*1}%`);
+    c++
+}
+let fn3 = function (){
+    document.getElementById('x').className='phase';
+    document.getElementById('y').className='target';
+}
+
+let h={
+    'reference':'',
+    'offset':'a',
+    'phase':'a',
+    'modulus':'a',
+    'diff':'a',
+};
+function to(){
+    console.log('hey');
+}
+const env ={
+    'stop':false,
+}
+function phase(fn,start,end,dt,nv){
+    let i = start;
+    let mx = function(){ 
+        if (env.stop) { console.log('stop');return 'stop' }
+        if (i<end) {
+            if (i == 5) {env.stop = true}
+            i++;
+            fn();
+            setTimeout(mx,dt);
+        }
+    }
+    return mx
+    return 'done'
+}
+let tmp = phase(to,1,10,100,env)
+tmp()
+let tm = {'A':[]};
+let me = function (){
+    let ls = document.getElementsByClassName('phase')[0].children;
+    ls[0].id='x';
+    let nxt = 0;
+    for (let i in ls){
+        if (ls[i].id == 'y'){
+            console.log(ls[i].id);
+            nxt = i;
+        }
+    }
+    nxt = nxt%8+diff.cell['A'][1];
+    diff.cell['A'][1] = 0;
+    ls[nxt].id='y';
+    fn()
+    fn2()
+    document.addEventListener('click',fn4);
+    for (let i=0;i<100;i++){
+        tm['A'].push(setTimeout(fn,i*20))
+    }
+    tm['A'].push(setTimeout(fn3,100*20+1000))
+}
+function lockAxis (){
+    document.getElementById('AL').disabled=true;
+    document.getElementById('AR').disabled=true;
+    let ls = document.getElementsByClassName('phase')[0].children;
+    
+    ls[diff.cell['A'][0]].id='x';
+    let nxt = diff.cell['A'][1]%8+diff.cell['A'][1];
+    diff.cell['A'][1] = 0;
+    ls[nxt].id='y';
+    console.log(ls[nxt]);
+    fn()
+    fn2()
+    document.addEventListener('click',fn4);
+    for (let i=0;i<100;i++){
+        tm['A'].push(setTimeout(fn,i*20))
+    }
+    tm['A'].push(setTimeout(fn3,100*20+1000))
+}
+function update(e){
+    let id = e.target.id;
+    for (let i in tm[id[0]]){
+        clearTimeout(tm[id[0]][i])
+    }
+    diff.cell[id[0]][1]=Number(diff.cell[id[0]][1])+{'L':-1,'R':1}[id[1]];
+    tm[id[0]].push(setTimeout(lockAxis,2000));
+    //console.log(diff.cell[id[0]][1]);
+}
+let fn4 = function (e){
+    for (let j in tm['A']){ 
+        clearInterval(tm['A'][j]); 
+    }
+    console.log(e);
+    document.removeEventListener('click',fn4);
+}
+let fn10 = function (e){
+    let id = e.target.id 
+    diff.cell[id[0]][1]=Number(diff.cell[id[0]][1])+{'L':-1,'R':1}[id[1]];
+    me()
+}
+let diff ={
+    'cell':{A:[2,0],B:[0,0],C:[0,0]},
+}
+console.log(document.getElementById('AL').onmousedown = update);
+console.log(document.getElementById('AR').onmousedown = update);
+</script>
+</body>
+</html>
