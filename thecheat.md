@@ -1,240 +1,269 @@
-# Load-Bearing Help Infrastructure (Mediator-as-Rotation Model)
+# Load-Bearing Help Infrastructure  
+## Compositional Mediation Model (Context-Governed Authority)
+
+---
 
 ## Design Goal
 
-Create a **load-bearing help layer** that:
-- does not rely on authority, expertise, or trust in individuals
-- treats participants symmetrically
-- remains resilient under stress
-- can exist inside or alongside existing systems
-- does not require prior legitimacy to function
+Create a **load-bearing coordination layer** where:
+- mediation authority is **compositional**, not positional
+- authority emerges from **context**, not rank
+- every participant can mediate **within bounded scope**
+- no role (including CEO, admin, expert) is structurally privileged
+- the system remains resilient even when actors are unequal in power
 
-The system must be stable **even if you do not trust who is mediating**.
+The system must remain stable **even when formal authority exists outside it**.
 
 ---
 
 ## Core Principle
 
-> **If the system depends on who the mediator is, the system is not resilient.**
+> **Mediation authority is not owned.  
+> It is composed dynamically from context, scope, and interaction state.**
 
-Therefore:
-- mediation is a **role**, not a position
-- mediators are **interchangeable**
-- legitimacy comes from **process**, not identity
+Authority is:
+- local
+- temporary
+- revocable
+- mutually constraining
 
----
-
-## Mediator as a Rotating / Randomized Role
-
-### Why rotation matters
-
-- Prevents concentration of power
-- Prevents burnout
-- Prevents capture
-- Prevents moral authority from accumulating
-- Ensures equality of participation
-
-Rotation ensures:
-- no one becomes load-bearing as a person
-- the system remains boring, procedural, and fair
-- trust is placed in the *rules*, not the *actor*
+Not hierarchical.
 
 ---
 
-### Mediator selection models
+## Mediation as a Compositional Structure
 
-Any of the following are acceptable and equivalent in principle:
+Instead of:
+- “the mediator”
+- “the decision maker”
+- “the authority”
 
-#### 1. Random selection
-- Mediator is chosen randomly from eligible participants
-- Eligibility criteria are minimal and explicit
-- Bias is replaced with statistical fairness
+We define **mediation rights** as a set of *capabilities* that can be activated by context.
 
-#### 2. Candidate randomization
-- A small random subset is selected
-- One accepts the role for a bounded window
-- Others remain backup
-
-#### 3. Time-sliced rotation
-- Mediator role rotates on a fixed schedule
-- No permanence
-- No accumulation of informal power
-
-The exact mechanism is less important than the invariant:
-> **No mediator is irreplaceable.**
+Each interaction composes:
+- who may mediate
+- over what
+- for how long
+- with what force
 
 ---
 
-## What the Mediator Does (Strictly Limited)
+## Context Grants Mediation, Not the System
 
-The mediator:
-- does **not** solve problems
-- does **not** give advice
-- does **not** judge correctness
-- does **not** arbitrate truth
+Mediation authority arises from **situational relevance**, not role.
 
-The mediator **only governs process**.
+Examples:
+- If you are affected by an action → you gain mediation rights over its process
+- If you are executing an action → others gain mediation rights over its impact
+- If you initiate escalation → you are subject to mediation by those downstream
 
-Allowed actions:
-- enforce structure
-- check scope mismatch
-- slow or pause interactions
-- redirect to different help modes
-- terminate interactions cleanly
-
-If a mediator exceeds this scope, the system—not the person—is at fault.
+This means:
+- authority is **bidirectional**
+- power is **constrained by exposure**
+- no actor is outside mediation
 
 ---
 
-## Why Randomization Increases Trust
+## Primary vs Secondary Mediation (Important Distinction)
 
-Counterintuitive but true:
+The system allows **primary mediation authority**, but never absolute authority.
 
-- When mediators are chosen intentionally, people infer bias
-- When mediators are chosen randomly, people infer neutrality
-- Randomness removes suspicion of agenda
-- Randomness prevents strategic behavior
+### Primary mediation
+- Assigned for efficiency (e.g. manager, facilitator, lead)
+- Scoped to a specific domain
+- Time-bounded
+- Reversible
 
-This is why:
-- juries use random selection
-- audits use random sampling
-- resilient systems avoid hand-picked gatekeepers
+### Secondary (contextual) mediation
+- Held by *any* affected participant
+- Can pause, challenge, or redirect process
+- Cannot dictate outcomes
+- Can only modify **how** decisions are made, not **what** they are
+
+This ensures:
+> **Power can act, but cannot escape constraint.**
 
 ---
 
-## Help Cells (Revised with Rotation)
+## Example: Firing an Employee
 
-A **help cell** is a minimal, repeatable unit.
+In a traditional hierarchy:
+- CEO / manager has unilateral authority
+- Mediation flows one way (downward)
+- The affected party has no structural recourse
 
-It contains:
+In this system:
 
-### 1. Request Envelope (unchanged)
+- Management has **primary mediation authority** to initiate termination
+- The employee has **contextual mediation authority** over:
+  - process
+  - timing
+  - scope
+  - escalation path
 
-A structured description of:
+They may:
+- request pause
+- request additional mediator
+- request clarification of criteria
+- invoke alternate process mode
+
+They may *not*:
+- veto indefinitely
+- override outcomes unilaterally
+
+The decision may still occur — but **never without mediation**.
+
+---
+
+## Why This Trains the System (Both Sides)
+
+Because mediation is compositional:
+
+- Helpers learn to operate under constraint
+- Decision-makers learn to justify process
+- Affected parties learn to intervene without escalation
+- Authority learns to tolerate being mediated
+
+This produces:
+- lower fear
+- less defensive behavior
+- fewer catastrophic escalations
+- higher long-term trust
+
+---
+
+## Help Cells (Revised Again)
+
+Each help cell composes mediation dynamically.
+
+### 1. Request Envelope
+
+Defines:
 - type of help
-- time horizon
 - risk level
-- exclusions
+- affected parties
+- time horizon
 
-This shapes demand before engagement.
-
----
-
-### 2. Bounded Helper Role (unchanged)
-
-Helpers opt into:
-- a specific, limited action
-- a time-bounded contribution
-- explicit limits
-
-This shapes supply and prevents burnout.
+This determines **who gains mediation rights**.
 
 ---
 
-### 3. Rotating Mediator (key change)
+### 2. Helper Roles
 
-- Selected randomly or via rotation
-- Active for a fixed, short window
-- No special status before or after
-- No long-term authority
+Helpers gain mediation authority only over:
+- the scope they accepted
+- the duration they accepted
+- the method they accepted
 
-Their job is to:
-- keep the interaction survivable
-- enforce reversibility
-- absorb coordination friction
+Nothing more.
 
 ---
 
-### 4. Clean Exit Paths (unchanged)
+### 3. Compositional Mediation Layer
 
-Every interaction ends as:
-- resolved
-- paused
-- handed off
-- out of scope
+At any moment:
+- multiple participants may hold partial mediation authority
+- authority overlaps
+- authority constrains authority
 
-Exits are non-punitive and explicit.
+Examples of mediation actions:
+- pause interaction
+- request reframing
+- downgrade stakes
+- require handoff
+- require second mediator
 
----
-
-## Equality as a Structural Property
-
-The system treats participants equally because:
-
-- no one controls entry
-- no one controls narrative
-- no one controls escalation
-- no one owns resolution
-
-Everyone may:
-- ask for help
-- offer help
-- mediate
-- step away
-
-Roles rotate. Load distributes.
+No single actor controls mediation fully.
 
 ---
 
-## Why This Is Resilient
+### 4. Exit and Escalation
+
+Escalation does not mean “appeal to power”.
+
+It means:
+- recomposing mediation
+- adding perspectives
+- changing interaction mode
+- widening constraint
+
+Exit remains:
+- safe
+- explicit
+- non-punitive
+
+---
+
+## Equality Is Enforced Structurally
+
+This system does **not** assume equality of power in the world.
+
+It enforces equality only in one dimension:
+
+> **Everyone is subject to mediation.**
+
+Including:
+- founders
+- executives
+- moderators
+- experts
+- institutions
+
+If someone cannot be mediated, they are **outside the system**, not above it.
+
+---
+
+## Why This Is Load-Bearing
 
 This structure:
-- has no single point of failure
-- does not reward dominance
-- does not reward charisma
-- does not rely on expertise
-- does not rely on trust in individuals
+- distributes stress
+- prevents unilateral failure
+- absorbs conflict
+- slows destructive action
+- keeps learning possible
 
-It survives:
-- bad actors (they rotate out)
-- low participation
-- partial engagement
-- social tension
-- error
-
-Because errors are **contained**, not amplified.
+It remains stable because:
+- authority is fragmented
+- responsibility is shared
+- no role is critical
+- errors are reversible
 
 ---
 
-## Compatibility with Existing Systems
+## Why This Can Exist Inside Existing Systems
 
-This layer:
-- does not replace institutions
-- does not oppose markets
-- does not require consensus
-- does not demand belief
+This model:
+- does not remove formal authority
+- does not block decisions
+- does not require buy-in from the top
+- does not demand ideological agreement
 
-It simply:
-- reduces coordination failure
-- absorbs social load
-- lowers the cost of helping
-- lowers the cost of asking
+It simply ensures:
+- decisions are mediated by context
+- affected parties have process-level leverage
+- catastrophic outcomes are damped
 
-Existing systems benefit without being threatened.
+Even hierarchical systems benefit from this — whether they acknowledge it or not.
 
 ---
 
 ## Key Invariant (Do Not Break This)
 
-> **If participants feel the need to vet or trust the mediator, the system has failed.**
+> **Any actor who can act on others must be mediatable by those actions affect.**
 
-Resilience comes from:
-- role limits
-- rotation
-- reversibility
-- boring process
-
-Not from good people.
+Break this, and the system recentralizes.
+Keep it, and resilience emerges.
 
 ---
 
 ## Final Summary
 
-- Load-bearing systems are built from **process**, not virtue
-- Mediators must be **fungible**
-- Randomness is a stabilizing force
-- Equality is enforced structurally, not morally
-- Help becomes possible when failure is safe
+- Mediation is not a role — it is a **capability**
+- Capabilities are granted by context
+- Authority is always partial
+- Power is always constrained
+- Load-bearing emerges from mutual mediation, not trust
 
-This is not a platform.
-It is a **protocol for survivable coordination**.
+This is not governance by people.
+
+It is **governance by interaction geometry**.
