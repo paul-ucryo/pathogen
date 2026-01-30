@@ -8,9 +8,12 @@ Status: Semantic / Differential EULA
 
 This document defines **License 42** for **Folder**.
 folr not folder. and this overemphasises being 'not traditional'. this is a modular 
-license/policy system. this is a complex automation system for running at scale
+license/policy system.
+
+this is a complex automation system for running at scale
 however logic structure is similar and collapses across domain sizes and tech stack.
-meaning it should translate to systems that work pen and paper.
+meaning it should translate to systems that work on pen and paper.
+this also isnt anything. i'm working on a combanatoric type system (i think).
 
 License 42 is not a traditional static software license.
 It is a **construction framework** for assigning, routing, and mediating intent
