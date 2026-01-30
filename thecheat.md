@@ -1,269 +1,222 @@
-# Load-Bearing Help Infrastructure  
-## Compositional Mediation Model (Context-Governed Authority)
+# Compositional System Optimization  
+## Fully Mediated Authority, Non-Profit Function, Network-Level Learning
 
 ---
 
 ## Design Goal
 
-Create a **load-bearing coordination layer** where:
-- mediation authority is **compositional**, not positional
-- authority emerges from **context**, not rank
-- every participant can mediate **within bounded scope**
-- no role (including CEO, admin, expert) is structurally privileged
-- the system remains resilient even when actors are unequal in power
+Build a **system optimization system** where:
+- authority is **fully compositional**
+- every node can mediate every other node under the right conditions
+- roles define **tasks**, not **relevance**
+- no position is structurally privileged
+- the system optimizes **network health**, not local profit
+- learning happens through **mutual mediation**, not hierarchy
 
-The system must remain stable **even when formal authority exists outside it**.
+This system must remain stable even when:
+- power is uneven outside the system
+- trust is partial or absent
+- actors enter and exit
+- incentives differ locally
 
 ---
 
 ## Core Principle
 
-> **Mediation authority is not owned.  
-> It is composed dynamically from context, scope, and interaction state.**
+> **No node is above mediation.  
+> Every node is potentially load-bearing.  
+> Authority is a function of context, not rank.**
 
-Authority is:
-- local
-- temporary
-- revocable
-- mutually constraining
+Under sufficient and valid context:
+- a janitor may mediate, halt, or initiate removal of a CEO
+- a CEO may not directly fire anyone
+- “firing” is a *system action*, not an individual one
 
-Not hierarchical.
-
----
-
-## Mediation as a Compositional Structure
-
-Instead of:
-- “the mediator”
-- “the decision maker”
-- “the authority”
-
-We define **mediation rights** as a set of *capabilities* that can be activated by context.
-
-Each interaction composes:
-- who may mediate
-- over what
-- for how long
-- with what force
+This is not symbolic equality.  
+It is **structural symmetry**.
 
 ---
 
-## Context Grants Mediation, Not the System
+## Role Inversion: Authority vs Task
 
-Mediation authority arises from **situational relevance**, not role.
+### Traditional hierarchy
+- CEO = authority + execution
+- HR = advisory
+- workers = passive recipients
 
-Examples:
-- If you are affected by an action → you gain mediation rights over its process
-- If you are executing an action → others gain mediation rights over its impact
-- If you initiate escalation → you are subject to mediation by those downstream
+### This system
+- **Roles define tasks, not power**
+- Authority is always **delegated, mediated, and reversible**
 
-This means:
-- authority is **bidirectional**
-- power is **constrained by exposure**
-- no actor is outside mediation
+Example:
+- CEO’s task: identify candidates for removal, restructuring, or reassignment
+- HR’s task: manage termination *process*
+- System’s task: decide *whether* termination occurs
+- Any affected node may invoke mediation
 
----
-
-## Primary vs Secondary Mediation (Important Distinction)
-
-The system allows **primary mediation authority**, but never absolute authority.
-
-### Primary mediation
-- Assigned for efficiency (e.g. manager, facilitator, lead)
-- Scoped to a specific domain
-- Time-bounded
-- Reversible
-
-### Secondary (contextual) mediation
-- Held by *any* affected participant
-- Can pause, challenge, or redirect process
-- Cannot dictate outcomes
-- Can only modify **how** decisions are made, not **what** they are
-
-This ensures:
-> **Power can act, but cannot escape constraint.**
+The CEO works *for* the system — not above it.
 
 ---
 
-## Example: Firing an Employee
+## Mediation Is Universal and Compositional
 
-In a traditional hierarchy:
-- CEO / manager has unilateral authority
-- Mediation flows one way (downward)
-- The affected party has no structural recourse
-
-In this system:
-
-- Management has **primary mediation authority** to initiate termination
-- The employee has **contextual mediation authority** over:
-  - process
-  - timing
-  - scope
-  - escalation path
-
-They may:
-- request pause
-- request additional mediator
-- request clarification of criteria
-- invoke alternate process mode
-
-They may *not*:
-- veto indefinitely
-- override outcomes unilaterally
-
-The decision may still occur — but **never without mediation**.
-
----
-
-## Why This Trains the System (Both Sides)
-
-Because mediation is compositional:
-
-- Helpers learn to operate under constraint
-- Decision-makers learn to justify process
-- Affected parties learn to intervene without escalation
-- Authority learns to tolerate being mediated
-
-This produces:
-- lower fear
-- less defensive behavior
-- fewer catastrophic escalations
-- higher long-term trust
-
----
-
-## Help Cells (Revised Again)
-
-Each help cell composes mediation dynamically.
-
-### 1. Request Envelope
-
-Defines:
-- type of help
-- risk level
-- affected parties
-- time horizon
-
-This determines **who gains mediation rights**.
-
----
-
-### 2. Helper Roles
-
-Helpers gain mediation authority only over:
-- the scope they accepted
-- the duration they accepted
-- the method they accepted
-
-Nothing more.
-
----
-
-### 3. Compositional Mediation Layer
+Mediation is not a role.
+It is a **capability** that composes dynamically.
 
 At any moment:
-- multiple participants may hold partial mediation authority
-- authority overlaps
-- authority constrains authority
+- multiple nodes may hold partial mediation authority
+- authority overlaps and constrains itself
+- mediation applies to *process*, not outcome
 
 Examples of mediation actions:
-- pause interaction
-- request reframing
+- pause a decision
+- require justification
+- invoke secondary review
 - downgrade stakes
-- require handoff
-- require second mediator
+- force handoff to a different process mode
 
-No single actor controls mediation fully.
+No node can:
+- unilaterally finalize irreversible action
+- bypass mediation
+- shield itself from constraint
 
 ---
 
-### 4. Exit and Escalation
+## Extreme Case (Intentional)
 
-Escalation does not mean “appeal to power”.
+> Under sufficient context, the janitor can fire the CEO.
+
+This does **not** mean:
+- the janitor replaces the CEO
+- authority becomes chaotic
+- decisions become arbitrary
 
 It means:
-- recomposing mediation
-- adding perspectives
-- changing interaction mode
-- widening constraint
+- the system recognizes **contextual relevance**
+- exposure creates mediation rights
+- impact creates constraint authority
 
-Exit remains:
-- safe
-- explicit
-- non-punitive
+Power is not denied.  
+Power is **bounded by its effects**.
 
 ---
 
-## Equality Is Enforced Structurally
+## System Engagement: Every Node Mediates Every Other Node
 
-This system does **not** assume equality of power in the world.
+The system is designed so that:
+- every node participates in optimization
+- every action generates feedback
+- every participant is both signal and sensor
 
-It enforces equality only in one dimension:
+This creates:
+- distributed load-bearing
+- no keystone individuals
+- no moral authority bottlenecks
+- no silent failure modes
 
-> **Everyone is subject to mediation.**
-
-Including:
-- founders
-- executives
-- moderators
-- experts
-- institutions
-
-If someone cannot be mediated, they are **outside the system**, not above it.
+The system **learns itself** through interaction.
 
 ---
 
-## Why This Is Load-Bearing
+## Trust Networks and Short-Circuiting
 
-This structure:
-- distributes stress
-- prevents unilateral failure
-- absorbs conflict
-- slows destructive action
-- keeps learning possible
+Trust is allowed — but never required.
 
-It remains stable because:
-- authority is fragmented
-- responsibility is shared
-- no role is critical
-- errors are reversible
+- High-trust clusters may short-read mediation layers
+- Low-trust contexts trigger full mediation
+- Trust accelerates interaction but never bypasses constraint
+
+Trust is a **performance optimization**, not a security model.
 
 ---
 
-## Why This Can Exist Inside Existing Systems
+## Non-Profit as a Structural Property
 
-This model:
-- does not remove formal authority
-- does not block decisions
-- does not require buy-in from the top
-- does not demand ideological agreement
+This system is **explicitly non-profit-driven**.
 
-It simply ensures:
-- decisions are mediated by context
-- affected parties have process-level leverage
-- catastrophic outcomes are damped
+Why:
+- profit optimizes **local nodes**
+- system health is a **global property**
+- profit collapses mediation into transaction
+- transactions erase context
 
-Even hierarchical systems benefit from this — whether they acknowledge it or not.
+In this system:
+- value is measured as **network coherence**
+- optimization target is **continued adaptability**
+- local efficiency is subordinate to system stability
 
 ---
 
-## Key Invariant (Do Not Break This)
+## How Profit Fits (Without Dominating)
 
-> **Any actor who can act on others must be mediatable by those actions affect.**
+Profit may exist *outside* the system.
 
-Break this, and the system recentralizes.
-Keep it, and resilience emerges.
+Within the system:
+- nodes optimize their **connections**, not extraction
+- incentives are informational, not financial
+- contribution is contextual, not monetized
+- relevance emerges from interaction, not accumulation
+
+Local optimization is allowed.
+Global collapse is not.
+
+---
+
+## Attractor Management (Why This Works)
+
+The system does not enforce behavior.
+It shapes **attractors**.
+
+- destructive attractors are damped
+- cooperative attractors are stabilized
+- escalation is slowed
+- lock-in is prevented
+
+Intent is layered onto these attractors.
+Intent that collapses option space is resisted.
+Intent that preserves learning is amplified.
+
+---
+
+## Load-Bearing Emerges Automatically
+
+Because:
+- no node is critical
+- failure is survivable
+- authority is distributed
+- mediation is universal
+- roles are replaceable
+
+The system does not ask:
+> “Who should decide?”
+
+It asks:
+> **“What interaction geometry keeps the system adaptive?”**
+
+---
+
+## System Invariant (Unbreakable)
+
+> **Any node that can affect the network must be mediatable by the network.**
+
+If this is violated:
+- the system recentralizes
+- brittleness increases
+- learning collapses
 
 ---
 
 ## Final Summary
 
-- Mediation is not a role — it is a **capability**
-- Capabilities are granted by context
-- Authority is always partial
-- Power is always constrained
-- Load-bearing emerges from mutual mediation, not trust
+- Authority is contextual, not positional
+- Roles define tasks, not importance
+- Everyone mediates; no one dominates
+- Profit is local; stability is global
+- Trust accelerates but never replaces structure
+- The system optimizes itself, not its actors
 
-This is not governance by people.
+This is not a governance model.  
+It is a **network-level learning architecture**.
 
-It is **governance by interaction geometry**.
+The system does not care who you are.  
+It only cares **how your actions shape the whole**.
