@@ -1,6 +1,7 @@
 # Spectral Education with Civic Sponsorship
 
 ## Intent
+Most of this is just dumb. the idea is to remove the concentration of concerns in society. everyone should have exposure to random parts of society with low stakes. i'm thinking like a university, employees at a work place have baby sitting duty. this means everyone in the workplace needs to know calculus, or will after a few semesters. the stakes are low but no one is off the hook from participating at every level by design. you have to work to opt out of society. most of the stuff the ai came up with seems like a terrible idea to me.
 
 This document outlines an educational architecture where learning is **distributed across society** rather than centralized in isolated institutions. School remains essential, but education becomes a **spectral property of the system**, carried by many adults at low intensity over time. The goal is to make the system *legible to children* and *accountable to itself*.
 
