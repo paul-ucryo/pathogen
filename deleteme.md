@@ -124,4 +124,99 @@ This is prayer **without language**, because language itself perturbs the system
 Jesus uses relational language (“Father,” “Kingdom”) but consistently strips it of control logic.
 
 He teaches that:
-- God already kn
+- God already knows needs
+- Excess words add no value
+- Display and performance introduce distortion
+- Anxiety reflects misalignment, not prudence
+
+This only makes sense if prayer is **not informational**.
+
+### The structure of Jesus’ prayer teaching
+
+The Lord’s Prayer is strikingly minimal:
+
+- No explanation
+- No mechanism
+- No specificity of outcome
+- Emphasis on daily needs, not future control
+
+“Not my will, but yours” is not submission to authority—it is **releasing local preference** so the larger system can resolve coherently.
+
+### Jesus and identity dissolution
+
+Jesus repeatedly attacks fixed identity:
+
+- “Lose your life”
+- “Deny yourself”
+- “The last shall be first”
+- “Do not worry”
+
+These are not moral inversions.  
+They are **warnings against rigid phase-locking**.
+
+A node that insists on its own trajectory destabilizes the whole.
+
+### Prayer as system sampling
+
+Jesus treats prayer as:
+- Exposure of need
+- Trust in response
+- Acceptance of non-visible resolution
+
+Outcomes may be:
+- External change
+- Internal transformation
+- Dissolution of the desire itself
+
+All are presented as valid.
+
+---
+
+## 5. Convergence: Same Perception, Different Interfaces
+
+| Figure | Primary Method | What Is Being Taught |
+|------|---------------|----------------------|
+| Buddha | Silent observation | See the dynamics directly |
+| Laozi | Non-forcing action | Move with system flow |
+| Jesus | Relational prayer | Release control into coherence |
+
+They differ culturally, but **they train the same capacity**:
+- Sensitivity to phase
+- Awareness of feedback
+- Recognition of instability
+- Trust in non-local resolution
+
+---
+
+## 6. The Role of the Brain
+
+All three traditions assume—implicitly—that:
+
+- The human mind can *perceive* these dynamics
+- Ordinary cognition obscures them
+- Training attention reveals them
+- Language is a crude but usable pointer
+
+Meditation, silence, prayer, and simplicity are not beliefs.  
+They are **methods for reducing cognitive noise** so the underlying process becomes visible.
+
+The brain does not calculate the system.
+It **resonates with it**.
+
+---
+
+## 7. Final Description
+
+These figures present religion as:
+
+- A way of *seeing* how reality moves
+- A way of *participating* without forcing
+- A way of *letting go* of unstable identity
+- A way of *allowing coherence to emerge*
+
+Prayer, across traditions, is not about being heard.
+
+It is about **letting the system run the problem** once you stop insisting on owning it.
+
+That is why it works.
+And why it cannot be reduced to doctrine.
