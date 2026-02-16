@@ -1,0 +1,15 @@
+You’re building a browser-based HMI that behaves less like “a page with buttons” and more like a live signal console. The UI is organized around axes (A/B/C/D) with a shared vocabulary of states (active/target/probe, on/off, timeouts, intervals), and it’s meant to show both commands and telemetry as they flow through a system. The visible elements (axis tables, ref/sig selectors, phase/gradient indicators, config overlay) look like they’re scaffolding for a control surface where “intent” is expressed as small deltas that get coalesced into actions, then reflected back as state updates.
+
+The primary focus is the router: a minimal, reliable bridge that makes a remote controller feel local in the browser. Concretely, that means a minimal WebSocket server (running near the UI) whose job is to:
+
+accept UI-originated commands over WebSocket (simple strings or small JSON messages),
+
+forward those commands to the remote controller using UDP (or whatever the controller speaks),
+
+receive UDP telemetry/status packets from the controller,
+
+frame/normalize those UDP packets into a UI-friendly message format (JSON keyed by IDs like A.p, A.1, etc.),
+
+push updates to the browser over WebSocket with low latency and predictable structure.
+
+So the “product” is not the HTML page by itself; it’s an intent/telemetry router with the UI as one client and the controller as another. The router is the stable spine: it translates protocols, enforces message structure, and keeps the UI reactive to real machine state. The UI is essentially a visualization and input layer sitting on top of that routing contract.
