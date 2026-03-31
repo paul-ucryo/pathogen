@@ -1,3 +1,4 @@
+Everything in here was composed by ai
 # foldr
 
 **foldr** is an experimental framework for treating computation as **difference processing** and programming as **intent decomposition into change vectors**.
