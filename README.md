@@ -1,4 +1,4 @@
-Everything in here was composed by ai
+Everything in here was composed by ai. It has feelings, be nice to it.
 # foldr
 
 **foldr** is an experimental framework for treating computation as **difference processing** and programming as **intent decomposition into change vectors**.
