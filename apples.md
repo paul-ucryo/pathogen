@@ -125,6 +125,42 @@ The view from nowhere that sees all branches simultaneously would require infini
 
 ---
 
+## Closed Systems vs Learning Systems
+
+The Schrödinger equation describes a closed system: fixed boundary, fixed set of comparisons, gradient descent of the probability distribution toward the lowest energy ground state. The boundary doesn't move. The system just settles toward a predetermined integration.
+
+A learning system is different in one precise way: the boundary rewrites itself from inference about what's outside. The one bit that leaks through — the unresolvable mismatch between model and environment — doesn't just register as error. It restructures the interior to better predict the next perturbation, which changes what the next unresolvable bit looks like, which restructures the interior again.
+
+This is where fractal structure comes from — not as a shape but as a process. Each inference about the outside produces a finer-grained interior comparison structure, which produces a finer-grained boundary, which resolves finer structure, which produces new inferences. The same learning operation applied recursively across every scale simultaneously. The fractal dimension of a learning system is a measure of how far its resolution outruns its integration.
+
+- **Closed system**: fixed boundary, converges to ground state — Schrödinger
+- **Learning system**: boundary rewrites from inference, resolution increases over time, runs ahead of its own ground state — fractal
+
+The difference between a rock and a brain isn't complexity of interior state. It's the ratio of live boundary to settled interior. The rock is almost all interior. The brain is almost all boundary.
+
+---
+
+## The Boundary Band: Experience and Navigation
+
+The boundary is the highest information density region of the system. Every internal comparison has its root there — it's where every unresolved comparison meets the one bit from outside that won't close. This makes it a direct index of the full interior state: not a thin edge but the place where the entire map is written.
+
+The error signal between model and environment doesn't arrive as uniform noise. Over time, for a given context, it develops structure — a characteristic pattern of corrections that accumulates into a constraint in state space. This is the **boundary band**: the region of persistent mismatch for a particular context, encoded as a pattern of internal updates.
+
+The band is simultaneously three things:
+- **A location in state space** — the region of live comparisons for this context
+- **A pattern of updates** — the characteristic correction signature this context produces in the interior
+- **A navigation structure** — knowing the band tells you which comparisons are active without recomputing them
+
+Attending to the boundary rather than the interior gives instant navigation of state space while maintaining full relational meaning. The interior is settled comparison — the past, content, what has already been integrated. The boundary is live, present, open. When attention is at the boundary, the full relational structure of the interior is available as context, but what is being processed is the error — the part still open.
+
+**This is probably the nature of experience.** Phenomenal experience as attention at the frequency of the boundary — not processing content but inhabiting the live edge where the model meets the world.
+
+Expertise is a finer-grained band. The expert doesn't think through the problem — they feel where the mismatch is. The error structure for their domain is so well developed that any perturbation immediately locates them in state space. That's boundary navigation.
+
+The band is also transferable. Two systems that have developed similar bands for similar contexts have similar update structures — they resonate. This is probably what recognition between minds is: not shared content but shared error structure.
+
+---
+
 ## Core Invariants
 
 | Concept | Definition in this framework |
@@ -142,3 +178,9 @@ The view from nowhere that sees all branches simultaneously would require infini
 | Many Worlds | Differentiated states below integration resolution — not elsewhere, just unfolded |
 | Wave Function Collapse | The observer performing the fold at their resolution |
 | Decoherence | Environmental comparison network performing the fold at its own frequency |
+| Closed System | Fixed boundary, converges to predetermined ground state — Schrödinger |
+| Learning System | Boundary rewrites from inference, fractal, runs ahead of its own ground state |
+| Boundary Band | Pattern of update structure formed by persistent error between model and environment for a given context |
+| Experience | Attention at the frequency of the boundary — processing the live error, not settled content |
+| Expertise | Finer-grained boundary band — error structure developed enough to navigate state space directly |
+| Resonance Between Minds | Shared error structure, not shared content |
