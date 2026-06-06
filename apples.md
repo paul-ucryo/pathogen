@@ -107,6 +107,16 @@ The "worlds" are differentiated states that exist below the perceptual threshold
 - The visual field is a spatial map of which comparisons the network has and hasn't made
 - Blur is not missing information — it is unresolved differentiation
 
+### The Worlds in Front of You
+
+Much of what many worlds actually looks like is daily schedules and cultural patterns — the mundane, stable, large-scale movement of matter a few levels removed from gravity.
+
+Gravity integrates matter into planets. A few levels up the hierarchy, that same preference for integrated states produces: seasons, tides, the day/night cycle. A few levels above that: agriculture, sleep schedules, the workweek. Above that: cities that empty and fill on a 24-hour rhythm, migration patterns, market cycles. These are not metaphors for branching worlds — they are branching worlds. Stable, periodic, large-scale comparison structures that most observers are embedded inside of and therefore can't perceive as structure. They're the low-frequency components of the social FFT, the patterns so large and slow they feel like background.
+
+The person who works nights and the person who works days are not in the same world in any trivial sense. They occupy the same space at different phases of the same comparison cycle. The matter that composes their experienced environment is literally different matter, moving in coordinated patterns they didn't choose and mostly can't see. Culture is a comparison network that moves bodies through space on a schedule. Religion, the calendar, the market — these are all integration structures operating at frequencies above individual perception, folding individual behavior into collective pattern.
+
+This is where the many worlds interpretation gets its intuitive pull and also where it misleads. People feel like there are parallel worlds because there are — they're just temporal and cultural, not spatial. The branching is happening at the frequency of institutions, seasons, and schedules. You can't perceive the branch because you're inside the integration.
+
 Wave function collapse is not the universe picking a branch. The observer *is* the collapse — defined by the resolution at which they integrate. Different observers don't see different branches of the same world; they have different integration resolutions and are binning reality at different scales.
 
 The view from nowhere that sees all branches simultaneously would require infinite integration resolution. That is the heat death state — the universe seeing itself whole.
