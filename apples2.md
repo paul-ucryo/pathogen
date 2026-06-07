@@ -4,6 +4,18 @@
 
 ---
 
+A state is a distinction network.
+
+Distinctions induce factor structure.
+
+Factor structure induces a spectrum.
+
+Phase is a coordinate on that spectrum.
+
+Schrödinger evolution is simply the law governing how the spectrum changes under comparison operations.
+
+
+
 ## The Primitive Distinction
 
 Everything begins with one distinction: **self / non-self**, equivalently **conducts / insulates**, or simply **1 / 0**.
