@@ -4,6 +4,7 @@
 ---
 
 ## 1. The Core Primitive: Comparison
+ 60
 
 The fundamental operation is a **comparison triple**: `(a, b) → result`
 
@@ -61,21 +62,23 @@ Charge is **relational**, not intrinsic. Antiparticles are the same object with 
 
 ---
 
-## 6. Antimatter as Inverse Insert Logic
+## 6 Antimatter as Inverse Insert Logic
 
 Matter can be understood as stable behavior resulting from a consistent insert rule. An electron, for example, is not a thing so much as a persistent pattern — a rule for inserting structure into a relational network that is self-consistent enough to accumulate and persist.
 
-Antimatter, in this framing, is the same insert rule expressed in inverse logic. Where matter creates structure by insertion, antimatter creates structure through the complement of that insertion — the same pattern operating on 0s instead of 1s.
+Antimatter, in this framing, is what results from removing a pattern from the address space entirely — equivalent to shifting the entire set by that pattern. The positron isn't an electron running in complement, it's what's left when you shift the whole set by the electron pattern. The absence that the pattern defines.
 
 This explains several things cleanly:
 
-- **Why antimatter is rare**: Stable structure accumulates on the side where insert rules are self-reinforcing. Inverse logic patterns don't accumulate stably in the same basis, so they appear transiently but don't compound into persistent structure.
+- **Why antimatter is rare**: Producing antimatter requires shifting the entire address space, not a local operation. That's expensive — it takes significant energy to perform a global shift rather than a local insertion. So antimatter appears only where enough energy is available to perform that shift.
 
-- **Why matter and antimatter annihilate**: They aren't opposites canceling — they're a pattern and its complement resolving to nothing, because together they constitute the complete basis with no remainder.
+- **Why antimatter is energetic**: The shift doesn't just affect one location — it reorganizes the whole set. When antimatter annihilates with matter, the shift releases back into the set, which is why annihilation produces so much energy relative to the masses involved.
 
-- **Why antimatter still appears**: An inverse logic pattern is still a pattern. It can exist transiently — in particle accelerators, cosmic ray interactions — without being stable enough to accumulate into observable structure.
+- **Why matter and antimatter annihilate**: A pattern meeting its own shift cancels — the address space returns to zero. It's not two things colliding, it's a pattern canceling the reorganization it defines.
 
-Antimatter in this view is the meta structure of relations — the accounting index rather than the thing being indexed. It exists as the necessary complement of matter's insert logic, but nothing stable occupies it.
+- **Why antimatter still appears**: The shift is a real operation even if it's expensive. It can be performed transiently — in particle accelerators, cosmic ray interactions — without being stable enough to accumulate into persistent structure.
+
+Antimatter in this view is the meta structure of relations — the accounting index rather than the thing being indexed. It exists as the necessary complement of matter's insert logic, but nothing stable occupies it because maintaining a global shift is too costly to persist.
 
 ---
 
