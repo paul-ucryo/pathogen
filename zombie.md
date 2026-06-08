@@ -56,7 +56,6 @@ The network can be modeled as a **B-tree** where comparisons are insertions.
   - Right insertion + leaves converge
   - Right insertion + leaves diverge
 - The sign of charge interaction is not in the insertion alone — it's in how the insertion **composes with the existing leaf structure**
-- **Energy** = the amplitude along one of these four types — unbounded, continuous, telling you how many comparisons deep you are along that type
 
 Charge is **relational**, not intrinsic. Antiparticles are the same object with opposite insertion direction.
 
