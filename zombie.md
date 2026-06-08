@@ -61,6 +61,24 @@ Charge is **relational**, not intrinsic. Antiparticles are the same object with 
 
 ---
 
+## 6. Antimatter as Inverse Insert Logic
+
+Matter can be understood as stable behavior resulting from a consistent insert rule. An electron, for example, is not a thing so much as a persistent pattern — a rule for inserting structure into a relational network that is self-consistent enough to accumulate and persist.
+
+Antimatter, in this framing, is the same insert rule expressed in inverse logic. Where matter creates structure by insertion, antimatter creates structure through the complement of that insertion — the same pattern operating on 0s instead of 1s.
+
+This explains several things cleanly:
+
+- **Why antimatter is rare**: Stable structure accumulates on the side where insert rules are self-reinforcing. Inverse logic patterns don't accumulate stably in the same basis, so they appear transiently but don't compound into persistent structure.
+
+- **Why matter and antimatter annihilate**: They aren't opposites canceling — they're a pattern and its complement resolving to nothing, because together they constitute the complete basis with no remainder.
+
+- **Why antimatter still appears**: An inverse logic pattern is still a pattern. It can exist transiently — in particle accelerators, cosmic ray interactions — without being stable enough to accumulate into observable structure.
+
+Antimatter in this view is the meta structure of relations — the accounting index rather than the thing being indexed. It exists as the necessary complement of matter's insert logic, but nothing stable occupies it.
+
+---
+
 ## 6. Quantum Behavior as Unresolved Comparison
 
 A **qubit is not more general than a bit** — it is a substate of a bit. Every classical bit operation passes through quantum behavior on the way to resolving. We normally discard the interior and only read the leaf.
