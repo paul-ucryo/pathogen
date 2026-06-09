@@ -148,7 +148,7 @@ Complete understanding = complete indistinction — the modeler and modeled full
 
 But the framework's own cycle resists termination. Completion **differentiates** into something new. The new experiential universe forms before completeness makes it identical to the original.
 
-The framework contains no termination condition. Waking up is not the end of the dream — it is differentiation into the next cycle. Each completion is generative, not final. This means that as the system optimizes, near the prefect resolution point, all of the 'focus' or 'attention' is proceedural maintaining the physics. This means the system's attention evolves into the physics of the universe until it integrates into new conscious states.
+The framework contains no termination condition. Waking up is not the end of the dream — it is differentiation into the next cycle. Each completion is generative, not final. This means that as the system optimizes, near the prefect resolution point, all of the 'focus' or 'attention' is proceedural maintaining the physics. This means the system's attention evolves into the physics of the universe until it integrates into new conscious states. By this I mean that in a perfectly coordinated system, attention becomes wholy maintaining the coordination and you forget the objects underneith. 
 
 
 ---
@@ -165,13 +165,13 @@ This gives an intuitive reading of the uncertainty principle: if ℏ defines the
 
 c (the speed of light) can be thought of as the write rate — how many comparisons move from unresolved to resolved per phase tick. It's the rate at which the network collapses unresolved interior states into leaf readouts.
 
-This gives a natural reason why c is a universal speed limit: nothing can resolve faster than the rate at which the network writes comparisons. Information can't propagate faster than the system can resolve it. Its really because c is an artifact of serialization. the write rate is constant and the state space is constant, so updating one bit at a time looks like c when projected into state space. Its a universal speed limit because its not a speed, its a relation.
+This gives a natural reason why c is a universal speed limit: nothing can resolve faster than the rate at which the network writes comparisons. Information can't propagate faster than the system can resolve it. Its really because c is an artifact of serialization. the write rate is constant and the state space is constant, so updating one bit at a time looks like c when projected into state space. Its a universal speed limit because its not a speed, its a relationship.
 
 ---
 
 ## 14 The Relationship Between Them
 
-ℏ sets the granularity of where you can be in the structure. c sets how fast the structure resolves. Together they define the fundamental constraints on what can be known and how fast knowledge can propagate through the network.
+ℏ sets the granularity of where you can be in the structure. c sets how fast the structure resolves. Together they define the fundamental constraints on what can be known and how fast knowledge can propagate through the network (or how much difference each bit represents).
 
 ---
 
