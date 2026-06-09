@@ -153,4 +153,28 @@ The framework contains no termination condition. Waking up is not the end of the
 
 ---
 
+## 12 ℏ — Cursor Size
+
+ℏ (Planck's constant) can be thought of as the minimum description needed to locate where you are in a relational structure. It's the size of the read head — how much information you need to specify a position in the comparison network.
+
+This gives an intuitive reading of the uncertainty principle: if ℏ defines the minimum cursor size, then there's a fundamental limit to how precisely you can point at a location in the relational structure. Below that size, you can't simultaneously specify conjugate properties like position and momentum — the cursor isn't small enough to resolve both at once.
+
+---
+
+## 13 c — Write Rate
+
+c (the speed of light) can be thought of as the write rate — how many comparisons move from unresolved to resolved per phase tick. It's the rate at which the network collapses unresolved interior states into leaf readouts.
+
+This gives a natural reason why c is a universal speed limit: nothing can resolve faster than the rate at which the network writes comparisons. Information can't propagate faster than the system can resolve it.
+
+---
+
+## 14 The Relationship Between Them
+
+ℏ sets the granularity of where you can be in the structure. c sets how fast the structure resolves. Together they define the fundamental constraints on what can be known and how fast knowledge can propagate through the network.
+
+---
+
+*These are conceptual framings intended for discussion, not formal derivations.*
+
 *These concepts are developed as a useful decomposition, not a proven theory. The framework claims to be right where it is useful.*
