@@ -158,6 +158,8 @@ This means that as the system optimizes, near the prefect resolution point, all 
 
 This gives an intuitive reading of the uncertainty principle: if ℏ defines the minimum cursor size, then there's a fundamental limit to how precisely you can point at a location in the relational structure. Below that size, you can't simultaneously specify conjugate properties like position and momentum — the cursor isn't small enough to resolve both at once.
 
+ℏ doesn't limit the structure from outside. It's what makes distinction possible at all. By setting a resolution floor, it creates the difference between "resolved" and "unresolved" — which is the only difference the framework actually needs. Without it that binary collapses. Everything is simultaneously resolved and unresolved because there's no scale at which to ask the question. This 'distinction' is expressed as addressability (distinction and addressability are different projections of the same thing).
+
 ---
 
 ## 13 c — Write Rate
