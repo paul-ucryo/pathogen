@@ -165,7 +165,7 @@ This gives an intuitive reading of the uncertainty principle: if ℏ defines the
 
 c (the speed of light) can be thought of as the write rate — how many comparisons move from unresolved to resolved per phase tick. It's the rate at which the network collapses unresolved interior states into leaf readouts.
 
-This gives a natural reason why c is a universal speed limit: nothing can resolve faster than the rate at which the network writes comparisons. Information can't propagate faster than the system can resolve it.
+This gives a natural reason why c is a universal speed limit: nothing can resolve faster than the rate at which the network writes comparisons. Information can't propagate faster than the system can resolve it. Its really because c is an artifact of serialization. the write rate is constant and the state space is constant, so updating one bit at a time looks like c when projected into state space. Its a universal speed limit because its not a speed, its a relation.
 
 ---
 
