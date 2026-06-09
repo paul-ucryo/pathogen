@@ -4,8 +4,6 @@
 ---
 
 ## 1. The Core Primitive: Comparison
- 60
-
 The fundamental operation is a **comparison triple**: `(a, b) → result`
 
 This decomposes into two phases:
