@@ -148,8 +148,7 @@ Complete understanding = complete indistinction — the modeler and modeled full
 
 But the framework's own cycle resists termination. Completion **differentiates** into something new. The new experiential universe forms before completeness makes it identical to the original.
 
-The framework contains no termination condition. Waking up is not the end of the dream — it is differentiation into the next cycle. Each completion is generative, not final. This means that as the system optimizes, near the prefect resolution point, all of the 'focus' or 'attention' is proceedural maintaining the physics. This means the system's attention evolves into the physics of the universe until it integrates into new conscious states. By this I mean that in a perfectly coordinated system, attention becomes wholy maintaining the coordination and you forget the objects underneith. 
-
+This means that as the system optimizes, near the prefect resolution point, all of the 'focus' or 'attention' or the processing potential is proceedural maintaining the physics of coordination between nodes. This means the system's attention evolves into the physics of the universe until it integrates into new conscious states. By this I mean that in a perfectly coordinated system, attention becomes wholy maintaining the coordination and you forget the objects underneith. This is somewhat like saying the evolution of attention is the phase shift of consciousness (inverting the information structures that occupy conscious attention, literally phase shifting consciousness into what used to be unconscious).
 
 ---
 
