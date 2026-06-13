@@ -22,7 +22,7 @@ The system state is separated into two components: **a**, the local logic (patte
 
 The use of **i** is interesting here. The word "imaginary" indeed implies internal. It represents phase: a **normalized**, distributed effect across the reals, observed as component behavior rather than object. Not pretend — internal. It converts differentiation to integration, 0→∞ and 0→1.
 
-The system's behavior at any moment depends on the relationshipathogenp between **ia** and **b**:
+The system's behavior at any moment depends on the relationship between **ia** and **b**:
 
 | Condition | State |
 |-----------|-------|
