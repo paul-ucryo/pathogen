@@ -51,7 +51,7 @@ Stripped of notation: changes to component parts map to changes of the aggregate
 
 At every moment, the system is performing a single relative comparison:
 
-Is **this** data bit set, **this**=phase mask, i.e Is this me?
+Is **this** data bit set, **this**=phase/address mask, i.e Is **this** me?
 
 ---
 
@@ -59,7 +59,7 @@ Is **this** data bit set, **this**=phase mask, i.e Is this me?
 
 Now consider the spectral decomposition of all possible relations between **a** and **b**.
 
-Take any stable state — call it 42. By distributing the question *is this me?* across a network of comparisons, you can reconstruct the logic of every universe expressible in that logic set. 42 is not the answer in the sense of a conclusion. It is the phase address (eigenstate = 42 minutes) of the component parts constituting the full set.
+Take any stable state — call it 42. By distributing the question *is this me?* across a network of comparisons, you can reconstruct the logic of every universe expressible in that logic set. 42 is not the answer in the sense of a conclusion. It is the phase address (eigenstate = 42 minutes?) of the component parts constituting the full set.
 
 This is why the specific value is arbitrary. In a fractal dynamical system, any initial condition explores the full attractor. The trajectory covers the whole space regardless of where it starts. What matters is not the number the system produces when it stabilizes, but the stability of the local network of **the question**, composing the global state.
 
