@@ -1,5 +1,5 @@
 # The Adams Conjecture
-(Just for fun — the math is BS)
+(Just for fun)
 
 ## The Fundamental Interconnectedness of All Things
 
@@ -22,7 +22,7 @@ The system state is separated into two components: **a**, the local logic (patte
 
 The use of **i** is interesting here. The word "imaginary" indeed implies internal. It represents phase: a **normalized**, distributed effect across the reals, observed as component behavior rather than object. Not pretend — internal. It converts differentiation to integration, 0→∞ and 0→1.
 
-The system's behavior at any moment depends on the relationship between **ia** and **b**:
+The system's behavior at any moment depends on the relationshipathogenp between **ia** and **b**:
 
 | Condition | State |
 |-----------|-------|
@@ -59,7 +59,7 @@ Is **this** data bit set, **this**=phase mask, i.e Is this me?
 
 Now consider the spectral decomposition of all possible relations between **a** and **b**.
 
-Take any stable state — call it 42. By distributing the question *is this me?* across a network of comparisons, you can reconstruct the logic of every universe expressible in that logic set. 42 is not the answer in the sense of a conclusion. It is the phase address (eigenstate) of the component parts constituting the full set.
+Take any stable state — call it 42. By distributing the question *is this me?* across a network of comparisons, you can reconstruct the logic of every universe expressible in that logic set. 42 is not the answer in the sense of a conclusion. It is the phase address (eigenstate = 42 minutes) of the component parts constituting the full set.
 
 This is why the specific value is arbitrary. In a fractal dynamical system, any initial condition explores the full attractor. The trajectory covers the whole space regardless of where it starts. What matters is not the number the system produces when it stabilizes, but the stability of the local network of **the question**, composing the global state.
 
