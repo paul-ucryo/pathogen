@@ -66,4 +66,4 @@ This is why the specific value is arbitrary. In a fractal dynamical system, any 
 
 The Earth is not computing the answer. It is the address of the network of relations stable enough to ask the question. The questioning gravitates towards integration, because an integrated reference is higher entropy then its constituatent parts.
 
-While the answer is arbitrary (the universe is expressible as any basis, not just 42) I would be remis not to consider the phase diameter of the earth is 42 minutes. Adams thought he was being silly. He would have found this extremely annoying.
+While the answer is arbitrary (the universe is expressible as any basis, not just 42) I would be remis not to bring up the phase diameter of the earth is 42 minutes (citeation needed). Adams thought he was being silly. He would have found this extremely annoying.
