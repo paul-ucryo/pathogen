@@ -37,7 +37,7 @@ For example, two people trying to bridge a gap and come together, with different
 
 ## Where Phase Locks: Environmental Feedback
 
-People whose early feedback taught532745 them the system responds to them develop a self that tracks momentum and systemic state. People whose early feedback taught them the system does not respond to them develop a self that tracks local position.
+People whose early feedback taught them the system responds to them develop a self that tracks momentum and systemic state. People whose early feedback taught them the system does not respond to them develop a self that tracks local position.
 
 But the environment/self/DNA distinction is only approximately useful — these are projections of the same underlying correlation structure. The whole system defines which projections are stable. Instability is phase change of local behavior. The whole drives the parts and the parts constitute the whole simultaneously. Phase is where you land on that balance, and it is thermodynamically determined by the total signal environment.
 
@@ -87,3 +87,7 @@ Goodness stops being a moral category and becomes a structural one. A good perso
 This is a more stable foundation for ethics than morality, or more fundamentally composes what morality means. Traditional morality requires the fiction of free choice. Structural goodness only asks: does this support experience, expand conduction, allow more selves to locate themselves in the network? And this collapses the concern of usurping the collective. The phase/momentum paradigm means that conduction supports individual because the indivdual and the network are the same thing. You can't have healthy system at the expense of the individual any more then an individual can exist without relation to the system.
 
 The determinism does not make it less precious. It makes it more so. This specific interference pattern, producing this specific experience — it could not have been otherwise, and it will not come again.
+
+## Conclusion
+Don't let the cunts get ya
+Down, surround yourself with ones that [bless] ya 
