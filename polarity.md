@@ -89,7 +89,8 @@ This is a more stable foundation for ethics than morality, or more fundamentally
 The determinism does not make it less precious. It makes it more so. This specific interference pattern, producing this specific experience — it could not have been otherwise, and it will not come again.
 
 ## Path-o-gen
-Every node is a seed for the network. This is the mechanism by which Trump became the conduction path for the network. By recognizing your own potential in the network and seeding your own conduction path, you actually build network integration by differentiating conduction paths. Becoming personally responsible for the network, you see yourself in the network. So at any phase, the system's moment toward integration comes through you and where you put your attention.
-I.e.
-Don't let the cunts get ya
-Down, surround yourself with ones that [bless] ya 
+Every node is a seed for the network. This is the mechanism by which Trump became the conduction path for the network. By recognizing your own potential in the network and seeding your own conduction path, you actually build network integration by differentiating conduction paths. Becoming personally responsible for the network, you see yourself in the network. So at any phase, the system's momentum toward integration comes through you and where you put your attention.
+
+Don't let the cunts get ya down
+
+surround yourself with ones that [bless] ya
