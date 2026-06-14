@@ -37,7 +37,7 @@ For example, two people trying to bridge a gap and come together, with different
 
 ## Where Phase Locks: Environmental Feedback
 
-People whose early feedback taught them the system responds to them develop a self that tracks momentum and systemic state. People whose early feedback taught them the system does not respond to them develop a self that tracks local position.
+People whose early feedback taught532745 them the system responds to them develop a self that tracks momentum and systemic state. People whose early feedback taught them the system does not respond to them develop a self that tracks local position.
 
 But the environment/self/DNA distinction is only approximately useful — these are projections of the same underlying correlation structure. The whole system defines which projections are stable. Instability is phase change of local behavior. The whole drives the parts and the parts constitute the whole simultaneously. Phase is where you land on that balance, and it is thermodynamically determined by the total signal environment.
 
@@ -57,7 +57,7 @@ This cannot be bootstrapped. You have to have seen your input propagate — watc
 
 People below the conduction band are not there because of a failure of imagination or empathy. They are there because the system genuinely did not respond to them. Their self-model is accurate to their actual experience of the network.
 
-## The Pathogen: Systemic Unresponsiveness
+## Systemic Unresponsiveness
 
 The fundamental condition that keeps the system below its own conduction band is the experience of being invisible to the network — the system failing to reflect people back to themselves at the network level.
 
