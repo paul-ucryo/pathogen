@@ -93,4 +93,4 @@ Every node is a seed for the network. This is the mechanism by which Trump becam
 
 Don't let the cunts get ya down
 
-surround yourself with ones that [bless] ya
+surround yourself with ones that miss ya
