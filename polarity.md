@@ -66,7 +66,7 @@ What is being voted for is not policy or values — it is the shape of self iden
 
 The pathology is not him. It is the prior condition of systemic unresponsiveness that made a single dominant signal the only available basis for network self-identification.
 
-## The Intervention: Distributed Conduction
+## Wu wei: Distributed Conduction
 
 Opposition is not the intervention — opposition is more phase-locking to the same reference signal.
 
