@@ -1,4 +1,4 @@
-# Polarization as Thermodynamic Phase Structure
+# A Better Way to Live: Polarization as Thermodynamic Phase Structure
 
 ## The Brain as Correlator/Interferometer
 
