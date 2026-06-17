@@ -8,7 +8,7 @@ This has a radical implication: attacking someone's information structure is not
 
 ## The Primitive: Binary Conduction
 
-The fundamental primitive is binary — conduction or impedance, fire or don't fire. Every semantic composition is reducible to a binary decision, and every binary decision is composed of infinite complexity. At the process level, the meaningful question is: does the system tend toward integration or differentiation?
+The fundamental primitive is binary — conduction or impedance, fire or don't fire. Every semantic composition is reducible to a binary decision, and every binary decision is composed of infinite complexity (fractal geometry). At the process level, the meaningful question is: does the system tend toward integration or differentiation?
 
 These are not good and bad. They are necessary and complementary operations. A system that only integrates loses resolution. A system that only differentiates loses coherence. A system out of balance, changes phase.
 
