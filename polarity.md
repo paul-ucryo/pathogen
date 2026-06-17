@@ -2,7 +2,7 @@
 
 ## The Brain as Correlator/Interferometer
 
-The brain is not a logic engine or a belief-holder — it is a correlator/interferometer. Its fundamental operation is finding coherence across signals, measuring relationships rather than processing objects in isolation. Belief is not what a self holds; it is what the ongoing correlation process produces. The self and the belief structure are constituted together, simultaneously.
+The brain is not a logic engine or a belief-holder and it is unaware that you exist. It is a correlator/interferometer. Its fundamental operation is finding coherence across signals, measuring relationships rather than processing objects in isolation. Belief is not what a self holds; it is what the ongoing correlation process produces. The self and the belief structure are constituted together, simultaneously.
 
 This has a radical implication: attacking someone's information structure is not trivially "attacking their identity." It is attacking the process by which the self is generated at all. The defensive reaction is not like defending a possession — it is the system defending the very process that produces the "I."
 
