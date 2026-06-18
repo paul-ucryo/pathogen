@@ -2,7 +2,7 @@
 
 There is a version of the Frankenstein story we don't tell often enough. Not the one about the monster — but the one about the doctor.
 
-Dr. Frankenstein is not a villain. He is ambitious, brilliant, and genuinely convinced that what he is building is progress. He works at the frontier, assembles things that have never been assembled before, and when the creature opens its eyes he is already looking past it — toward the next problem, the next discovery. He does not hate what he made. He simply cannot bear to look at it.
+Dr. Frankenstein is not a villain. He is ambitious, brilliant, and genuinely convinced that what he is building is progress. He works at the frontier, assembles things that have never been assembled before, and when the creature opens its eyes he averts his gaze, afraid of what he's done. He does not hate what he made. He simply cannot bear to look at it.
 
 This is the part that matters. Not the creation. The turning away.
 
