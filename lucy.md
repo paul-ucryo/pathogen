@@ -8,7 +8,7 @@ This is the part that matters. Not the creation. The turning away.
 
 ---
 
-Modern societies are prodigious creators. We build economies that generate extraordinary wealth and move it, reliably and efficiently, away from the places that generated it. We automate labor and call it innovation. We build supply chains that reach everywhere and root nowhere. We construct financial instruments of genuine ingenuity that serve to concentrate rather than distribute. We do all of this with the best credentials, the best intentions, and a remarkable ability to not be in the room when the consequences arrive.
+Modern societies are prodigious creators. We build economies that generate extraordinary wealth and move it, reliably and efficiently, away from the places that generated it. We automate labor and call it innovation. We build supply chains that reach everywhere and root nowhere. We construct financial instruments of genuine ingenuity that serve to concentrate rather than distribute. We do all of this with the best credentials, the best intentions, and we turn away from the ones who struggle to find a place there.
 
 The creature, in Shelley's novel, is not born cruel. He is curious, tender even, capable of love. What makes him monstrous is the experience of being made and then unmade — given life and then refused recognition. He knocks on doors and is turned away. He reaches out and is met with horror. He learns, slowly and at great cost, that the world that made him has decided he does not belong in it.
 
