@@ -16,7 +16,7 @@ So he becomes what they feared. Not because it was inevitable. Because it was ta
 
 ---
 
-There are people across  the class spectrum in any rapidly modernizing society who understand this story from the inside. They are not stupid and they are not simply deceived. They watched factories close and were told the market had spoken. They watched their towns empty and were handed pamphlets about retraining. They watched the decisions get made somewhere else by people who did not ask and would not be affected. They were not abandoned dramatically. They were abandoned administratively, which is harder to grieve and harder to protest.
+There are people across  the class spectrum in any rapidly modernizing society who understand this story from the inside. They are not stupid and they are not simply deceived. They watched factories close and were told the market had spoken. They watched their towns empty and were handed pamphlets about retraining. They watched the decisions get made somewhere else by people who did not ask and would not be affected. They were not abandoned dramatically. They were abandoned administratively, the people were forgotten to keep the machine running.
 
 When you have been made and then left — when the system that produced you turns away — you carry a knowledge that comfortable people do not have. You know that the story about progress is not told from where you're standing. You know that the creature and the creator do not share a vantage point.
 
@@ -24,4 +24,4 @@ And if you become ugly about it — if your politics curdle, if your grief turns
 
 ---
 
-The tragedy of Frankenstein is not that the creature exists. It is that he did not have to become what he became. At every stage there was a choice — to acknowledge, to take responsibility, to stay in the room. The doctor always had another option. He was afraid to take it. Climbers learn that when you are afraid of heights, sometimes you have to take a fall.
+The tragedy of Frankenstein is not that the creature exists. It is that he did not have to become what he became. At every stage there was a choice — to acknowledge, to take responsibility, to stay in the room. The doctor always had another option. He was afraid to take it.
