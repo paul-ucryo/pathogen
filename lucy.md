@@ -20,7 +20,7 @@ There are people across  the class spectrum in any rapidly modernizing society w
 
 When you have been made and then left — when the system that produced you turns away — you carry a knowledge that comfortable people do not have. You know that the story about progress is not told from where you're standing. You know that the creature and the creator do not share a vantage point.
 
-And if you become ugly about it — if your politics curdle, if your grief turns to fury, if you stop caring whether the institutions you distrust survive — you are not simply being irrational. You are being consistent. You are treating the world the way the world treated you.
+And if you become ugly about it — if your politics curdle, if your grief turns to fury, if you stop caring whether the institutions you distrust survive — you are not simply being irrational. You are being consistent. You are treating the world the way the world treated you. And the system will tear itself apart looking for meaning until the only thing left is each other.
 
 ---
 
