@@ -24,6 +24,4 @@ And if you become ugly about it — if your politics curdle, if your grief turns
 
 ---
 
-The tragedy of Frankenstein is not that the creature exists. It is that he did not have to become what he became. At every stage there was a choice — to acknowledge, to take responsibility, to stay in the room. The doctor always had another option. He never took it.
-
-We are still making that choice.
+The tragedy of Frankenstein is not that the creature exists. It is that he did not have to become what he became. At every stage there was a choice — to acknowledge, to take responsibility, to stay in the room. The doctor always had another option. He was afraid to take it. Climbers learn that when you are afraid of heights, sometimes you have to take a fall.
