@@ -16,7 +16,7 @@ So he becomes what they feared. Not because it was inevitable. Because it was ta
 
 ---
 
-There are people across  the class spectrum in any rapidly modernizing society who understand this story from the inside. They are not stupid and they are not simply deceived. They watched factories close and were told the market had spoken. They watched their towns empty and were handed pamphlets about retraining. They watched the decisions get made somewhere else by people who did not ask and would not be affected. They were not abandoned dramatically. They were abandoned administratively, the people were forgotten to keep the machine running.
+There are people across  the class spectrum in any rapidly modernizing society who understand this story from the inside. They are not stupid and they are not simply deceived. They watched factories close and were told the market had spoken. They watched their towns empty and were handed pamphlets about retraining. They watched the decisions get made somewhere else by people who did not ask and would not be affected. They were not abandoned dramatically. They were abandoned by progress, as if progress means something other then taking care of each other (there is no othe direction with meaning).
 
 When you have been made and then left — when the system that produced you turns away — you carry a knowledge that comfortable people do not have. You know that the story about progress is not told from where you're standing. You know that the creature and the creator do not share a vantage point.
 
