@@ -1,4 +1,4 @@
-# The Creature We Made and Cannot Name
+# Frankenstein's Monster
 
 There is a version of the Frankenstein story we don't tell often enough. Not the one about the monster — but the one about the doctor.
 
