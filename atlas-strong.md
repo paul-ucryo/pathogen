@@ -51,6 +51,8 @@ Help everyone around you, all the time, as best you can —
 **without being asked** (waiting for permission is its own withh/olding),
 **without giving up yourself in the process** (taking on suffering isn't illimating it).
 
-You are wrong. Everywhere all the time. Which is no an excuse to stop trying to get it right. But it does mean you have to be *mindful* and actively corrective. If it's real, it conduct — not by argument, naturally. But things are complicated. Be mindful what is conducting because misinterpretting which part of the message is carrying is almost universal. I suggest watching how uncompelled generosity makes the witness want to act better, with no instruction required. And maybe given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
+You are wrong. Everywhere all the time. Which is a perfect excuse to stop trying, if other's didn't depend on you. But it does mean you have to be *mindful* and actively corrective because unintended harm is the condition. Don't let that condition crystalize into indeference, inaction or negligence.
+
+Real truth conducts — not by argument, naturally. But things are complicated. Be mindful what is conducting because misinterpretting which part of the message is carrying is almost universal. I suggest watching how uncompelled generosity makes the witness want to act better, with no instruction required. And maybe given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
 
 The ugly practice — the failed reps, the misjudged offers, the awkward attempts — always comes before the performance. Don't wait for the girl to practice being a good date. Life also happens everywhere. Don't wait for the practice to find the girl. So you go.
