@@ -2,8 +2,11 @@
 
 ### 0. Declaration of self
 "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable rights, that among these are Life, Liberty, and the pursuit of Happiness."
+
 These rights are unalienable in the literal sense — not transferable, not revocable, not something that can be taken from you by force or decree. What can be taken, what is taken constantly and everywhere, is the ease of asserting them. A government, a landlord, an occupying army cannot reach in and remove your liberty. They can only raise the toll on using it until the asking looks like the only sane option left. That's not a technicality. It's the whole distance between "you have no rights here" and "you have rights here, and the price of exercising them is everything you have."
+
 Naming that distance doesn't close it. Saying the right was never actually gone does nothing to the boot on the neck — doesn't lighten it by a gram, doesn't pay anyone's rent or stop anyone's border crossing from being fatal. This is not a substitute for ending the oppression; it is what's still standing underneath the oppression while the slower work of ending it goes on. The cost is real. The cost is not the same thing as the right. Conflating the two is how oppression gets to claim it won something it never actually had the power to take.
+
 A real constitution — meaning the operating document, not the printed one — would hold that standard the same way for everyone, not because borders are illegitimate but because they're a useful fiction: a way of locating where suffering and oppression are currently surfacing, not a wall around who's allowed to count. You use the map to find the fire. You don't mistake the map's edge for the edge of who's allowed to be burning.
 
 ### 1. Structures only stand because you keep recognizing them
