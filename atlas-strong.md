@@ -39,9 +39,9 @@ Don't wait to be cured before going first. Don't wait to become someone before s
 ### 11. Soren's Quiet Practice
 Help everyone around you, all the time, as best you can —
 **without imposing** (deciding you know their need better than they do),
-**without being asked** (waiting for permission is its own withholding),
+**without being asked** (waiting for permission is its own withh/olding),
 **without giving up yourself in the process** (taking on suffering isn't illimating it).
 
-You are wrong. Everywhere all the time. Thats not an excuse to stop trying. But it does mean you have to be *mindful* and actively corrective. If it's real, it transmits — not by argument, but the way watching uncompelled generosity makes the witness want to act better, with no instruction required. Given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
+You are wrong. Everywhere all the time. Which is no an excuse to stop trying to get it right. But it does mean you have to be *mindful* and actively corrective. If it's real, it conduct — not by argument, naturally. But things are complicated. Be mindful what is conducting because misinterpretting which part of the message is carrying is almost universal. I suggest watching how uncompelled generosity makes the witness want to act better, with no instruction required. And maybe given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
 
 The ugly practice — the failed reps, the misjudged offers, the awkward attempts — doesn't happen in some private room you graduate out of before the real thing starts. It happens everywhere, all the time, because everywhere, all the time, is where your life is. There is no separate stage where you arrive already finished. You don't wait for the date, the fire, the war, the world, to become ready for you. You're already in it. So you go.
