@@ -3,7 +3,7 @@
 ### 1. Structures only stand because you keep recognizing them
 A landlord, a tyrant, a credential gate, a war over a flag — none of these are physics. They run on continued belief and continued participation. Stop supplying that, and there's nothing left holding them up. This is wu wei: not negotiating with something that was never real enough to negotiate with, because negotiation already grants it standing.
 
-But non-recognition isn't just an internal posture. The deeper trap is mistaking the structure's *terms* for the terrain itself — accepting "pay or be evicted" as the full set of options when it's just the frame the structure found convenient to offer. Real non-recognition means continually checking whether the choice in front of you is actual or manufactured.
+But non-recognition isn't just an internal posture. The deeper trap is mistaking the structure's *terms* for the terrain itself — accepting "pay or be evicted" as the full set of options when it's just the frame the structure found convenient to offer. Real non-recognition means continually checking whether the choice in front of you is actual or manufactured. This does not reduce the disparity of the dynamic or instantly diffuse oppression or magically bring about justice. It restores dignity to what ever existance you can manage wherever you are.
 
 ### 2. The canyon, not the coalition
 Change doesn't require a hero (one drop) or an organized movement (a coalition of drops). It happens when everyone, separately, just keeps being water — falling the way water falls, with no theory of the rock, no schedule requiring the rock's compliance. Rain doesn't know it's forming a canyon. It just keeps being what it is.
