@@ -32,7 +32,7 @@ Suffering isn't caused by an external enemy. Schadenfreude, tribalism, cruelty a
 Suffering, more precisely: it's not a failure of perception, it's bias toward connection — directional, constant, like gravity. The system samples it, mostly badly, until the model of *separate self* updates to match what was already true: self and other were never actually two things to begin with. Love of self is love of neighbor, not as an instruction to live up to, but as a description with no gap in it for the discharge mechanism to use.
 
 ### 10. The hummingbird
-It spits on the fire knowing it won't put it out, because there's no other choice available to whatever in it does the spitting. The tool was never aimed at solving the fire. It's aimed at the seam — wherever the model still insists on a self separate enough to need defending — and it gets pointed there constantly, indiscriminately, expecting to fail most of the time, because the failing was never actually the variable being optimized. The pointing was.
+It spits on the fire knowing it won't put it out, because there's no other choice available to whatever in it does the spitting. The tool was never aimed at solving the fire. It's aimed at the seam — wherever the model still insists on a self separate enough to need defending — and it gets pointed there constantly, indiscriminately, expecting to fail most of the time, because the failing was never actua/lly the variable being optimized. The pointing was.
 
 Don't wait to be cured before going first. Don't wait to become someone before showing up. There is no growing up to wait for — that question teaches you that the real version of your life is a privileged state you haven't reached yet. It's happening now, unfinished, and that's not a deficient condition, it's the only condition there is.
 
@@ -40,8 +40,8 @@ Don't wait to be cured before going first. Don't wait to become someone before s
 Help everyone around you, all the time, as best you can —
 **without imposing** (deciding you know their need better than they do),
 **without being asked** (waiting for permission is its own withholding),
-**without giving up yourself in the process** (a self that erases itself has nothing left to transmit from).
+**without giving up yourself in the process** (taking on suffering isn't illimating it).
 
-If it's real, it transmits — not by argument, but the way watching uncompelled generosity makes the witness want to act better, with no instruction required. Given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
+You are wrong. Everywhere all the time. Thats not an excuse to stop trying. But it does mean you have to be *mindful* and actively corrective. If it's real, it transmits — not by argument, but the way watching uncompelled generosity makes the witness want to act better, with no instruction required. Given enough hops through enough people, it reaches someone with actual leverage, who starts acting differently before they can fully say why.
 
 The ugly practice — the failed reps, the misjudged offers, the awkward attempts — doesn't happen in some private room you graduate out of before the real thing starts. It happens everywhere, all the time, because everywhere, all the time, is where your life is. There is no separate stage where you arrive already finished. You don't wait for the date, the fire, the war, the world, to become ready for you. You're already in it. So you go.
