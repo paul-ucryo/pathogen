@@ -2,15 +2,15 @@
 
 ## Core Objects
 
-- **V(s)** — the value at an address, as a function of system state s. This is potential. It is the observer state at a different phase coordinate — you can't observe potential directly, only its effect.
-- **L** — the raw system change. What the user or system inputs. s1 - s0.
-- **T** — the internal dynamics of V. How V changes given L.
+- **V(s)** — the value at an address, as a function of system state s. This is potential, system state phase shifted into an address relative to reference (s).
+- **L** — the raw system change. s1 - s0. Think of this as the io boundary.
+- **T** — the internal dynamics of V. How V changes given L (io change).
 
 ```
 dV/ds = L + V
 ```
 
-The register updates by accumulating the system input L on top of its current value V. The register has memory — it carries itself forward.
+A given register updates by accumulating the io (L) on top of its current value V. The register has memory — it carries itself forward.
 
 The Lagrangian:
 
@@ -18,14 +18,15 @@ The Lagrangian:
 L = dV/ds - V
 ```
 
-The difference between how V is changing and what V is. Dynamics minus state.
+The difference between how V is changing and what V is. Dynamics minus state is the io boundary.
 
 ---
 
 ## Kinetic and Potential
 
-- **Potential (V)** — the observer state at a different spacetime coordinate. A phase shift of the observer. You never observe potential directly — observation is itself a phase shift, so you only ever see the derivative.
-- **Kinetic (T)** — the internal dynamics of the potential. How V behaves in its own local coordinates. Not the observer's frame — V's own frame. The imaginary component: what's rotating, not yet settled.
+- **Potential (V)** — A register is observer state phase shifted to a different spacetime coordinate. You never observe potential directly — observation is itself a phase shift, so you only ever see the derivative.
+  
+- **Kinetic (T)** — the internal dynamics of the potential. How V behaves in its own local coordinates. Not the observer's frame — V's own frame. The imaginary component: how the behavior of V defines its future state.
 
 L = T - V is the observer's own rate of change. The Lagrangian is the observer's dynamics.
 
@@ -35,7 +36,7 @@ L = T - V is the observer's own rate of change. The Lagrangian is the observer's
 
 Given two states s0 and s1, we want the function V(s) that takes the shortest path between them.
 
-The path is shortest when each step holds the same meaning — the bit value is stationary relative to the update. No step does more or less work than any other.
+The shortest path between 2 states is only a straight line in euclidean geometry. The path is only shortest when your metric is constant throughout the state space. Your bit doesn't change meaning/weight depending on where you are in state space. No step does more or less work than any other.
 
 **Stationary condition**: δS = 0, where S = ∫ L ds.
 
@@ -59,4 +60,4 @@ Every dynamic in the namespace is a choice of which path to take through state s
 
 The Lagrangian L = dV/ds - V is the bookkeeping: what changed (dV/ds), what was already there (V), and the difference is what the system is actually doing.
 
-The tensor T_uv — still to be derived in this framework — will express how these dynamics couple across different distinctions in the namespace.
+The tensor T_uv — still to be derived in this framework — will express how these dynamics couple across different distinctions in the namespace. Basically how the system updates in terms of relative changes up to the 4rth order derivative, because a non-zero fifth order darivative would result in a phase dependancy term in your change potential unit.
