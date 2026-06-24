@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+
+
+
+// E is a monad that wraps a function fn into an imaginary object.
+// Resolution integrates fn over phase t in steps of dt,
+// accumulating into the real component r.
+// The ground state (t=0) returns r directly.
+// hbar is the theoretical phase resolution floor — dt defaults to 1 (operation depth).
+
+
+const hbar = 1.0545718e-34
+
+const E = function(fn){ 
+    const I = function(r,t,dt=1){
+        if (t<=0) return r;
+        return I(r+fn(t)*dt,t-dt);
+    };
+    return function(t){
+        return I(0,t);
+    };
+}
+
+function x(a) {return function(t){return a} }
+
+function add(a,b) {return E(x(a))(1) + E(x(b))(1)}
+
+console.log(add(3,4));
+
+</script>
+</body>
+</html>
