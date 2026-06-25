@@ -93,8 +93,6 @@ This is the holographic principle: every 3D environment composed of a particle f
 ## Connection to Physics
 
 - Multibody dynamics solvers (CAD constraint solvers) are executing the Lagrangian's prescription — the iterative search is the path integral being traced
-- The brain is a CAD kernel — continuously solving constraint satisfaction, finding minimum action path between current and target state given the full capability map
-- Every model of every problem anyone tries to solve is the same process: Lagrangian minimization with a dynamically chosen ground state
 - Physics, information, and language/meaning are the same structure at different levels of description
 
 ---
