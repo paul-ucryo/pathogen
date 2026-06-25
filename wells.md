@@ -27,13 +27,24 @@ const E = function(fn){
 
 ## L — The IO Boundary
 
-`L = dV/ds` where: #pretty sure this wrong/inprecise.
+`L = dV/ds` where: *#pretty sure this is wrong/imprecise.*
 
 - `V` is observable state — what you can measure
 - `s` is the system path
 - `dV = V(s1) - V(s0)` — change in observable state between two points
 
-`L` is the IO boundary, how adding/removing potentials to different registers changes the system toward a stable state. The IO boundary of any system is the well displacement — the user's input is moving the well's position, not pushing the object.
+`L` is the IO boundary: how adding/removing potentials to different registers changes the system toward a stable state. The IO boundary of any system is the well displacement — the user's input is moving the well's position, not pushing the object.
+
+---
+
+## p(s) and V(s) — The Fundamental Separation
+
+Any system is described by two distinct objects:
+
+- `p(s)` — free particles: their positions and momenta. The system state. Never directly touched by the user.
+- `V(s)` — field geometry: the potential landscape. The design surface. What the user manipulates.
+
+User input is always a perturbation to `V(s)`. Particles respond according to the field. Control is indirect by definition. This separation *is* the IO boundary — `V(s)` is the interface, `p(s)` is the interior.
 
 ---
 
@@ -90,12 +101,28 @@ This is the holographic principle: every 3D environment composed of a particle f
 
 ---
 
+## General Analytical Framework
+
+This is not just a design tool — it is a general physics map of any information structure.
+
+Given any domain of arbitrary complexity — computational, biological, economic, social — if you can identify `p(s)` (the free agents, the things that move) and `V(s)` (the incentive structure, the environmental constraints), you get the physics for free:
+
+- **Local minima** — stable states the system naturally falls into even if they are not optimal
+- **Global minimum** — where the system would go given enough energy, and how deep the barrier is between here and there
+- **Catalyst definition** — the minimal perturbation to `V(s)` that destabilizes the current well and lets the system roll to a better configuration
+- **Metastability** — shallow wells, one perturbation away from collapse
+- **State stability analysis** — stability is well geometry: deep and narrow is robust, shallow is fragile
+
+Any given information structure's state stability is readable directly from the field geometry.
+
+---
+
 ## Connection to Physics
 
 - Multibody dynamics solvers (CAD constraint solvers) are executing the Lagrangian's prescription — the iterative search is the path integral being traced
 - Physics, information, and language/meaning are the same structure at different levels of description
-
----
+- The brain is a CAD kernel — continuously solving constraint satisfaction, finding minimum action path between current and target state given the full capability map
+- Every model of every problem anyone tries to solve is the same process: Lagrangian minimization with a dynamically chosen ground state
 
 ---
 
