@@ -36,9 +36,9 @@ Every `psi` is built from the same primitive: `delta` — the binary correlation
 
 The primitive. Pure binary correlation — does this phase match or not. Not a thing in the field, it's the event that defines presence. The atomic write.
 
-```javascript
-function delta(a) { return (t) => t === 1 ? 1 : 0 }
-```
+```javascripto
+function delta(a) { return (t) => t === 1 ? a : 0 }o
+```o
 
 No parameter. Carries no value. Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
 
