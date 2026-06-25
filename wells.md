@@ -119,11 +119,9 @@ Any given information structure's state stability is readable directly from the 
 
 ## Connection to Physics
 
-- Multibody dynamics solvers (CAD constraint solvers) are executing the Lagrangian's prescription — the iterative search is the path integral being traced
+- Multibody dynamics solvers (CAD constraint solvers) are executing the Lagrangian's prescription — the iterative search is the path integral being minimized.
 - Physics, information, and language/meaning are the same structure at different levels of description
-- The brain is a CAD kernel — continuously solving constraint satisfaction, finding minimum action path between current and target state given the full capability map
-- Every model of every problem anyone tries to solve is the same process: Lagrangian minimization with a dynamically chosen ground state
-
+  
 ---
 
 ## Design Process
