@@ -27,27 +27,13 @@ const E = function(fn){
 
 ## L — The IO Boundary
 
-`L = dV/ds` where:
+`L = dV/ds` where: #pretty sure this wrong/inprecise.
 
 - `V` is observable state — what you can measure
 - `s` is the system path
 - `dV = V(s1) - V(s0)` — change in observable state between two points
 
-`L` is what you pass into `E`. The IO boundary of any system is the well displacement — the user's input is moving the well's position, not pushing the object.
-
----
-
-## State Space
-
-Every observable intrinsically possesses its relational dynamics as another state variable. State is always a tuple:
-
-- `θ` — position
-- `ω` — velocity (rate of change of `θ`)
-- `α` — acceleration (rate of change of `ω`)
-
-`E` is the operation connecting levels: `E(ω)(t) = θ(t)`
-
-For binary control systems (moving vs not moving), `ω` collapses to a boolean gated by constraint.
+`L` is the IO boundary, how adding/removing potentials to different registers changes the system toward a stable state. The IO boundary of any system is the well displacement — the user's input is moving the well's position, not pushing the object.
 
 ---
 
