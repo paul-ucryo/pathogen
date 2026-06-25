@@ -40,7 +40,7 @@ The primitive. Pure binary correlation — does this phase match or not. Not a t
 function delta(a) { return (t) => t === 1 ? a : 0 }o
 ```o
 
-No parameter. Carries no value. Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
+Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
 
 Delta is a fixed address location. A read at a specific phase. The derivative of the step function.
 
