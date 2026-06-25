@@ -21,7 +21,7 @@ const E = function(fn){
 }
 ```
 
-`E` is a numerical traversal of what the Lagrangian describes — it traces the path the Lagrangian prescribes for finding the minimization of the path integral between current and end state. For well-behaved `psi`, you could take the Laplacian and solve analytically in a simpler coordinate system. `E` is the numerical fallback for complex geometry.
+`E` returns the field part of the Lagrangian, where the Lagrangia is input to the system (behavior minus state).
 
 - `E` → correlator
 - `psi` → correlation geometry (the function passed to `E`)
