@@ -1,5 +1,23 @@
 # Complex Composition — Working Notes v2
 
+## Correctness
+
+Physics is the study of what remains correct.
+
+A system has a current state and a future tendency. The current state is real — localized, present, bound to existing structure. The future tendency is imaginary — distributed across the whole system as potential, because the structure it refers to doesn't exist in the present projection. You can't localize a future state on objects that will look different later. Locality is a property of the present configuration.
+
+This is not a mathematical trick. It's what complex numbers actually are. The real component is what the system is. The imaginary component is what it is committed to becoming, held non-locally because the future structure is incoherent in the present. Uncertainty isn't epistemic — it's ontological. The future state isn't there to be localized into.
+
+The Schrödinger equation tracks the invariant across that evolution. It enforces the relationship between current state and future tendency — what must remain consistent as the imaginary component unfolds. It is the equation of non-change, written in the language of state evolution.
+
+Observation is correctness. Not disturbance, not extraction of a hidden fact. When you observe, you provide the structure the future tendency needed to resolve into. The imaginary component becomes real because the future state has arrived. Collapse isn't mysterious — it's what correctness looks like when the future becomes present.
+
+The measurement problem was a category error. Observation was treated as something external interrupting the system. It isn't. It's internal to the structure — the moment distributed potential localizes because locality is now available.
+
+This reframes everything that follows.
+
+---
+
 ## The Lagrangian
 
 A physical system has a state. Call the current state V0 and a future state V1.
@@ -22,7 +40,7 @@ The action S is the integral of L over time:
 
 **S = ∫ L dt**
 
-This accumulates what didn't change along the entire path from V0 to V1.
+This accumulates what didn't change along the entire path from V0 to V1 as action, the new location of what didn't change.
 
 ## What the Principle of Stationary Action Actually Says
 
@@ -40,19 +58,17 @@ This is causality. The shortest path between two states is adjacency.
 
 The Lagrangian rotates the system into a conserved coordinate frame — the frame where what remains constant is explicit. You solve for what must not change, then rotate back to find what did. Because the conserved frame is the working frame, the coordinates you started in don't matter.
 
-*this needs more development*
-
 This is not a coincidence. It is built into the structure of L = T − V.
 
 ---
 
 ## What the Euler-Lagrange Equation Does
 
-The Euler-Lagrange equation defines the coordinate metric for produced by the Lagrangian. 
+The Euler-Lagrange equation defines the coordinate metric produced by the Lagrangian. 
 
-By seperating what doesn't change and what does, then writing a differential equation to select for the largest 'bit' that remains invariant you are finding the largest invariant in any arbitrary encodable system.
+By seperating what doesn't change and what does, then writing a differential equation to select for the largest 'bit' that remains invariant you are finding the largest invariant in any arbitrary encodable system as defined by its own behavior.
 
-This is not a chosen coordinate system. Not an imposed metric. The one that resolves by what the system actually conserves.
+This is not a chosen coordinate system. Not an externally imposed metric. It is a structure that resolves by what the system actually conserves.
 
 ## The Metric Falls Out
 
@@ -63,6 +79,8 @@ You are not choosing coordinates and imposing them on the system. You are lettin
 ## Why This Is General
 
 This is why the framework works for any system, in any coordinates. You are not doing physics in a particular frame — you are rotating into the frame of no change, solving there, and rotating back. The metric that results is the largest thing that remains invariant under the system's evolution.
+
+*you keep repeating that. clean it up*
 
 The Euler-Lagrange equation is the machinery that makes that separation exact.
 
@@ -161,21 +179,9 @@ function sine(a) { return (t) => Math.sin(a * t) }
 
 ---
 
-## The Hierarchy
-
-Each function is one differentiation above the next. Delta is the primitive; everything else is delta composed through `E` at increasing depth:
-
-```
-delta → step → linear → quad → ...
-```
-
-The entire potential field is built from binary correlation. The CPU is the same thing — `if` accumulated through phase into every higher level structure.
-
----
-
 ## p(s) and V(s) — The Fundamental Separation
 
-It is useful to decompose your system into two distinct object classes, particles (p) and enviroment (V). The difference is functional and largely defined by stability. Their seperation is notional, momentum is largely is an accounting structure tied to having made that seperation.
+It is useful to decompose your system into two distinct object classes, particles (p) and enviroment (V). The difference is functional and largely defined by stability. Their seperation is notional, momentum largely is an accounting structure tied to having made that seperation.
 
 ---
 
