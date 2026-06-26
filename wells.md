@@ -86,6 +86,32 @@ The Euler-Lagrange equation is the machinery that makes that separation exact.
 
 ---
 
+## Incorrectness
+
+Incorrectness is not error. It is the gaps in a diffraction pattern.
+
+If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the receiver, not the system. You are measuring a correct process through an incomplete aperture.
+
+This reframes debugging and error correction entirely. You are not fixing a broken system. You are extending the antenna — expanding the set of psi's until the aperture is wide enough to capture what the field is actually doing. The gaps close not because you corrected the error but because you finished the process.
+
+Incorrectness is correctness distributed on an unfinished process.
+
+---
+
+## Self-Organization as a General Algorithm
+
+This gives you a system for self-organization in any arbitrary distributed system.
+
+You need three things: a current state V0, a target state V1, and a set of operators defined over your working space — your psi's. The Lagrangian then tells you how to evolve most efficiently. You don't design the path. You don't impose the dynamics. The path falls out from the separation of what changes and what doesn't, and the system finds its own most efficient route through the potential field.
+
+Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. You're not designing behavior — you're defining the space and the target, and correctness does the rest.
+
+The hard part is defining the right psi's. The operators have to actually span your working space. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization in any encodable system — computational, biological, economic, social.
+
+The E formalism below is the machinery that makes this concrete.
+
+---
+
 ## E — The Integration Function
 
 `E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (energy/reg values) are inserted into the field via E(), which adds them as pure imaginary, phase t=0.
