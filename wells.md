@@ -1,12 +1,76 @@
 # Complex Composition — Working Notes v2
 
-*working format — not finalized*
+## The Lagrangian
+
+A physical system has a state. Call the current state V0 and a future state V1.
+
+V captures everything about the system at a moment — positions, configurations, potentials. In quantum mechanics we stop talking about positions and talk about states directly; positions are just one way to describe a state.
+
+T is what changed between states: V1 − V0. It is a function of velocities — not the state itself, but how the state is moving.
+
+## The Lagrangian
+
+The Lagrangian is:
+
+**L = T − V = (V1 − V0) − V0**
+
+This is what *didn't* change. You subtract the current state from what changed, leaving the remainder — the part of the transition that is conserved.
+
+## The Action
+
+The action S is the integral of L over time:
+
+**S = ∫ L dt**
+
+This accumulates what didn't change along the entire path from V0 to V1.
+
+## What the Principle of Stationary Action Actually Says
+
+The physical path is the one where S is stationary — where small perturbations to the path don't change the total.
+
+Read forwards, this sounds abstract. Read backwards, it's a tautology:
+
+> *The sum of what didn't change is what didn't change.*
+
+The system takes the path of maximum change — the most direct route through state space — and so the total of what is conserved along that path is stationary. Any other path would involve the system being somewhere it wasn't.
+
+This is causality. The shortest path between two states is adjacency.
+
+## Why It's Coordinate Independent
+
+The Lagrangian rotates the system into a conserved coordinate frame — the frame where what remains constant is explicit. You solve for what must not change, then rotate back to find what did. Because the conserved frame is the working frame, the coordinates you started in don't matter.
+
+*this needs more development*
+
+This is not a coincidence. It is built into the structure of L = T − V.
+
+---
+
+## What the Euler-Lagrange Equation Does
+
+The Euler-Lagrange equation defines the coordinate metric for produced by the Lagrangian. 
+
+By seperating what doesn't change and what does, then writing a differential equation to select for the largest 'bit' that remains invariant you are finding the largest invariant in any arbitrary encodable system.
+
+This is not a chosen coordinate system. Not an imposed metric. The one that resolves by what the system actually conserves.
+
+## The Metric Falls Out
+
+The relationship between what changes and what doesn't defines your coordinate system. The metric of the system is just the collection of all its invariants — everything that must remain the same as the system evolves.
+
+You are not choosing coordinates and imposing them on the system. You are letting the system tell you what its natural coordinates are, based purely on separating what does and doesn't change.
+
+## Why This Is General
+
+This is why the framework works for any system, in any coordinates. You are not doing physics in a particular frame — you are rotating into the frame of no change, solving there, and rotating back. The metric that results is the largest thing that remains invariant under the system's evolution.
+
+The Euler-Lagrange equation is the machinery that makes that separation exact.
 
 ---
 
 ## E — The Integration Function
 
-`E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. The ground state (`t=0`) returns `r` directly.
+`E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (energy/reg values) are inserted into the field via E(), which adds them as pure imaginary, phase t=0.
 
 ```javascript
 const hbar = 1.0545718e-34
@@ -21,8 +85,6 @@ const E = function(fn){
 }
 ```
 
-`E` returns the field part of the Lagrangian, where the Lagrangia is input to the system (behavior minus state).
-
 - `E` → correlator
 - `psi` → correlation geometry (the function passed to `E`)
 
@@ -36,9 +98,9 @@ Every `psi` is built from the same primitive: `delta` — the binary correlation
 
 The primitive. Pure binary correlation — does this phase match or not. Not a thing in the field, it's the event that defines presence. The atomic write.
 
-```javascripto
-function delta(a) { return (t) => a-t === 1 ? 1 : 0 }o
-```o
+```javascript
+function delta(a) { return (t) => a-t === 1 ? 1 : 0 }
+```
 
 Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
 
@@ -113,22 +175,7 @@ The entire potential field is built from binary correlation. The CPU is the same
 
 ## p(s) and V(s) — The Fundamental Separation
 
-Any system is described by two distinct objects:
-
-- `p(s)` — free particles: positions and momenta. The system state. Never directly touched.
-- `V(s)` — field geometry: the potential landscape. The design surface. What the user manipulates.
-
-User input is always a perturbation to `V(s)`. Particles respond according to the field. Control is indirect by definition. This separation *is* the IO boundary.
-
----
-
-## L — The IO Boundary
-
-*#notation still imprecise*
-
-`L = dV/ds` where `dV = V(s1) - V(s0)` — change in observable state between two points on the path.
-
-`L` is how adding/removing potentials to different registers changes the system toward a stable state. The user's input is moving the well's position, not pushing the particle. The IO boundary is the well displacement.
+It is useful to decompose your system into two distinct object classes, particles (p) and enviroment (V). The difference is functional and largely defined by stability. Their seperation is notional, momentum is largely is an accounting structure tied to having made that seperation.
 
 ---
 
