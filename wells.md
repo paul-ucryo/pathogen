@@ -1,20 +1,18 @@
 # Complex Composition — Working Notes v2
 
-## Correctness
+## Core claim (not defined theory): Correctness
 
 Physics is the study of what remains correct.
 
-A system has a current state and a future tendency. The current state is real — localized, present, bound to existing structure. The future tendency is imaginary — distributed across the whole system as potential, because the structure it refers to doesn't exist in the present projection. You can't localize a future state on objects that will look different later. Locality is a property of the present configuration.
+A system has a current state and a future tendency. The current state is real — localized, present, bound to existing structure. The future tendency is imaginary —  because the structure it refers to is a distribution within the present projection. You can't localize a future state on objects that will look different later. Locality is a property of the present configuration. Momentum is how future state is distributed currently.
 
-This is not a mathematical trick. It's what complex numbers actually are. The real component is what the system is. The imaginary component is what it is committed to becoming, held non-locally because the future structure is incoherent in the present. Uncertainty isn't epistemic — it's ontological. The future state isn't there to be localized into.
+This is not a mathematical trick. It's what complex numbers actually are. The real component is what the system is. The imaginary component is what it is committed to becoming, held non-locally because the future structure is incoherent in the present. Uncertainty isn't epistemic — it's ontological. The future state is a collelation across the localized pattern.
 
 The Schrödinger equation tracks the invariant across that evolution. It enforces the relationship between current state and future tendency — what must remain consistent as the imaginary component unfolds. It is the equation of non-change, written in the language of state evolution.
 
 Observation is correctness. Not disturbance, not extraction of a hidden fact. When you observe, you provide the structure the future tendency needed to resolve into. The imaginary component becomes real because the future state has arrived. Collapse isn't mysterious — it's what correctness looks like when the future becomes present.
 
-The measurement problem was a category error. Observation was treated as something external interrupting the system. It isn't. It's internal to the structure — the moment distributed potential localizes because locality is now available.
-
-This reframes everything that follows.
+This reframes what follows.
 
 ---
 
@@ -24,9 +22,7 @@ A physical system has a state. Call the current state V0 and a future state V1.
 
 V captures everything about the system at a moment — positions, configurations, potentials. In quantum mechanics we stop talking about positions and talk about states directly; positions are just one way to describe a state.
 
-T is what changed between states: V1 − V0. It is a function of velocities — not the state itself, but how the state is moving.
-
-## The Lagrangian
+Momentum (T) in this frame is what changed between states: V1 − V0. It is a function of velocities — not the state itself, but how the state is moving.
 
 The Lagrangian is:
 
@@ -35,14 +31,13 @@ The Lagrangian is:
 This is what *didn't* change. You subtract the current state from what changed, leaving the remainder — the part of the transition that is conserved.
 
 ## The Action
-
-The action S is the integral of L over time:
+We define a quantity *S*, the sum of the inverients. In a a well behaved smooth system the appears as the integral
 
 **S = ∫ L dt**
 
-This accumulates what didn't change along the entire path from V0 to V1 as action, the new location of what didn't change.
+This accumulates what didn't change along the entire path from V0 to V1. Why do we call this action? Because it answers the question, where did what I had, get moved to. AKA,the new location of what didn't change.
 
-## What the Principle of Stationary Action Actually Says
+## What the Principle of Stationary Action Says in This Frame
 
 The physical path is the one where S is stationary — where small perturbations to the path don't change the total.
 
