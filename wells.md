@@ -90,7 +90,7 @@ The Euler-Lagrange equation is the machinery that makes that separation exact.
 
 Incorrectness is not error. It is the gaps in a diffraction pattern.
 
-If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the receiver, not the system. You are measuring a correct process through an incomplete aperture.
+If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the antenna, not the receiver. You are measuring a correct process through an incomplete aperture.
 
 This reframes debugging and error correction entirely. You are not fixing a broken system. You are extending the antenna — expanding the set of psi's until the aperture is wide enough to capture what the field is actually doing. The gaps close not because you corrected the error but because you finished the process.
 
