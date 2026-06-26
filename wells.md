@@ -85,9 +85,9 @@ The Euler-Lagrange equation is the machinery that makes that separation exact.
 
 Incorrectness is not error. It is the gaps in a diffraction pattern.
 
-If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the antenna, not the receiver. You are measuring a correct process through an incomplete aperture.
+If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the antenna, not the receiver. You are measuring a correct process through an incomplete aperture and assuming local behavior.
 
-This reframes debugging and error correction entirely. You are not fixing a broken system. You are extending the antenna — expanding the set of psi's until the aperture is wide enough to capture what the field is actually doing. The gaps close not because you corrected the error but because you finished the process.
+This reframes debugging and error correction entirely. You are not fixing a broken system. You changing the antenna — altering what you sample and expanding the set of psi's until the aperture is wide enough to capture what the field is actually doing. The gaps close not because you corrected the error but because you finished the process.
 
 Incorrectness is correctness distributed on an unfinished process.
 
@@ -101,7 +101,7 @@ You need three things: a current state V0, a target state V1, and a set of opera
 
 Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. You're not designing behavior — you're defining the space and the target, and correctness does the rest.
 
-The hard part is defining the right psi's. The operators have to actually span your working space. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization in any encodable system — computational, biological, economic, social.
+The hard part is defining the right psi's. The operators have to actually span your working space. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization in any encodable system — computational, biological, economic, social up to the resolution of your invarient.
 
 The E formalism below is the machinery that makes this concrete.
 
@@ -109,12 +109,14 @@ The E formalism below is the machinery that makes this concrete.
 
 ## E — The Integration Function
 
-`E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (energy/reg values) are inserted into the field via E(), which adds them as pure imaginary, phase t=0.
+`E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (potential/register values) are inserted into the field via E(), which adds them as pure imaginary, phase t=0.
 
 ```javascript
-const hbar = 1.0545718e-34
+#const hbar = 1.0545718e-34
+#dt=hbar is natural physics?
+
 const E = function(fn){ 
-    const I = function(r,t,dt=1){
+    const I = function(r,t,dt){
         if (t<=0) return r;
         return I(r+fn(t)*dt,t-dt);
     };
@@ -131,7 +133,7 @@ const E = function(fn){
 
 ## Correlation Functions
 
-Every `psi` is built from the same primitive: `delta` — the binary correlation event. `if`, defined as an operator. The CPU is delta functions composed through `E` at increasing depth.
+In our system, we, every `psi` is built from the same primitive: `delta` — the binary correlation, an *event*. This defines `if`, as processor function in terms of pure logic operation? The CPU is delta functions composed through `E` at increasing phase offset (t).
 
 ### delta
 
@@ -143,7 +145,7 @@ function delta(a) { return (t) => a-t === 1 ? 1 : 0 }
 
 Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
 
-Delta is a fixed address location. A read at a specific phase. The derivative of the step function.
+Delta is a fixed address location. A compare at a specific phase (address). This object is the derivative of the step function?
 
 ### step
 
@@ -156,7 +158,7 @@ function step(a) { return (t) => t >= 1 ? a : 0 }
 `E(step(a))` gives you a ramp — `a*t`. Step is the resulting register state after the delta write event. You never see the delta directly; you see its integral held in the register.
 
 - Delta is the transition. Step is what the transition leaves behind.
-- Delta is a read at a specific address. Step is a write that holds.
+- Delta is a compare at a specific address. Step remembers the event, effect persists across context.
 
 ### linear
 
@@ -166,31 +168,27 @@ Step integrated. Constant rate of change — `a` added each phase.
 function linear(a) { return (t) => a }
 ```
 
-`E(linear(a))` gives you `a*t`. The slope of a potential well wall.
+`E(linear(a))` gives you curvature `a/2*t**2`. The ramp defines how multiple events accumulate across the phase. 
 
 ### quad
 
-Linear integrated. Rate grows with phase.
+Linear integrated gives curvature, how the system responds to events. `E(quad(a))` -> `a*t²/2`. 
 
-```javascript
-function quad(a) { return (t) => a * t }
-```
-
-`E(quad(a))` gives you `a*t²/2`. The curved well geometry — acceleration profile.
+Higher order integrations repeat this at different scales.
 
 ### exp
 
-Self-referential growth. Each phase step adds a value proportional to itself.
+Self-referential growth. Patterns where each unit copies itself in the next step.
 
 ```javascript
 function exp(a) { return (t) => a**t }
 ```
 
-`E(exp(a))` gives you `a**t / ln(a)`. `e` is the natural base — the specific value where `ln(a) = 1` and the function is exactly its own derivative. The natural unit of self-referential growth, the same way `pi` is the natural unit of rotational change. `pi` is the constant of perpendicular projection; `e` is the constant of parallel projection. Same property, different geometry.
+`E(exp(a))` gives you `a**t / ln(a)`. `e` is the natural base — the specific value where `ln(a) = 1` and the function is exactly its own derivative. The natural unit of self-referential growth, the same way `pi` is the natural unit of rotational change. `pi` is the constant of perpendicular projection; `e` is the constant of parallel projection. Same property, different geometry. (right?)
 
 ### sine
 
-Oscillation. `a` scales frequency.
+Oscillation or pattern recognition.
 
 ```javascript
 function sine(a) { return (t) => Math.sin(a * t) }
@@ -198,11 +196,12 @@ function sine(a) { return (t) => Math.sin(a * t) }
 
 `E(sine(a))` gives you `-cos(a*t)/a`. Resonance, ringing, oscillation around a minimum.
 
+Is this the *inverse*
 ---
 
 ## p(s) and V(s) — The Fundamental Separation
 
-It is useful to decompose your system into two distinct object classes, particles (p) and enviroment (V). The difference is functional and largely defined by stability. Their seperation is notional, momentum largely is an accounting structure tied to having made that seperation.
+It is useful to decompose your system into two distinct object classes, particles (p) and enviroment (V). The difference is functional and largely defined by stability. Their seperation is notional, momentum largely is an accounting structure tied to having made that seperation?
 
 ---
 
@@ -223,7 +222,7 @@ The system lives in a potential field. State is a particle in a well.
 
 ---
 
-## Wheel and Switch — Example System
+## Example System - Wheel and Switch
 
 State variables: `[θ, moving, switch]`
 
@@ -246,7 +245,7 @@ The design artifact is a **2D potential field with N control handles**.
 - Control handles are the IO boundary — the only thing the user touches
 - N-body complexity represented in 2D
 
-This is the holographic principle: the 2D field with N handles *is* the boundary. The full system behavior reads off it.
+Is this the holographic principle: the 2D field with N handles *is* the boundary. The full system behavior reads off it.
 
 ---
 
