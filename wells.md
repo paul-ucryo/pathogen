@@ -1,124 +1,110 @@
 # Complex Composition — Working Notes v2
 
-## Core claim (not defined theory): Correctness
+## Core claim for Review: On Selection and Correctness
 
-Physics is the study of what remains correct.
+Let's consider every behavior, even passive observation, is an action. Action can be seen as a selection or choice amongst a set. The following suggests a general strategy for selection meant to minimize prediction error. Effectively a strategy for defining 'correctness' amongst a set of choices.
 
-A system has a current state and a future tendency. The current state is real — localized, present, bound to existing structure. The future tendency is imaginary —  because the structure it refers to is a distribution within the present projection. You can't localize a future state on objects that will look different later. Locality is a property of the present configuration. Momentum is how future state is distributed currently.
+I would like to ground the selection in physics terminology, so let's consider a *state* as a selection amongst a set. This definition can be argued, but the following useful formulation does not depend on its precision. As such a dynamic system would be one in which the selection changes amongst the set, the state changes. We want to develop a formal strategy around state changes, prediction. Prediction allows us to consider both expected and observed selection and compare them. 
 
-This is not a mathematical trick. It's what complex numbers actually are. The real component is what the system is. The imaginary component is what it is committed to becoming, held non-locally because the future structure is incoherent in the present. Uncertainty isn't epistemic — it's ontological. The future state is a collelation across the localized pattern.
+In this formulation we always start with an inital state. I can't see a way to define a system outside a relation to a state that already exists. This naturally gives us 2 states, the reference or initial condition and observation or final state. Our goal is to be able to produce the final state from the initial condition. So let's say, the initial condition is presumed known and the final state is our unknown.
 
-The Schrödinger equation tracks the invariant across that evolution. It enforces the relationship between current state and future tendency — what must remain consistent as the imaginary component unfolds. It is the equation of non-change, written in the language of state evolution.
+Define the set S1-S0, the set of states which are different between final and initial state (ds). I would call this set, the behavior. It defines the changes that initial state will undergo. As such we can define our final state:
 
-Observation is correctness. Not disturbance, not extraction of a hidden fact. When you observe, you provide the structure the future tendency needed to resolve into. The imaginary component becomes real because the future state has arrived. Collapse isn't mysterious — it's what correctness looks like when the future becomes present.
+`S1 = S0+ds`
 
-This reframes what follows.
+The addition opperator in this context is not what we think of as scalar addition, ds represents changes to the selection of S0, not sequential adding. In order to indicate that the addition is non-standard, we are going to introduce an opperator on ds that transforms it into coordinates that are coherent to S0. Call this operator `i`. In this context, `i` is selecting which parts of ds should be applied to which parts of S0 (coordinate transform). i selects not just which parts of ds apply to which parts of S0, but resolves them into a common basis — it is the operation that makes future structure legible in present coordinates.
+
+This is common in mathamatics and engineering. It is the function of complex numbers. The real component is what the system is, the current selection. The imaginary component is what it is committed to becoming, held non-locally because the future structure is incoherent in the present. Uncertainty isn't epistemic — it's ontological. The future state is a correlation across the localized pattern.
+
+Observation is resolution of prediction (correctness). Not disturbance, not extraction of a hidden fact. When you observe, the initial selection moves to the future selection. The imaginary component becomes real because the future state has arrived. Collapse isn't mysterious — it's what correct prediction looks like when the future becomes present.
 
 ---
 
 ## The Lagrangian
 
-A physical system has a state. Call the current state V0 and a future state V1.
+The previous section motivated the notation we use in common physics. At this time I'm going to change to more common symbols. We can formalize the gap at a later date. The following does not need the above to hold.
+
+A physical system has a state. Call the current state V0 and a future state V1. A more generalized version of V may be possible, but we will start with physical states.
 
 V captures everything about the system at a moment — positions, configurations, potentials. In quantum mechanics we stop talking about positions and talk about states directly; positions are just one way to describe a state.
 
-Momentum (T) in this frame is what changed between states: V1 − V0. It is a function of velocities — not the state itself, but how the state is moving.
+Momentum (T) in this frame is what changed between states: V1 − V0 (our ds, imaginary component). It is a function of velocities — not the state itself, rather how the state is evolving.
 
-The Lagrangian is:
+In Lagrangian mechanics we define:
 
-**L = T − V = (V1 − V0) − V0**
+**L = T − V**
 
-This is what *didn't* change. You subtract the current state from what changed, leaving the remainder — the part of the transition that is conserved.
+Which our formulation means:
+
+**L = ds-V0 = (V1 − V0) − V0**
+
+Consider, this is what *didn't* change. You subtract the current state from what changed, leaving the remainder — the selection invariants.
 
 ## The Action
-We define a quantity *S*, the sum of the inverients. In a a well behaved smooth system the appears as the integral
+Standard physics like to define a quantity *S*, the sum of L as the system evolves. In our framing this is sum of the inverients over an evoloving system. In a a well behaved smooth system this appears as the integral:
 
 **S = ∫ L dt**
 
-This accumulates what didn't change along the entire path from V0 to V1. Why do we call this action? Because it answers the question, where did what I had, get moved to. AKA,the new location of what didn't change.
+This accumulates what didn't change along the entire path from V0 to V1. Why do we call this action? Because it answers the question, where did what I had, get moved to. AKA,the set of actions applied to the invarients.
 
 ## What the Principle of Stationary Action Says in This Frame
 
-The physical path is the one where S is stationary — where small perturbations to the path don't change the total.
+Traditionally stationary action is an observation, the physical path is the one where S is stationary — where small perturbations to the path don't change the total.
 
-Read forwards, this sounds abstract. Read backwards, it's a tautology:
+Read this way, this sounds abstract. Read backwards, it's a tautology:
 
-> *The sum of what didn't change is what didn't change.*
+> *The sum over what didn't change remains unchanged*
 
-The system takes the path of maximum change — the most direct route through state space — and so the total of what is conserved along that path is stationary. Any other path would involve the system being somewhere it wasn't.
+By working with the set of invariants, you naturally measure the set of maximum change, or rather you measure all of the change in one metric, and the invariants remain stationary.
 
-This is causality. The shortest path between two states is adjacency.
-
-## Why It's Coordinate Independent
-
-The Lagrangian rotates the system into a conserved coordinate frame — the frame where what remains constant is explicit. You solve for what must not change, then rotate back to find what did. Because the conserved frame is the working frame, the coordinates you started in don't matter.
-
-This is not a coincidence. It is built into the structure of L = T − V.
+I would suggest this as a working definition for causality. The shortest path between two states is adjacency.
 
 ---
 
-## What the Euler-Lagrange Equation Does
+## Differentiation: What the Euler-Lagrange Equation Gives 
 
-The Euler-Lagrange equation defines the coordinate metric produced by the Lagrangian. 
-
-By seperating what doesn't change and what does, then writing a differential equation to select for the largest 'bit' that remains invariant you are finding the largest invariant in any arbitrary encodable system as defined by its own behavior.
+Once you have seperation of change from invariants, we can inspect our change structure against the invariant. We look through our change structure for the largest invariant reference applicable to every change. This is our 'bit', the largest object we can use to define any given change.
 
 This is not a chosen coordinate system. Not an externally imposed metric. It is a structure that resolves by what the system actually conserves.
 
-## The Metric Falls Out
-
-The relationship between what changes and what doesn't defines your coordinate system. The metric of the system is just the collection of all its invariants — everything that must remain the same as the system evolves.
-
-You are not choosing coordinates and imposing them on the system. You are letting the system tell you what its natural coordinates are, based purely on separating what does and doesn't change.
-
-## Why This Is General
-
-This is why the framework works for any system, in any coordinates. You are not doing physics in a particular frame — you are rotating into the frame of no change, solving there, and rotating back. The metric that results is the largest thing that remains invariant under the system's evolution.
-
-*you keep repeating that. clean it up*
-
-The Euler-Lagrange equation is the machinery that makes that separation exact.
+The Euler-Lagrange equation is the differnetial equation describing that mechanism.
 
 ---
 
 ## Incorrectness
 
-Incorrectness is not error. It is the gaps in a diffraction pattern.
+Incorrectness is this frame is not error. It is the gaps in a diffraction pattern.
 
-If your antenna doesn't capture the full field, what you see looks like noise — missing signal, wrong values, incoherent output. But the field is complete. The incorrectness is in the antenna, not the receiver. You are measuring a correct process through an incomplete aperture and assuming local behavior.
+If your antenna doesn't capture the full field, what you see looks like discontinuity — missing signal and jumps. But those are component parts of a continous signal.The incorrectness is in the antenna, not the receiver. You are measuring a correct process through an incomplete aperture and assuming locality confuses the behavior.
 
-This reframes debugging and error correction entirely. You are not fixing a broken system. You changing the antenna — altering what you sample and expanding the set of psi's until the aperture is wide enough to capture what the field is actually doing. The gaps close not because you corrected the error but because you finished the process.
-
-Incorrectness is correctness distributed on an unfinished process.
+Prediction error is then better seen as accurate prediction on a sub manifold that does not map to desired state. 
 
 ---
 
-## Self-Organization as a General Algorithm
+## Self-Organization as Self Selection
 
-This gives you a system for self-organization in any arbitrary distributed system.
+Given three things: a current state V0, a target state V1, and a set of operators defined over your working space — your psi's, the Lagrangian tells you how to evolve most efficiently to your target state. You don't design the path. You don't impose the dynamics. The path falls out from the separation of what changes and what doesn't, and the system finds its own most efficient route through the potential field.
 
-You need three things: a current state V0, a target state V1, and a set of operators defined over your working space — your psi's. The Lagrangian then tells you how to evolve most efficiently. You don't design the path. You don't impose the dynamics. The path falls out from the separation of what changes and what doesn't, and the system finds its own most efficient route through the potential field.
+Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub patterns of the Lagrangian. 
 
-Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. You're not designing behavior — you're defining the space and the target, and correctness does the rest.
-
-The hard part is defining the right psi's. The operators have to actually span your working space. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization in any encodable system — computational, biological, economic, social up to the resolution of your invarient.
-
-The E formalism below is the machinery that makes this concrete.
+In a design problem, defining psi is not trivial. The operators should form the eigenbasis of the your desired outcome. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization irrespective of domain — computational, biological, economic, social up to the resolution/coherence of your invarient.
 
 ---
 
 ## E — The Integration Function
 
-`E` is a correlator. It takes a correlation function `psi` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (potential/register values) are inserted into the field via E(), which adds them as pure imaginary, phase t=0.
+The following is an attempted implementation and case study of the above framework. Sorry, I change symbols again, because instead of working with arbitrary states, we are working with a digital potential field with an established addressing system (registers - r).
+
+`E` is a correlator. It takes a correlation function `p` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (potential/register values) are inserted into the field via E(), encoding the behavior or momentum as p(t=0) for cross correlation against a real value at some later phase t!=0.
 
 ```javascript
-#const hbar = 1.0545718e-34
-#dt=hbar is natural physics?
+//const hbar = 1.0545718e-34
+//dt=hbar is natural physics?
 
-const E = function(fn){ 
+const E = function(p){ 
     const I = function(r,t,dt){
         if (t<=0) return r;
-        return I(r+fn(t)*dt,t-dt);
+        return I(r+p(t)*dt,t-dt);
     };
     return function(t){
         return I(0,t);
@@ -127,25 +113,25 @@ const E = function(fn){
 ```
 
 - `E` → correlator
-- `psi` → correlation geometry (the function passed to `E`)
+- `p` → correlation geometry (the function/behavior passed to `E`)
 
 ---
 
 ## Correlation Functions
 
-In our system, we, every `psi` is built from the same primitive: `delta` — the binary correlation, an *event*. This defines `if`, as processor function in terms of pure logic operation? The CPU is delta functions composed through `E` at increasing phase offset (t).
+In our digital system, every `p` is built from the same primitive: `delta` — the binary correlation, an *event*. This defines `if`, as processor function in terms of pure logic operation (claim may not be precise?). The transistor network is delta functions composed through `E` at increasing phase offset (t).
 
 ### delta
 
-The primitive. Pure binary correlation — does this phase match or not. Not a thing in the field, it's the event that defines presence. The atomic write.
+The primitive. Pure binary correlation — does this phase match or not. Not a thing in the field, it's the event that defines presence (observation?).
 
 ```javascript
 function delta(a) { return (t) => a-t === 1 ? 1 : 0 }
 ```
 
-Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists.
+Just the selector. `E(delta(a))` gives you a constant — delta is the event, its integral is what persists (step function).
 
-Delta is a fixed address location. A compare at a specific phase (address). This object is the derivative of the step function?
+Delta is a fixed address location. A compare at a specific phase (address). 
 
 ### step
 
@@ -155,14 +141,14 @@ Delta integrated. The write that persists. Zero before the event, `a` from that 
 function step(a) { return (t) => t >= 1 ? a : 0 }
 ```
 
-`E(step(a))` gives you a ramp — `a*t`. Step is the resulting register state after the delta write event. You never see the delta directly; you see its integral held in the register.
+`E(step(a))` gives you a ramp — `a*t`. The step is the resulting register state after the delta write event. You never see the delta directly; you see its integral held in the register.
 
 - Delta is the transition. Step is what the transition leaves behind.
-- Delta is a compare at a specific address. Step remembers the event, effect persists across context.
+- Delta is a compare at a specific address. Step remembers the event, effect of the event which persists across the context.
 
 ### linear
 
-Step integrated. Constant rate of change — `a` added each phase.
+Constant rate of change — `a` added each phase.
 
 ```javascript
 function linear(a) { return (t) => a }
@@ -184,7 +170,9 @@ Self-referential growth. Patterns where each unit copies itself in the next step
 function exp(a) { return (t) => a**t }
 ```
 
-`E(exp(a))` gives you `a**t / ln(a)`. `e` is the natural base — the specific value where `ln(a) = 1` and the function is exactly its own derivative. The natural unit of self-referential growth, the same way `pi` is the natural unit of rotational change. `pi` is the constant of perpendicular projection; `e` is the constant of parallel projection. Same property, different geometry. (right?)
+`E(exp(a))` gives you `a**t / ln(a)` -> the pattern of a pattern that repeats itself, is the pattern repeating itself.
+
+`e` is the natural base — the specific value where `ln(a) = 1` and the function is exactly its own derivative. The natural unit of self-referential growth, the same way `pi` is the natural unit of rotational change. `pi` is the constant of perpendicular projection; `e` is the constant of parallel projection. Same property, different geometry. (right?)
 
 ### sine
 
@@ -194,9 +182,10 @@ Oscillation or pattern recognition.
 function sine(a) { return (t) => Math.sin(a * t) }
 ```
 
-`E(sine(a))` gives you `-cos(a*t)/a`. Resonance, ringing, oscillation around a minimum.
+`E(sine(a))` gives you `-cos(a*t)/a`. The pattern of a pattern that identifies itself, is a pattern that identifies itself.
 
-Is this the *inverse*
+This gives a strong motivation for the euler relation. Exponential is a repeating pattern, and sin is pattern identification. In the euler formula, you are looking at the relationship of a pattern of self identifications. This isn't precisely correct, but I think its close to a real intuitive understanding of e^it = cos(t)+isin(t) and the general relationship between exponentiation and periodic behavior.
+
 ---
 
 ## p(s) and V(s) — The Fundamental Separation
@@ -205,9 +194,9 @@ It is useful to decompose your system into two distinct object classes, particle
 
 ---
 
-## Potential Field Model
+## Case Study: Potential Field Model
 
-The system lives in a potential field. State is a particle in a well.
+Consider a particle in a potential well.
 
 **To move to a new state:** shift the well position, not the particle. Inertia keeps the particle in place; now it sits on a slope in the new well geometry and rolls to the new minimum on its own.
 
