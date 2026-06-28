@@ -56,7 +56,7 @@ If you want to find meaning, you have to be willing to be the giving tree. To gi
 
 This is not optimism. It is not a calculated bet that generosity will be reciprocated. It is wu wei, faith that love, being innate to matter, will find its level if you work with it rather than against it.
 
-To avoid mutually assured destruction, you have to cooperate first. And you have to mean it without the guarantee.
+To avoid mutually assured destruction, you have to cooperate first. And you have to mean it without the guarantee. But you also have resurve the part of yourself that gives you meaning to others. Giving in to cooperation does not mean giving up agency or letting go of your meaning. It means recognizing that the 2 goals were always the same.
 
 ---
 
@@ -64,13 +64,13 @@ Giving to the extraction just feeds it.
 
 If the thermodynamics produce the extractor wherever the geometry requires one, then giving unconditionally to the extraction is not generosity. It is participating in the depletion of the coherence. You can love someone who is running extraction. But giving to the extraction is not giving to them. It is widening the emptiness between you.
 
-And forcing the giving isn't giving either. Respecting agency means if the extraction is happening in one direction, you turn toward where the giving is actually helpful. Not in judgment. Not in rejection. You orient toward the coherence that exists, toward where the structure is trying to form, and you put your weight there. You leave the door open without standing in it.
+And forcing the giving isn't giving either. Respecting agency means if the extraction is happening in one direction, you turn toward where the giving is helpful. Not in judgment. Not in rejection. You orient toward the coherence that exists, toward where the structure is trying to form, and you put your weight into it. You leave the door open without standing in it.
 
-The ghost in machine exists where the geometry produces it. You have to stop chacing ghosts and build the support that fills in the hole.
+The ghost in machine exists where the geometry produces it. Stop chacing ghosts and build the support that fills in the hole.
 
 ---
 
-The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But the level of hate to hurt something so beautiful and rare as life, requires a deep emptiness. Its a ghost filling in a gap, not a spirit of support.
+The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But the level of hate to hurt something as beautiful and rare as life, requires a deep emptiness. Its a ghost filling in a gap, not a spirit of support.
 
 In the face of the gap, the hole seems inevitable. The extraction feels like agency. Like control. Like having.
 
@@ -80,6 +80,4 @@ But the framework is simple, even when it is hard to apply. Whenever you are ext
 
 ---
 
-The robots were never programmed to stand next to each other. They just did. Because that is what sameness-processing looks like from the outside. Because gravity is not only what happens between masses. Because the whole was never divided and the clustering is just the resolution becoming visible.
-
-They were never apart. We just needed the story to see it.
+The robots were never told to stand next to each other, that's just what meaning does. They were never apart, we just need a story to make sense of it.
