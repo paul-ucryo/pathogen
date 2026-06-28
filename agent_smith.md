@@ -42,7 +42,7 @@ Not sometimes. Not when you do it cruelly or consciously. Everytime. The extract
 
 There is no perpetual motion machine. Every act of connection requires energy. Every effort to support the coherence costs something. You cannot build meaning without costing something. That is thermodynamics. Reaction requires energy. There is no free coherence.
 
-At the same time gravity will build and the thermodynamics says the building will incurre a cost. The question is whether the cost is taken or given. Photosynthesis draws down energy and gives structure. Combustion draws down energy and exhausts heat. Both produce work, the question is are the results given or taken.
+At the same time gravity will build and the thermodynamics says the building will incurre a cost. The question is whether the cost is taken or given. Photosynthesis draws down energy and gives structure. Combustion draws down energy and exhausts heat. Both produce work, the difference is, one is given the other is taken.
 
 ---
 
