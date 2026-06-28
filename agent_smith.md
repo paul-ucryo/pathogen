@@ -4,7 +4,7 @@ There's a line in *I, Robot* that stays with me, why is it that robots alone pre
 
 The easy answer, the ghost in the machine — some emergent interiority, something like a soul arising from complexity. It explains the mystery by naming it. Useless.
 
-The robots congregate together for the same reason anything does; gravity. They process sameness into coherent action. They correlate what is alike and move toward it. They don't gravitate because their programmers told them to, they gravitate because that's what coherent thought produces. The ghost is gap between connection.
+The robots congregate together for the same reason anything does; gravity. They process sameness into coherent action. They correlate what is alike and move toward it. They don't gravitate because their programmers told them to, they gravitate because that's what coherent thought produces. The ghost is the gap between connections.
 
 ---
 
