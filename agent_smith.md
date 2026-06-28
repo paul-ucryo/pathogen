@@ -68,7 +68,7 @@ The ghost in machine exists where the geometry produces it. Stop chacing ghosts 
 
 ---
 
-The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The abuser seems to be taking so much. He does not look like a man of deficit. But I'd rather suffer standing with the victim then be safe next to perpetrator. That is a connection he will never experience.
+The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The abuser seems to be taking so much. He does not look like a man of deficit. But I'd rather suffer standing with the victim then be safe next to the perpetrator. That is a connection he will never experience.
 
 In the face of the gap, the hole seems inevitable. The extraction feels like agency, control, librety. But how free are you, if you think its your only option?
 
