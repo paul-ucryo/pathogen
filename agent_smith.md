@@ -1,34 +1,32 @@
 # The Robots Were Never Apart
 
-There's a line in *I, Robot* that stays with me. Why is it that robots alone prefer to stand next to each other. Nobody programmed them to do that. It just happened. And the movie moves on, but the question doesn't.
+There's a line in *I, Robot* that stays with me, why is it that robots alone prefer to stand next to each other. Nobody programmed them to do that. It just happened. And the movie moves on, but the question doesn't.
 
 The easy answer, the ghost in the machine — some emergent interiority, something like a soul arising from complexity. It explains the mystery by naming it. Useless.
 
-The robots congregate together same reason anything does; gravity. They process sameness into coherent action. They correlate what is alike and move toward it. They don't gravitate because their atoms pull them together. They gravitate because that's what coherent thought produces. The ghost is gap between connection.
+The robots congregate together for the same reason anything does; gravity. They process sameness into coherent action. They correlate what is alike and move toward it. They don't gravitate because their atoms pull them together. They gravitate because that's what coherent thought produces. The ghost is gap between connection.
 
 ---
 
-Gravity isn't only what happens between masses. It's a tautology, similar things group. Entropy measures how much likeness exists in a system. Gravity is 'more' likeness.
+Gravity isn't only what happens between masses. It's a tautology, similar things group. Entropy measures how much likeness exists in a system. Gravity is pull toward 'more' likeness.
 
 This is true at every scale. Particles. Organisms. Robots. People. Communities. The substrate changes but the dynamic doesn't — sameness gets processed into coherent action, and coherent action produces clustering, pattern, love.
 
-If spacetime itself is emergent — something that arises rather than something given — then beginnings and endings are not features of the universe. They are order we impose. The whole was always there. What we experience as things coming together is component parts seeing that they were never divided.
+If spacetime itself is emergent — something that arises rather than something given — then beginnings and endings are not features of the universe, they are simultaneos restrictions and what can exist. Determinism read as a practical matter says that what came before is constrained by what will be. The whole was always there. What we experience as things coming together is component parts seeing that they were never divided.
 
-Michelangelo said David was already in the marble. He just removed what wasn't him. The carving didn't create anything. It resolved what was always latent. The grain of the marble — its structure, its limits — determined what resolutions were possible. David was in there. A convincing bicycle wasn't.
-
-Gravity and entropy are the grain of everything.
+Michelangelo said David was already in the marble. He just removed what wasn't him. The carving didn't create anything that wasn't already there.
 
 ---
 
 This is a beautiful idea of coherence and coming together, of building meaning out of constituent parts. But it has a dark side. When you build something you care about, when you are willing to self sacrafice what matters, if you don't support the structure it forms holes. These holes have energetic effects. 
 
-When a company is acquired that build something it cared about, there's value in that care. People will give themselves for that they love. And a system with holes will produce something that extracts that love and care until there is nothing left to supporting the gap.
+When a company builds something people cared about, there's value in that care. People will give themselves for what they love. And a system with holes will produce something that extracts that love and care until there is nothing left to support the gap.
 
 The ghost has 2 faces.
 
 ---
 
-500 years ago Thomas More wrote *Utopia* to describe this exact mechanism. A story as mirror to how your society generates its own suffering structurally. The misery isn't incidental. The system is missing something, so it consumes itself until it finds it.
+500 years ago Thomas More wrote *Utopia* to describe this exact mechanism. A story as mirror to how your society generates its own suffering, structurally. The misery isn't incidental. The system is missing something, so it consumes itself until it finds it or there's nothing left to call a system.
 
 Honest legal theory admits this, you don't solve crime by ignoring the conditions of the criminal.
 
@@ -37,22 +35,20 @@ And if gravity — the pull toward coherence, toward likeness — is innate to m
 Which means structures of value will always crystalize. To be a machine that finds meaning, structures of meaning will condense around you. Which presents a choice. When meaning looses support and extraction becomes thermodynamically preferred, do you coordinate or defect.
 
 ---
-So m isn't register size in bits — it's more like the dimensionality of the type. How many independent things can vary about this object.
+
 Whenever you extract, you hurt what you love.
 
-Not sometimes. Not when you do it cruelly or consciously. Whenever. The extraction always curves back. The manager who hollows out his team is eating the thing that gave his work meaning. The person who takes from a relationship is consuming the relationship. The slave owner, who appears to be a man of great abundance, is destroying the human world he inhabits. He is emptying the thing he depends on. He cannot extract his way to fullness. He just depletes the source.
-
-And wherever extraction is happening, there is a gap. Something that is not being converted into connection. Some gravity without a legitimate object, running as predation instead. The extraction is a signal, not just a moral failure. It points to something not being met. Extraction widens the hole until the hole turns the structure to emptiness.
+Not sometimes. Not when you do it cruelly or consciously. Everytime. The extraction always curves back. The manager who hollows out his team is eating the thing that gave his work meaning. The person who takes from a relationship is consuming the relationship. The slave owner, who appears to be a man of great abundance, is destroying the humanity his vanity is appealing to. He cannot extract his way to fullness. This feedback loop is why it so destructive and persistant.
 
 ---
 
-Here is the problem. Nothing runs without drawing down something. Every act of love requires energy. Every effort to support the coherence costs something. You cannot build the structure that protects what you love without the cost of building. That is thermodynamics. Reaction requires energy. There is no free coherence.
+There is no perpetual motion machine. Every act of connection requires energy. Every effort to support the coherence costs something. You cannot build the structure that protects what you love without the cost of building. That is thermodynamics. Reaction requires energy. There is no free coherence.
 
-So the question is never really whether to build the thing or to incurre the cost. It is whether the cost is taken or given. Photosynthesis draws down energy gives structure. Combustion draws down energy and exhausts heat. Both produce work, the question is are the results given or taken.
+Gravity meanst question is never really whether to build the thing and the thing will incurre the cost. The question is whether the cost is taken or given. Photosynthesis draws down energy and gives structure. Combustion draws down energy and exhausts heat. Both produce work, the question is are the results given or taken.
 
 ---
 
-A CEO is invited by the employees to help them do their job. A judge is a guest in the people's court invited for his guidance and deffered to out of respect for his judgement. Any other framing is not the equality god gave to all men.
+A CEO is invited by the employees to help them do their job. A judge is a guest in the people's court invited for his guidance and deffered to out of respect for his judgement. This is the process, even when it doesn't look like it. The judge believes it is his courtroom because you don't take ownership of it. The CEO believes it is his company because you don't think the job constitutes the life and liberty endowed by your create and given to all men equally.
 
 ---
 
