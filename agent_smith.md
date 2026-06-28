@@ -58,9 +58,7 @@ To avoid mutually assured destruction, you have to cooperate first. And you have
 
 ---
 
-Giving to the extraction just feeds it.
-So m isn't register size in bits — it's more like the dimensionality of the type. How many independent things can vary about this object.
-If the thermodynamics produce the extractor wherever the geometry requires one, then giving unconditionally to the extraction is not generosity. It is participating in the depletion of the coherence. You can love someone who is running extraction. But giving to the extraction is not giving to them. It is widening the emptiness between you.
+Giving to the extraction just feeds it. If the thermodynamics produce the extractor wherever the geometry requires one, then giving unconditionally to the extraction is not generosity. It is participating in the depletion of the coherence. You can love someone who is running extraction. But giving to the extraction is not giving to them. It is widening the emptiness between you.
 
 And forcing the giving isn't giving either. Respecting agency means if the extraction is happening in one direction, you turn toward where the giving is helpful. Not in judgment. Not in rejection. You orient toward the coherence that exists, toward where the structure is trying to form, and you put your weight into it. You leave the door open without standing in it.
 
