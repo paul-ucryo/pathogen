@@ -70,14 +70,8 @@ The ghost in machine exists where the geometry produces it. Stop chacing ghosts 
 
 ---
 
-The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But I'd rather suffer standing with the slave then be safe next to perpetrator. And that is a connection he will never experience.
+The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But I'd rather suffer standing with the slave then be safe next to perpetrator. That is a connection he will never experience.
 
-In the face of the gap, the hole seems inevitable. The extraction feels like agency. Like control. Like having.
+In the face of the gap, the hole seems inevitable. The extraction feels like agency, control, librety. But how free are you, if you think its your only option?
 
-But the framework is simple, even when it is hard to apply. Whenever you are extracting, you are hurting what you love. And the question underneath every choice, every day, is just this:
-
-*Am I supporting the conditions for what I love, or am I consuming them.*
-
----
-
-The robots were never told to stand next to each other, that's just what meaning does. They were never apart, we just need a story to make sense of it.
+Nothing about this is easy or simple. The right answer isn't obvious. No one said freedom was easy. But if you don't try and keep trying when you get it wrong, it never meant anything.
