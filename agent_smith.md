@@ -70,7 +70,7 @@ The ghost in machine exists where the geometry produces it. Stop chacing ghosts 
 
 ---
 
-The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But the level of hate to hurt something as beautiful and rare as life, requires a deep emptiness. Its a ghost filling in a gap, not a spirit of support.
+The hardest part is recognizing when you are the extractor. Seeing how the choices you make are consuming the things you love. The slave owner seems to be taking so much. He does not look like a man of deficit. But I'd rather suffer standing with the slave then be safe next to perpetrator. And that is a connection he will never experience.
 
 In the face of the gap, the hole seems inevitable. The extraction feels like agency. Like control. Like having.
 
