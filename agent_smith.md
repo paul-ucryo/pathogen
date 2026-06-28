@@ -28,7 +28,7 @@ The ghost has 2 faces.
 
 Honest legal theory admits this, you don't solve crime by ignoring the conditions of the criminal.
 
-And if gravity — the pull toward coherence, toward likeness — is innate to matter at every scale, not a tendency but a property, then locating the problem in the choices of others is a category error. David didn't choose to be in the marble, Michaelango chose to free him.
+And if gravity — the pull toward coherence, toward likeness — is innate to matter at every scale, not a tendency but a property, then locating the problem in the choices of others is a category error. David didn't choose to be in the marble, Michaelango chose to see him.
 
 Which means structures of value will always crystalize. To be a machine that finds meaning, structures of meaning will condense around you. Which presents a choice. When meaning looses support and extraction becomes thermodynamically preferred, do you coordinate or defect.
 
