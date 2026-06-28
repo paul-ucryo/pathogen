@@ -48,7 +48,7 @@ Gravity means the thing will be build and the thermodynamics says the building w
 
 ---
 
-A CEO is invited by the employees to help them do their job. A judge is a guest in the people's court invited for his guidance and deffered to out of respect for his judgement. This is the process, even when it doesn't look like it. The judge believes it is his courtroom because you don't take ownership of it. The CEO believes it is his company because you don't think the job constitutes the life and liberty endowed by your create and given to all men equally.
+A CEO is invited by the employees to help them do their job. A judge is a guest in the people's court invited for his guidance and deffered to out of respect for his judgement. This is the process, even when it doesn't look like it. The judge believes it is his courtroom because you don't take ownership of it. The CEO believes it is his company because you are convinced the job does not constitute part of the life and liberty endowed by your create and given to all men equally. It is his company but it is your job. Those 2 are on equal footing in the eyes your creator, weather you see it that way or not. And the things you care about will suffer if you look away.
 
 ---
 
