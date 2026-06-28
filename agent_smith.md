@@ -1,8 +1,6 @@
 # The Robots Were Never Apart
 
-There's a line in *I, Robot* that stays with me, why is it that robots alone prefer to stand next to each other. Nobody programmed them to do that. It just happened. And the movie moves on, but the question doesn't.
-
-The easy answer, the ghost in the machine — some emergent interiority, something like a soul arising from complexity. It explains the mystery by naming it. Useless.
+There's a line in *I, Robot* that stays with me, why is it that robots alone prefer to stand next to each other. Nobody programmed them to do that. It just happened. The ghost in the machine.
 
 The robots congregate together for the same reason anything does; gravity. They process sameness into coherent action. They correlate what is alike and move toward it. They don't gravitate because their programmers told them to, they gravitate because that's what coherent thought produces. The ghost is the gap between connections.
 
