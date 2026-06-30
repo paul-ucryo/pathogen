@@ -6,7 +6,7 @@ People tend to treat their job as a bounded task: this is my role, this is where
 
 The military cuts against this completely: get the job done, by whatever means necessary, no excuses, because the actual mission was never the narrow task — it was always taking care of each other. It doesn't remove roles, it doesn't remove coordination, it says the task is what matters. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've seperated their life from living and gave up their agency.
 
-This isn't unique to police. It's a more universal failure: the comfortable bystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description.
+This isn't unique to police, they are just paid for it. It's a universal failure: the comfortable bystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description.
 
 ## Where Hierarchy Actually Comes From
 
