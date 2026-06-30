@@ -14,7 +14,7 @@ Not having a clean answer is no more an excuse then innaction is going to solve 
 
 Hierarchy isn't first a political or historical invention — it's installed early, in every household, before anyone has the capacity to question it. Every human starts life genuinely less *capable* than the adults around them. That's just true — a child can't do what an adult can do yet.
 
-The error is what gets layered on top of that fact: skill gets quietly conflated with capability. Less skill becomes treated as less agency. That conflation happens before a child has the tools to notice or resist it, and it becomes the template every later hierarchy gets built from — titles, badges, robes, authority — all of it the same original mistake, scaled up and re-skinned. Don't question.
+The error is what gets layered on top of that fact: skill gets quietly conflated with capability. Less skill becomes treated as less agency. That conflation happens before a child has the tools to notice or resist it, and it becomes the template every later hierarchy gets built from — titles, badges, robes, authority — all of it the same original mistake, scaled up and re-skinned. I'm in charge. Don't question. He told me to.
 
 The fix isn't denying the real skill difference. It's refusing to let skill difference imply rank or restrict agency. A child isn't deficient; they're a person who needs help and guidance with a unique experience more valuable then we give credit. Parents often seem to not respect the child's self enough to learn from them. To learn how they became who they are before they were able to form memory. They are one of the most valuble teaching tools for how to be. Failing that they train people to think of their value and agency as a thing given not a belief held.
 
