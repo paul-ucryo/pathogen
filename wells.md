@@ -71,6 +71,190 @@ The Euler-Lagrange equation is the differnetial equation describing that mechani
 
 ---
 
+## The Fundamental Separation
+
+It is useful to decompose your system into two distinct object classes, environment and observables. In modeling terms this is what you know or control and your target. In computer modeling this is functionally input vs output. This sets up your system give you control handles where you have them and readouts on what you need to respond to.
+
+
+---
+
+## Potential Field Model
+
+Consider a particle in a potential well, where the well is a ramp on one side and a wall on the other.
+
+**To move the particle to a new state:** shift the well position, not the particle. Now the partilcle sits on the top of the slope and rolls to the new minimum on its own. With this simple setup we can expand to complex topologies and optimize automating their resolution.
+
+**Well geometry defines dynamics:**
+- Steep narrow well → fast response, hard stop
+- Shallow wide well → slow smooth response  
+- Asymmetric walls → damping
+- Removable wall → latch point (switch)
+
+**Cell position** = position of the well minimum  
+**Acceleration/deceleration** = well geometry around the minimum
+
+---
+
+## Example System - Wheel and Switch
+
+Well geometry: a slope with a hard wall. The switch *is* the wall — not a separate system. Latching is the particle sitting at the bottom against the hard wall. Stable by geometry, no energy required to hold.
+
+**Multi-position traversal:**
+
+A staircase potential. Each intermediate cell has a wall with a release mechanism (open switch — triggered on contact). Ball hits wall, wall opens, rolls to next step. Only the target cell has a closed wall. Ball hits and stays. That's the dock latch.
+
+Control: set target cell. Intermediate cells self-clear. Ball rolls to dock and stops. Staircase geometry handles sequencing automatically.
+
+If your state is a wheel, the geometry resets, the user brings you back to the top of the slide, which looks like the potential wells resetting to the starting state. If user input isn't involved, then the wells look like harmonics in a signal.
+
+---
+
+## Design Surface
+
+The design artifact is a **2D potential field with N control handles**.
+
+- Wells are draggable
+- Well geometry defines motion profile
+- Control handles are the IO boundary — the only thing the user touches
+- N-body complexity represented in 2D
+
+Is this the holographic principle: the 2D field with N handles *is* the boundary. The full system behavior reads off it.
+
+---
+
+## Design Process
+
+1. **Design the potential field** — draw the problem space as particle physics. Place balls, shape wells, set wall geometry, place switches and triggers.
+
+2. **Translate to code registers** — each well minimum becomes a cell, each wall becomes a switch or latch, each slope becomes an `E` accumulation with the appropriate `p(t)`. Translation is mechanical (not trivial but well defined).
+
+---
+
+## General Analytical Framework
+
+Given any domain of arbitrary complexity — computational, biological, economic, social — identify `p(s)` and `V(s)` and you get predictive autonomy/decision as a procedure:
+
+- **Local minima** — stable states the system naturally falls into even if suboptimal
+- **Global minimum** — deepest well, and the barrier height between here and there
+- **Catalyst definition** — minimal perturbation to `V(s)` that destabilizes current well
+- **Metastability** — shallow wells, one perturbation from collapse
+- **State stability** — deep narrow well is robust; shallow well is fragile
+
+The claim: **problem geometry determines register organization**. You don't design data structures and then solve the problem. The potential field tells you what the registers have to be. Arbitrary complexity in the problem space collapses to equivalent well structures — class equivalence defined by field geometry, not domain.
+
+---
+
+## Potential Field Editor — Validating Use Case
+
+A JS-based visual design tool:
+
+- Draw the potential landscape
+- Place balls (particles/state objects)
+- Shape well geometry by dragging — sets acceleration profiles
+- Place switches and triggers as wall features
+- Move control handles — the IO boundary
+- Schema serializes the field → generates register definitions
+
+**JS schema sketch:**
+
+```javascript
+{
+  wells: [
+    { id: 'cell_0', position: 0, geometry: { slope: 1.0, wall: 'hard', release: null } },
+    { id: 'cell_1', position: 10, geometry: { slope: 1.0, wall: 'hard', release: 'on_contact' } },
+    { id: 'cell_target', position: 20, geometry: { slope: 1.0, wall: 'hard', release: null } }
+  ],
+  balls: [
+    { id: 'wheel', position: 0, well: 'cell_0' }
+  ],
+  handles: [
+    { id: 'dock', controls: 'cell_target.position' }
+  ]
+}
+```
+
+---
+
+*next: implement wheel-switch system in E formalism; build potential field editor as validating use case*
+
+---
+
+## Digital to Analog Converter
+
+The following is not a computation of physical behavior. It is physical behavior instantiated on a digital substrate.
+The distinction matters. A simulation maintains a model and an approximation of reality — there is always a gap between the two. What follows has no such gap. The accumulation structure is the physics running. The system doesn't compute what a physical system would do. It does it.
+This is possible because the monad carries the Lagrangian, the Euler-Lagrange condition, and the action integral simultaneously as a single accumulator. In standard analytical field theory these are three separate steps — define L, derive the metric, run the field equations. Numerically, they share the same accumulation structure. The monad runs all three in one pass, updating together as data arrives.
+dt is not a parameter you set. It is the natural phase period that emerges as the correlators find coherence — the same way a physical system finds its natural frequency. You don't calculate it. The system settles into it.
+E is the correlator. It takes a correlation function p and integrates it over phase, accumulating simultaneously into L, the Euler-Lagrange condition, and S. The system is self-calibrating by construction.
+You should be able to measure E as the heat from the cpu. 
+
+## Append: On What The Physics Means
+
+This document is not an interpretation of standard physics. It is a statement of what the standard physics formalism already means, with the accumulated interpretive residue removed. Each equation is not being reframed — it is being read plainly, shut up and calculate without the shut up.
+
+### On L
+
+L = T − V is not a quantity that happens to satisfy a clever variational condition discovered after the fact. Lagrange constructed it specifically so that the arrangement of the problem — separating the rate of change of state from the state itself — would make the constraint structure legible. The equation is not found in nature and then verified. The arrangement *is* the condition. The meaning of L is the operation itself: group what is changing and correlate what it is changing against. What comes out of that separation, when integrated and varied, is not a derived result checked against Newton — it is a grouping strategy.
+
+L is a statement about state geometry. T and V are not energy quantities that happen to have this geometric structure — the geometric structure is what they are. Energy is one instantiation of that structure, the same way 2 grains of rice is one instantiation of 2. The arithmetic doesn't depend on the rice.
+
+### On The Lagrangian Formalism and QM
+
+Quantum mechanics is not hard because it contradicts classical mechanics. It appears hard because people read it against classical mechanics — trying to find the balls and positions underneath. There are none. QM is already a state-only formalism. Energy and momentum are not properties of massive objects — they are geometries of state change, operators on state. The difficulty dissolves when you stop looking for the classical objects underneath and read the formalism as what it actually is: a complete description at the level of state, where positions are one possible description among many, not the ground floor.
+
+### On Non-Locality
+
+The constancy of c — the same in every reference frame regardless of the motion of source or observer — is already a non-local fact, prior to and independent of quantum mechanics or Bell's theorem. A medium gives you a preferred frame; c has none. This means the structure that propagates isn't moving *through* spacetime the way sound moves through air. c is not a speed through a pre-existing container. It is a network update property — a fact about the maximum rate at which one part of the structure can be reflected in another. Spacetime geometry is what you read off the update graph, not the substrate the updates happen inside.
+
+This is speculative and unworked-out, but the observation is: you don't need Bell's theorem to see non-locality. You only need c and what its invariance requires about the structure that has that property.
+
+### On Y
+
+The eigenvalue problem `H*Y = E*Y` is not a technique for extracting special solutions from a system. It is a projection of a self referential problem. The differential equation is the system viewed as its own instantaneous self-reference. The eigenvalue framing is that same system viewed as the set of constraints on the problem projected onto a stable set of values within the problem space.
+
+Y becomes the set of solutions that satisfy the constraint. Not a member of that set selected by some criterion and not a probablitly distribution but the full set of coherent solutions.
+
+For systems simple enough to characterize the solution set by inspection or enumeration, Y can be stated outright — no eigenvalue solve required. The `H(p)` accumulator is the tool for producing Y when direct solution is unavailable. It is not Y itself.
+
+### What Y Looks Like As A Bit Structure
+
+Since Y is a set of solutions, it is a complex bit structure: one concrete solution in the real part, and the set of transforms that reach every other valid solution in the imaginary part.
+
+The clearest model is git. A commit is a fully resolved state — what the repository actually is right now. Other valid states aren't stored as separate full snapshots; they're stored as diffs against a common reference. The full solution space isn't "all snapshots expanded out" — it's one real state plus the transforms that stay within the valid solution space.
+
+Producing Y means: find one valid solution (real part), then characterize the transforms between that solution and the others H admits (imaginary part). H has the constraint geometry. Y lives inside it — one real state plus the branch structure of everything else the constraint permits.
+
+This is precisely what a monad is in catagory theory. It is a structure which correlates change against some future input. It is helpful for me to think of it as a phase shift, moving data to a position until it is needed at some other time. The time parameter is the correlation between the input state and its update.
+
+---
+
+# sandbox
+
+## E = mc²: Rest Energy of a Register
+
+- **m** — number of bits in the object (register size)
+- **c** — propagation rate: the number of network nodes affected by one bit update
+- **c²** — cascade rate: one change affects c nodes, each of which affects c more
+- **E** — rest energy: total network effect when this object changes state
+
+## Statement
+
+**E = mc²**
+
+The rest energy of an object in the network is its size times the square of the propagation rate. This is how much of the network has to update when this object changes state — before any dynamics, just from its structural position.
+
+## Interpretation
+
+In a fully connected network, every node relates to every other node. Bit position defines relation; bit value defines weight. One bit update changes the weighted value of that bit's relation to all other bits in the network. c is the rate that one change propagates. c² is the cascade.
+
+Larger objects (more bits) with higher propagation rates (more connections) have higher rest energy — they move more of the network when they change. This is why massive objects in a load-balanced system gravitate toward each other: the update cost of coordinating highly connected objects makes co-location efficient.
+
+## Relation to Address Space
+
+c is not the clock speed — objects in the registers do not observe the clock speed. c is defined by the relational geometry of the address space: how many other bits a given bit update affects. This is invariant across the system, defined by the architecture, not the contents.
+
+---
+
 ## Incorrectness
 
 Incorrectness is this frame is not error. It is the gaps in a diffraction pattern.
@@ -88,8 +272,6 @@ Given three things: a current state V0, a target state V1, and a set of operator
 Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub patterns of the Lagrangian. 
 
 In a design problem, defining psi is not trivial. The operators should form the eigenbasis of the your desired outcome. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization irrespective of domain — computational, biological, economic, social up to the resolution/coherence of your invarient.
-
----
 
 ## H — The Potential Monad
 
@@ -209,181 +391,6 @@ This gives a strong motivation for the euler relation. Exponential is a repeatin
 
 ---
 
-## The Fundamental Separation
-
-It is useful to decompose your system into two distinct object classes, environment and observables. In modeling terms this is what you know or control and your target. In computer modeling this is functionally input vs output. This sets up your system give you control handles where you have them and readouts on what you need to respond to.
-
----
-
-## E = mc²: Rest Energy of a Register
-
-- **m** — number of bits in the object (register size)
-- **c** — propagation rate: the number of network nodes affected by one bit update
-- **c²** — cascade rate: one change affects c nodes, each of which affects c more
-- **E** — rest energy: total network effect when this object changes state
-
-## Statement
-
-**E = mc²**
-
-The rest energy of an object in the network is its size times the square of the propagation rate. This is how much of the network has to update when this object changes state — before any dynamics, just from its structural position.
-
-## Interpretation
-
-In a fully connected network, every node relates to every other node. Bit position defines relation; bit value defines weight. One bit update changes the weighted value of that bit's relation to all other bits in the network. c is the rate that one change propagates. c² is the cascade.
-
-Larger objects (more bits) with higher propagation rates (more connections) have higher rest energy — they move more of the network when they change. This is why massive objects in a load-balanced system gravitate toward each other: the update cost of coordinating highly connected objects makes co-location efficient.
-
-## Relation to Address Space
-
-c is not the clock speed — objects in the registers do not observe the clock speed. c is defined by the relational geometry of the address space: how many other bits a given bit update affects. This is invariant across the system, defined by the architecture, not the contents.
-
----
-
-## Case Study: Potential Field Model
-
-Consider a particle in a potential well, where the well is a ramp on one side and a wall on the other.
-
-**To move the particle to a new state:** shift the well position, not the particle. Now the partilcle sits on the top of the slope and rolls to the new minimum on its own. With this simple setup we can expand to complex topologies and optimize automating their resolution.
-
-**Well geometry defines dynamics:**
-- Steep narrow well → fast response, hard stop
-- Shallow wide well → slow smooth response  
-- Asymmetric walls → damping
-- Hard wall → latch point (switch)
-
-**Cell position** = position of the well minimum  
-**Acceleration/deceleration** = well geometry around the minimum
-
----
-
-## Example System - Wheel and Switch
-
-State variables: `[θ, moving, switch]`
-
-Well geometry: a slope with a hard wall. The switch *is* the wall — not a separate system. Latching is the particle sitting at the bottom against the hard wall. Stable by geometry, no energy required to hold.
-
-**Multi-position traversal:**
-
-A staircase potential. Each intermediate cell has a wall with a release mechanism (open switch — triggered on contact). Ball hits wall, wall opens, rolls to next step. Only the target cell has a closed wall. Ball hits and stays. That's the dock latch.
-
-Control: set target cell. Intermediate cells self-clear. Ball rolls to dock and stops. Staircase geometry handles sequencing automatically.
-
----
-
-## Design Surface
-
-The design artifact is a **2D potential field with N control handles**.
-
-- Wells are draggable
-- Well geometry defines motion profile
-- Control handles are the IO boundary — the only thing the user touches
-- N-body complexity represented in 2D
-
-Is this the holographic principle: the 2D field with N handles *is* the boundary. The full system behavior reads off it.
-
----
-
-## Design Process
-
-1. **Design the potential field** — draw the problem space as particle physics. Place balls, shape wells, set wall geometry, place switches and triggers.
-
-2. **Translate to code registers** — each well minimum becomes a cell, each wall becomes a switch or latch, each slope becomes an `E` accumulation with the appropriate `p(t)`. Translation is mechanical (not trivial but well defined).
-
----
-
-## General Analytical Framework
-
-Given any domain of arbitrary complexity — computational, biological, economic, social — identify `p(s)` and `V(s)` and you get predictive autonomy as a procedure:
-
-- **Local minima** — stable states the system naturally falls into even if suboptimal
-- **Global minimum** — deepest well, and the barrier height between here and there
-- **Catalyst definition** — minimal perturbation to `V(s)` that destabilizes current well
-- **Metastability** — shallow wells, one perturbation from collapse
-- **State stability** — deep narrow well is robust; shallow well is fragile
-
-The claim: **problem geometry determines register organization**. You don't design data structures and then solve the problem. The potential field tells you what the registers have to be. Arbitrary complexity in the problem space collapses to equivalent well structures — class equivalence defined by field geometry, not domain.
-
----
-
-## Potential Field Editor — Validating Use Case
-
-A JS-based visual design tool:
-
-- Draw the potential landscape
-- Place balls (particles/state objects)
-- Shape well geometry by dragging — sets acceleration profiles
-- Place switches and triggers as wall features
-- Move control handles — the IO boundary
-- Schema serializes the field → generates register definitions
-
-**JS schema sketch:**
-
-```javascript
-{
-  wells: [
-    { id: 'cell_0', position: 0, geometry: { slope: 1.0, wall: 'hard', release: null } },
-    { id: 'cell_1', position: 10, geometry: { slope: 1.0, wall: 'hard', release: 'on_contact' } },
-    { id: 'cell_target', position: 20, geometry: { slope: 1.0, wall: 'hard', release: null } }
-  ],
-  balls: [
-    { id: 'wheel', position: 0, well: 'cell_0' }
-  ],
-  handles: [
-    { id: 'dock', controls: 'cell_target.position' }
-  ]
-}
-```
-
----
-
-*next: implement wheel-switch system in E formalism; build potential field editor as validating use case*
-
----
-
-## Digital to Analog Converter
-
-The following is not a computation of physical behavior. It is physical behavior instantiated on a digital substrate.
-The distinction matters. A simulation maintains a model and an approximation of reality — there is always a gap between the two. What follows has no such gap. The accumulation structure is the physics running. The system doesn't compute what a physical system would do. It does it.
-This is possible because the monad carries the Lagrangian, the Euler-Lagrange condition, and the action integral simultaneously as a single accumulator. In standard analytical field theory these are three separate steps — define L, derive the metric, run the field equations. Numerically, they share the same accumulation structure. The monad runs all three in one pass, updating together as data arrives.
-dt is not a parameter you set. It is the natural phase period that emerges as the correlators find coherence — the same way a physical system finds its natural frequency. You don't calculate it. The system settles into it.
-E is the correlator. It takes a correlation function p and integrates it over phase, accumulating simultaneously into L, the Euler-Lagrange condition, and S. The system is self-calibrating by construction.
-You should be able to measure E as the heat from the cpu. 
-
-## Append: On What The Physics Means
-
-This document is not an interpretation of standard physics. It is a statement of what the standard physics formalism already means, with the accumulated interpretive residue removed. Each equation is not being reframed — it is being read plainly.
-
-### On L
-
-L = T − V is not a quantity that happens to satisfy a clever variational condition discovered after the fact. Lagrange constructed it specifically so that the arrangement of the problem — separating the rate of change of state from the state itself — would make the constraint structure legible. The equation is not found in nature and then verified. The arrangement *is* the condition. The meaning of L is the operation itself: separate what is changing from what it is changing against. What comes out of that separation, when integrated and varied, is not a derived result checked against Newton — it is the same statement made twice, in different coordinates.
-
-L is a statement about state geometry. T and V are not energy quantities that happen to have this geometric structure — the geometric structure is what they are. Energy is one instantiation of that structure, the same way 2 grains of rice is one instantiation of 2. The arithmetic doesn't depend on the rice.
-
-### On The Lagrangian Formalism and QM
-
-Quantum mechanics is not hard because it contradicts classical mechanics. It appears hard because people read it against classical mechanics — trying to find the balls and positions underneath. There are none. QM is already a state-only formalism. Energy and momentum are not properties of massive objects — they are geometries of state change, operators on state. The difficulty dissolves when you stop looking for the classical objects underneath and read the formalism as what it actually is: a complete description at the level of state, where positions are one possible description among many, not the ground floor.
-
-### On Non-Locality
-
-The constancy of c — the same in every reference frame regardless of the motion of source or observer — is already a non-local fact, prior to and independent of quantum mechanics or Bell's theorem. A medium gives you a preferred frame; c has none. This means the structure that propagates isn't moving *through* spacetime the way sound moves through air. c is not a speed through a pre-existing container. It is a network update property — a fact about the maximum rate at which one part of the structure can be reflected in another. Spacetime geometry is what you read off the update graph, not the substrate the updates happen inside.
-
-This is speculative and unworked-out, but the observation is: you don't need Bell's theorem to see non-locality. You only need c and what its invariance requires about the structure that has that property.
-
-### On Y
-
-The eigenvalue problem `H*Y = E*Y` is not a technique for extracting special solutions from a system. It is a projection — a second coordinate system for seeing the same self-referential structure that the differential equation already describes. The differential equation is the system viewed as its own instantaneous self-reference. The eigenvalue framing is that same system viewed as the complete structure of what satisfies it.
-
-Y is the set of solutions that satisfy the constraint. Not a member of that set selected by some criterion — Y is the solution space itself as a single object.
-
-H and E are machinery for finding Y when it cannot be written down directly. For systems simple enough to characterize the solution set by inspection or enumeration, Y can be stated outright — no eigenvalue solve required. The `H(p)` accumulator is the tool for producing Y when direct solution is unavailable. It is not Y itself.
-
-### What Y Looks Like As A Bit Structure
-
-Y is not a list of solutions. It is a complex bit structure: one concrete solution in the real part, and the set of transforms that reach every other valid solution in the imaginary part.
-
-The clearest model is git. A commit is a fully resolved state — what the repository actually is right now. Other valid states aren't stored as separate full snapshots; they're stored as diffs against a common reference. The full solution space isn't "all snapshots expanded out" — it's one real state plus the geometry of transforms that stay within the valid solution space.
-
-Y has the same structure. The real part is one concrete configuration that satisfies H — fully resolved, what the system actually is. The imaginary part is not a second solution stored in full — it is the set of transforms (diffs, deltas) from the current real solution to every other solution H admits, held in compressed correlation form. Only transforms that remain within H's solution space are valid imaginary components.
-
-Producing Y means: find one valid solution (real part), then characterize the transforms between that solution and the others H admits (imaginary part). H has the constraint geometry. Y lives inside it — one real state plus the branch structure of everything else the constraint permits.
+3: atom trap
+: 4x checkpoints
+: nasa shroud
