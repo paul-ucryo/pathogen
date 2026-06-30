@@ -91,35 +91,58 @@ In a design problem, defining psi is not trivial. The operators should form the 
 
 ---
 
-## E — The Integration Function
+## H — The Potential Monad
 
-The following is an attempted implementation and case study of the above framework. Sorry, I change symbols again, because instead of working with arbitrary states, we are working with a digital potential field with an established addressing system (registers - r).
-
-`E` is a correlator. It takes a correlation function `p` and integrates it over phase `t`, accumulating into the real component `r`. Real objects (potential/register values) are inserted into the field via E(), encoding the behavior or momentum as p(t=0) for cross correlation against a real value at some later phase t!=0.
+`H` is a correlator. It takes a correlation function `p` and integrates potential position over phase `t`, accumulating constraint to possible positions (r). Real objects (potential/register values) are inserted into the field via E(), encoding the behavior or momentum as p(t=0) for cross correlation against a real value at some later phase t!=0.
 
 ```javascript
 //const hbar = 1.0545718e-34
 //dt=hbar is natural physics?
 
-const E = function(p){ 
-    const I = function(r,t,dt){
+const H = function(p){ 
+    const i = function(r,t,dt){
         if (t<=0) return r;
-        return I(r+p(t)*dt,t-dt);
+        return i(r+p(t)*dt,t-dt);
     };
     return function(t){
-        return I(0,t);
+        return i(0,t);
     };
 }
 ```
 
-- `E` → correlator
-- `p` → correlation geometry (the function/behavior passed to `E`)
+- `H` -> Constraint matrix/geometry
+- `p` -> potential/constraint
+- `Y` -> possible configurations as initial (real) and imaginary component tells you how to iterate through the configurations. This gives you the possible bit patterns that result in constrained behavior. The imaginary component lets you run through different equivalent patterns. I'm not 100% sure that's 100% right.
+
+
+H*Y = E*Y -> eigenvalue problem
+
+- `m` -> mass is a constraint, these contigous bit values travel together. As a type system, this is constant, where the word size is compressed to minimum set.
+
+range = function (start,end){
+    return function (arg){
+        if arg<start: return None
+        if arg>end: return None
+        return arg
+    }
+}
+
+H(range(0,10))()+H(range(4,6))()
+
+const = function (dt){
+    return function(arg){
+        return dt
+    }
+}
+
+
+xxx = function (dt){
+    return function(arg){
+        return arg+dt
+    }
+}
 
 ---
-
-## Correlation Functions
-
-In our digital system, every `p` is built from the same primitive: `delta` — the binary correlation, an *event*. This defines `if`, as processor function in terms of pure logic operation (claim may not be precise?). The transistor network is delta functions composed through `E` at increasing phase offset (t).
 
 ### delta
 
@@ -174,8 +197,6 @@ function exp(a) { return (t) => a**t }
 
 `e` is the natural base — the specific value where `ln(a) = 1` and the function is exactly its own derivative. The natural unit of self-referential growth, the same way `pi` is the natural unit of rotational change. `pi` is the constant of perpendicular projection; `e` is the constant of parallel projection. Same property, different geometry. (right?)
 
-### sine
-
 Oscillation or pattern recognition.
 
 ```javascript
@@ -191,6 +212,31 @@ This gives a strong motivation for the euler relation. Exponential is a repeatin
 ## The Fundamental Separation
 
 It is useful to decompose your system into two distinct object classes, environment and observables. In modeling terms this is what you know or control and your target. In computer modeling this is functionally input vs output. This sets up your system give you control handles where you have them and readouts on what you need to respond to.
+
+---
+
+## E = mc²: Rest Energy of a Register
+
+- **m** — number of bits in the object (register size)
+- **c** — propagation rate: the number of network nodes affected by one bit update
+- **c²** — cascade rate: one change affects c nodes, each of which affects c more
+- **E** — rest energy: total network effect when this object changes state
+
+## Statement
+
+**E = mc²**
+
+The rest energy of an object in the network is its size times the square of the propagation rate. This is how much of the network has to update when this object changes state — before any dynamics, just from its structural position.
+
+## Interpretation
+
+In a fully connected network, every node relates to every other node. Bit position defines relation; bit value defines weight. One bit update changes the weighted value of that bit's relation to all other bits in the network. c is the rate that one change propagates. c² is the cascade.
+
+Larger objects (more bits) with higher propagation rates (more connections) have higher rest energy — they move more of the network when they change. This is why massive objects in a load-balanced system gravitate toward each other: the update cost of coordinating highly connected objects makes co-location efficient.
+
+## Relation to Address Space
+
+c is not the clock speed — objects in the registers do not observe the clock speed. c is defined by the relational geometry of the address space: how many other bits a given bit update affects. This is invariant across the system, defined by the architecture, not the contents.
 
 ---
 
@@ -304,27 +350,40 @@ dt is not a parameter you set. It is the natural phase period that emerges as th
 E is the correlator. It takes a correlation function p and integrates it over phase, accumulating simultaneously into L, the Euler-Lagrange condition, and S. The system is self-calibrating by construction.
 You should be able to measure E as the heat from the cpu. 
 
-# E = mc²: Rest Energy of a Register
+## Append: On What The Physics Means
 
-## Definitions
+This document is not an interpretation of standard physics. It is a statement of what the standard physics formalism already means, with the accumulated interpretive residue removed. Each equation is not being reframed — it is being read plainly.
 
-- **m** — number of bits in the object (register size)
-- **c** — propagation rate: the number of network nodes affected by one bit update
-- **c²** — cascade rate: one change affects c nodes, each of which affects c more
-- **E** — rest energy: total network effect when this object changes state
+### On L
 
-## Statement
+L = T − V is not a quantity that happens to satisfy a clever variational condition discovered after the fact. Lagrange constructed it specifically so that the arrangement of the problem — separating the rate of change of state from the state itself — would make the constraint structure legible. The equation is not found in nature and then verified. The arrangement *is* the condition. The meaning of L is the operation itself: separate what is changing from what it is changing against. What comes out of that separation, when integrated and varied, is not a derived result checked against Newton — it is the same statement made twice, in different coordinates.
 
-**E = mc²**
+L is a statement about state geometry. T and V are not energy quantities that happen to have this geometric structure — the geometric structure is what they are. Energy is one instantiation of that structure, the same way 2 grains of rice is one instantiation of 2. The arithmetic doesn't depend on the rice.
 
-The rest energy of an object in the network is its size times the square of the propagation rate. This is how much of the network has to update when this object changes state — before any dynamics, just from its structural position.
+### On The Lagrangian Formalism and QM
 
-## Interpretation
+Quantum mechanics is not hard because it contradicts classical mechanics. It appears hard because people read it against classical mechanics — trying to find the balls and positions underneath. There are none. QM is already a state-only formalism. Energy and momentum are not properties of massive objects — they are geometries of state change, operators on state. The difficulty dissolves when you stop looking for the classical objects underneath and read the formalism as what it actually is: a complete description at the level of state, where positions are one possible description among many, not the ground floor.
 
-In a fully connected network, every node relates to every other node. Bit position defines relation; bit value defines weight. One bit update changes the weighted value of that bit's relation to all other bits in the network. c is the rate that one change propagates. c² is the cascade.
+### On Non-Locality
 
-Larger objects (more bits) with higher propagation rates (more connections) have higher rest energy — they move more of the network when they change. This is why massive objects in a load-balanced system gravitate toward each other: the update cost of coordinating highly connected objects makes co-location efficient.
+The constancy of c — the same in every reference frame regardless of the motion of source or observer — is already a non-local fact, prior to and independent of quantum mechanics or Bell's theorem. A medium gives you a preferred frame; c has none. This means the structure that propagates isn't moving *through* spacetime the way sound moves through air. c is not a speed through a pre-existing container. It is a network update property — a fact about the maximum rate at which one part of the structure can be reflected in another. Spacetime geometry is what you read off the update graph, not the substrate the updates happen inside.
 
-## Relation to Address Space
+This is speculative and unworked-out, but the observation is: you don't need Bell's theorem to see non-locality. You only need c and what its invariance requires about the structure that has that property.
 
-c is not the clock speed — objects in the registers do not observe the clock speed. c is defined by the relational geometry of the address space: how many other bits a given bit update affects. This is invariant across the system, defined by the architecture, not the contents.
+### On Y
+
+The eigenvalue problem `H*Y = E*Y` is not a technique for extracting special solutions from a system. It is a projection — a second coordinate system for seeing the same self-referential structure that the differential equation already describes. The differential equation is the system viewed as its own instantaneous self-reference. The eigenvalue framing is that same system viewed as the complete structure of what satisfies it.
+
+Y is the set of solutions that satisfy the constraint. Not a member of that set selected by some criterion — Y is the solution space itself as a single object.
+
+H and E are machinery for finding Y when it cannot be written down directly. For systems simple enough to characterize the solution set by inspection or enumeration, Y can be stated outright — no eigenvalue solve required. The `H(p)` accumulator is the tool for producing Y when direct solution is unavailable. It is not Y itself.
+
+### What Y Looks Like As A Bit Structure
+
+Y is not a list of solutions. It is a complex bit structure: one concrete solution in the real part, and the set of transforms that reach every other valid solution in the imaginary part.
+
+The clearest model is git. A commit is a fully resolved state — what the repository actually is right now. Other valid states aren't stored as separate full snapshots; they're stored as diffs against a common reference. The full solution space isn't "all snapshots expanded out" — it's one real state plus the geometry of transforms that stay within the valid solution space.
+
+Y has the same structure. The real part is one concrete configuration that satisfies H — fully resolved, what the system actually is. The imaginary part is not a second solution stored in full — it is the set of transforms (diffs, deltas) from the current real solution to every other solution H admits, held in compressed correlation form. Only transforms that remain within H's solution space are valid imaginary components.
+
+Producing Y means: find one valid solution (real part), then characterize the transforms between that solution and the others H admits (imaginary part). H has the constraint geometry. Y lives inside it — one real state plus the branch structure of everything else the constraint permits.
