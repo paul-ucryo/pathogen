@@ -1,0 +1,29 @@
+# Lies
+
+## Bounded Jobs vs. the Only Real Mission
+
+People tend to treat their job as a bounded task: this is my role, this is where it stops, what's outside that scope isn't mine to carry. Three or four cops on the job can sit on their ass in a parking lot "watching" a store and never ask "can I do more". Real, visible problems exist nearby that touch their own lives and their families' lives. The job description lets them prettend they're off the hook. Not take a different side or change your politics, look at whats happening to what you care about and do something, whatever that means to you. The role becomes a wall between "what I'm responsible for" and "what's actually in front of me."
+
+The military cuts against this completely: get the job done, by whatever means necessary, no excuses, because the actual mission was never the narrow task — it was always taking care of each other. It doesn't remove roles, it doesn't remove coordination, it says the task is what matters. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've seperated their life from living and gave up their agency.
+
+This isn't unique to police, they are just paid for it. It's a universal failure: the comfortable bystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description or punch clock.
+
+Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. Not even getting it done. Just trying.
+
+## Where Hierarchy Actually Comes From
+
+Hierarchy isn't first a political or historical invention — it's installed early, in every household, before anyone has the capacity to question it. Every human starts life genuinely less *capable* than the adults around them. That's just true — a child can't do what an adult can do yet.
+
+The error is what gets layered on top of that fact: skill gets quietly conflated with capability. Less skill becomes treated as less agency. That conflation happens before a child has the tools to notice or resist it, and it becomes the template every later hierarchy gets built from — titles, badges, robes, authority — all of it the same original mistake, scaled up and re-skinned. I'm in charge. Don't question. He told me to.
+
+The fix isn't denying the real skill difference. It's refusing to let skill difference imply rank or restrict agency. A child isn't deficient; they're a person who needs help and guidance with a unique experience more valuable then we give credit. Parents often seem to not respect the child's self enough to learn from them. To learn how they became who they are before they were able to form memory. They are one of the most valuble teaching tools for how to be. Failing that they train people to think of their value and agency as a thing given not a belief held.
+
+## Caring Through Non-Attachment
+
+Non-attachment doesn't mean indifference, and it doesn't require certainty about what's "real" in order to function. Caring isn't actually a relationship to a confirmed, solid object — that need for the object to be verified, solid, externally validated, *is* the attachment. Drop that need, and caring becomes a quality of mind itself, not contingent on proof.
+
+This tracks with strands of Buddhist thought — the bodhisattva vow to help all beings, held alongside the view that "being" itself has no fixed, independent existence. Both at once, not a contradiction to resolve. Metta (loving-kindness) practice extends outward to beings never met or verified; the caring doesn't borrow its legitimacy from certainty about the object.
+
+Practically: caring that's genuine still sometimes gets things wrong, still sometimes causes real harm — but it's the only available compass toward less suffering, not because every instance is safe, but because the alternative (waiting for certainty, or defaulting to comfortable inaction) doesn't even attempt contact with what's real. Passivity dressed as neutrality is its own quiet harm. Acting from real care, even imperfectly, stays in contact with the world in a way nothing else does.
+
+The thread running under all of this: don't let a bounded role, an inherited hierarchy, or uncertainty become an excuse to look away. If you don't like what's happening, what are we going to do? Your answer is less important then the effort. The only consistent compass is what you care about. If action comes from genuine caring, the intrinsic right and wrong will meet reality. You can be wrong, but if you are honest you will find truth. 
