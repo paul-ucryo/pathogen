@@ -2,9 +2,9 @@
 
 ## Bounded Jobs vs. the Only Real Mission
 
-People — public servants especially, but everyone really — tend to treat their job as a bounded task: this is my role, this is where it stops, what's outside that scope isn't mine to carry. Five or six cops can stand in a parking lot watching a store while real, visible problems exist nearby that touch their own lives and their families' lives, and the job description lets them look away. The role becomes a wall between "what I'm responsible for" and "what's actually in front of me."
+People tend to treat their job as a bounded task: this is my role, this is where it stops, what's outside that scope isn't mine to carry. Three or four cops can sit on their ass in a parking lot "watching" a store while the world crumbles. Real, visible problems exist nearby that touch their own lives and their families' lives. The job description lets them look away and prettend they shouldn't be doing more. The role becomes a wall between "what I'm responsible for" and "what's actually in front of me."
 
-The military framing cuts against this completely: get the job done, by whatever means necessary, no excuses, because the actual mission was never the narrow task — it was always taking care of each other. The narrow task is just the current shape that mission happens to be wearing. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've mistaken the shape for the mission.
+The military cuts against this completely: get the job done, by whatever means necessary, no excuses, because the actual mission was never the narrow task — it was always taking care of each other. It doesn't remove roles, it doesn't remove coordination, it says the task is what matters. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've seperated their life from living and gave up their agency.
 
 This isn't unique to police. It's a more universal failure: the comfortable bystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description.
 
