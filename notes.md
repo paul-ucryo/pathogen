@@ -2,7 +2,7 @@
 
 ## Bounded Jobs vs. the Only Real Mission
 
-People tend to treat their job as a bounded task: this is my role, this is where it stops, what's outside that scope isn't mine to carry. Three or four cops on the job can sit on their ass in a parking lot "watching" a store while the world crumbles. Real, visible problems exist nearby that touch their own lives and their families' lives. The job description lets them look away and prettend they shouldn't be doing more. Not take a different or change your politics, look at whats happening to what you care about and do something. The role becomes a wall between "what I'm responsible for" and "what's actually in front of me."
+People tend to treat their job as a bounded task: this is my role, this is where it stops, what's outside that scope isn't mine to carry. Three or four cops on the job can sit on their ass in a parking lot "watching" a store and never ask "can I do more". Real, visible problems exist nearby that touch their own lives and their families' lives. The job description lets them look away and prettend they shouldn't be doing more. Not take a different or change your politics, look at whats happening to what you care about and do something. The role becomes a wall between "what I'm responsible for" and "what's actually in front of me."
 
 The military cuts against this completely: get the job done, by whatever means necessary, no excuses, because the actual mission was never the narrow task — it was always taking care of each other. It doesn't remove roles, it doesn't remove coordination, it says the task is what matters. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've seperated their life from living and gave up their agency.
 
