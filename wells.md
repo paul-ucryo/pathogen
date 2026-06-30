@@ -1,3 +1,11 @@
+# Preamble
+
+This is a working model, not a formal theory. The goal is to express a current understanding clearly enough to think with and build on. Gaps and imprecision are known and expected. The question driving it is: how does nature make choice and how do complex structures make 'correct' choice. All points should be argued over and contested. The usefulness of the framing should not wait for the formal definitions. The focus on 'whats the next step' should come from implementing better decision not formalizing physics terms.
+
+Known next steps:
+
+-> Define Y as a container to hold complex values.
+
 # Complex Composition — Working Notes v2
 
 ## Core claim for Review: On Selection and Correctness
@@ -232,8 +240,10 @@ This is precisely what a monad is in catagory theory. It is a structure which co
 
 ## E = mc²: Rest Energy of a Register
 
-- **m** — number of bits in the object (register size)
-- **c** — propagation rate: the number of network nodes affected by one bit update
+- **hbar** — size of the address space, total nodes
+- **G** — network effect of flipping 1 bit
+- **m** — number of set bits in the object, node weight
+- **c** — propagation rate: the number of network nodes affected by moving one bit in the network
 - **c²** — cascade rate: one change affects c nodes, each of which affects c more
 - **E** — rest energy: total network effect when this object changes state
 
@@ -269,7 +279,7 @@ Prediction error is then better seen as accurate prediction on a sub manifold th
 
 Given three things: a current state V0, a target state V1, and a set of operators defined over your working space — your psi's, the Lagrangian tells you how to evolve most efficiently to your target state. You don't design the path. You don't impose the dynamics. The path falls out from the separation of what changes and what doesn't, and the system finds its own most efficient route through the potential field.
 
-Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub optimal paths near the Lagrangian. 
+Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub optimal paths through the Lagrangian. 
 
 In a design problem, defining psi is not trivial. The operators should form the eigenbasis of the your desired outcome. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization irrespective of domain — computational, biological, economic, social up to the resolution/coherence of your invarient.
 
