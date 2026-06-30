@@ -269,7 +269,7 @@ Prediction error is then better seen as accurate prediction on a sub manifold th
 
 Given three things: a current state V0, a target state V1, and a set of operators defined over your working space — your psi's, the Lagrangian tells you how to evolve most efficiently to your target state. You don't design the path. You don't impose the dynamics. The path falls out from the separation of what changes and what doesn't, and the system finds its own most efficient route through the potential field.
 
-Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub patterns of the Lagrangian. 
+Self-organization isn't a special property of biological or complex systems. It's what any system does when you give it a V1 and let the Lagrangian run. And I would consider that systems which work toward self organization are largely sub optimal paths near the Lagrangian. 
 
 In a design problem, defining psi is not trivial. The operators should form the eigenbasis of the your desired outcome. Get them wrong and the Lagrangian optimizes through a subspace that doesn't cover the real dynamics. Get them right and you have a general engine for directed self-organization irrespective of domain — computational, biological, economic, social up to the resolution/coherence of your invarient.
 
