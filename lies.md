@@ -8,7 +8,7 @@ The military cuts against this completely: get the job done, by whatever means n
 
 This isn't unique to police, they are just paid for it. It's a universal failure: the protester who caries a sign that says fuck you, standing next to man holding a sign that says anything helps. Caring, if it's real, doesn't stay inside a job description, punch clock or whatever you think 'resistance' looks like.
 
-Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. You may not be able to get it done. But you still have to try, or watch what you care about suffer.
+Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. You may not be able to get it done. But you still have to try, or watch what you care about suffer alone.
 
 ## Where Hierarchy Actually Comes From
 
