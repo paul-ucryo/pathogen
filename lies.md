@@ -6,7 +6,7 @@ People tend to treat their job as a bounded task: this is my role, this is where
 
 The military cuts against this completely: get the job done, by whatever means necessary, no excuses, because the task only matters in relation to the mission. It doesn't remove roles, it doesn't remove coordination or responsability, it says focus on what matters. When someone treats their job as bounded — *not my department, not my hours, not my problem* — they've seperated their life from living and gave up their agency to effect what they care about.
 
-This isn't unique to police, they are just paid for it. It's a universal failure: the comfortable bgithub.com/paul-ucryo/pathogen/new/mainystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description or punch clock.
+This isn't unique to police, they are just paid for it. It's a universal failure: the protester who caries a sign that says fuck you, standing next to man holding a sign that says anything helps. Caring, if it's real, doesn't stay inside a job description, punch clock or whatever you think 'resistance' looks like.
 
 Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. You may not be able to get it done. But you still have to try, or watch what you care about suffer.
 
