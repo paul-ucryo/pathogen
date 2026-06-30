@@ -8,7 +8,7 @@ The military cuts against this completely: get the job done, by whatever means n
 
 This isn't unique to police, they are just paid for it. It's a universal failure: the comfortable bystander who privately agrees something is wrong but does nothing is doing the same thing as the cop in the parking lot — defining their responsibility narrowly enough that looking away becomes permissible. Caring, if it's real, doesn't stay inside a job description or punch clock.
 
-Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. Not even getting it done. Just trying.
+Not having a clean answer is no more an excuse then innaction is going to solve the problem. Because something is hard, doesn't releive you the responsibility of doing it. You may not be able to get it done. But you still have to try, or watch what you care about suffer.
 
 ## Where Hierarchy Actually Comes From
 
