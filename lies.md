@@ -22,7 +22,7 @@ The fix isn't denying the skill difference or authority. It's refusing to let ti
 
 Non-attachment doesn't mean indifference, and it doesn't require certainty about what's "real" in order to function. Caring isn't actually a relationship to a confirmed, solid object — that need for the object to be verified, solid, externally validated, *is* the attachment. Drop that need, and caring becomes a quality of mind itself, not contingent on proof. Was Pan's Labrynth diagetically true? assumes there is a truth outside the point of the story.
 
-This tracks with strands of Buddhist thought — the bodhisattva vow to help all beings, held alongside the view that "being" itself has no fixed, independent existence. Both at once, not a contradiction to resolve. Metta (loving-kindness) practice extends outward to beings never met or verified; the caring doesn't borrow its legitimacy from certainty about the object.
+This tracks with strands of Buddhist thought — the bodhisattva vow to help all beings, held alongside the view that "being" itself has no fixed, independent existence. Both at once, not a contradiction to resolve. Metta (loving-kindness) practice extends outward to beings never met or verified; the caring and truth are inside the narrative not the physics.
 
 Practically: caring that's genuine still sometimes gets things wrong, still sometimes causes real harm — but it's the only available compass toward less suffering, not because every instance is safe, but because the alternative (waiting for certainty, or defaulting to comfortable inaction) doesn't even attempt contact with what's real. Passivity dressed as neutrality is its own quiet harm. Acting from real care, even imperfectly, stays in contact with the world in a way nothing else does.
 
