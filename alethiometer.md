@@ -40,6 +40,7 @@ Policies are something like config files. If you define hand edited or static co
 All action is communication across a bus. Even a disk, is just potential sitting on a bus not connected to anything that would drain it. So a gateway is just a named bus. Buses can be complex, holding potential value that resolves once connected to an endpoint. Like an internet connection can be a standin for whatever ip atcually resolves, the logic depending on it doesn't care whats underneith it. This gives monadic composition and lazy evaluation as routing potential.
 
 ## Dependency
+
 - requires
 - permits
 - excludes
@@ -48,7 +49,7 @@ All action is communication across a bus. Even a disk, is just potential sitting
 - replaces
 - prefers -> bidirectional
 
-
+## Network
 
 - 10.0.0.1\16:provides:ucryo.lan -> dhcp range
 - ucryo.lan:requires:(10.0.0.1,10.0.0.2)
@@ -58,6 +59,8 @@ All action is communication across a bus. Even a disk, is just potential sitting
 - dewey:requires:acs.signature.ucryo.lan[1]
 - mac1:provides:acs.signature.ucryo.lan[0]
 - mac2:provides:acs.signature.ucryo.lan[0]
+
+## Graphics
 
 - "Table name":provides:dom.el1.name
 - dom.el1:provides:table
