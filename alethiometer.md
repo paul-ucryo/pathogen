@@ -39,6 +39,8 @@ Policies are something like config files. If you define hand edited or static co
 
 All action is communication across a bus. Even a disk, is just potential sitting on a bus not connected to anything that would drain it. So a gateway is just a named bus. Buses can be complex, holding potential value that resolves once connected to an endpoint. Like an internet connection can be a standin for whatever ip atcually resolves, the logic depending on it doesn't care whats underneith it. This gives monadic composition and lazy evaluation as routing potential.
 
+'.' indicates route traversal. ucryo.lan and lan.ucryo are 2 paths that may or may not resolve to the same state. Basically transform order where its typical that the operation is commutative.
+
 ## Dependency
 
 - requires
@@ -52,13 +54,20 @@ All action is communication across a bus. Even a disk, is just potential sitting
 ## Network
 
 - 10.0.0.1\16:provides:ucryo.lan -> dhcp range
-- ucryo.lan:requires:(10.0.0.1,10.0.0.2)
+- ucryo.lan:requires:(10.0.0.1,10.0.0.2) 
 - scrooge:provides:10.0.0.1 -> dns entry
 - dewey:provides:10.0.0.2 -> dns entry
-- scrooge:requires:acs.signature.ucryo.lan[0]
-- dewey:requires:acs.signature.ucryo.lan[1]
-- mac1:provides:acs.signature.ucryo.lan[0]
-- mac2:provides:acs.signature.ucryo.lan[0]
+- scrooge:requires:acs.signature.ucryo.lan.0
+- dewey:requires:acs.signature.ucryo.lan.1
+- mac1:provides:acs.signature.ucryo.lan.0
+- mac2:provides:acs.signature.ucryo.lan.[1,2,3,5]
+
+##
+- ()->any,[]->every,{}->map
+- .. -> increment
+- [1,..,5]
+- [fn0,..,fn1] -> basicaly while
+- {fn0:fn2,..,fn1:fn3} [1,..,5] -> {1:1,..,5:5}
 
 ## Graphics
 
