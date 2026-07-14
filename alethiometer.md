@@ -1,10 +1,11 @@
-Computation as bit routing. No objects, no classes in the type syste, just behaviors that bind into coherent (hoepfully) action. Remote/local is mostly load balance.
+# Computation as bit routing
+No objects, no classes, type system defines behavior. Behaviors that bind into coherent (hoepfully) action. Remote/local is mostly load balance.
 
 Defining a problem and writing a program are the same thing, how behavior routes. A convoluted routing scheme is a poorly understood problem. Query/lookup isn't locating its behavior resolution. A hard to find object is a hard to describe object.
 
-.policy is where most stuff is defined and exists. .bind is basically projection. So say im working on proj x with team y. the 'x' is a domain /home/x where all of it's information lives. i don't work in x. i work in /home/me/.bind/x. So i have my own projection of x, can reorganize, create alternative auth and hosting structures, whatever is negotiated between /home/x and /home/me/.bind/x. It also means /home/x/.bind is a sort of import/export plane such that /home/x/.policy can reference /home/me components as /home/x/.bind/me.
+/home/{domain}/.policy is where rules are defined, think rpm dependency for arbitrary behavior. Most things are rules. /home/{domain}/.bind is basically projection. So say im working on proj x with team y. the 'x' is a domain /home/x where all of it's information lives. But I don't work in x. I work in /home/me/.bind/x. So I have my own projection of x, can reorganize, create alternative auth and hosting structures, whatever is negotiated between /home/x and /home/me/.bind/x as defined in both .policy systems. It also means /home/x/.bind is a sort of import/export plane such that /home/x/.policy can reference /home/me components as /home/x/.bind/me. Probably best to thinkg of .policy as firewall/rule table and .bind is the request+response
 
-Space is the dimensionality of a problem space. rasters convert scene geometry to pixels, whether the dimensions are cartesian (cad), dom, product data.
+"Space" is the dimensionality of a problem domain. Rasters convert scene geometry to pixels, whether the dimensions are cartesian (cad), dom, product data.
 
 .policy -> routing rules
 .bind -> materialized state,
