@@ -65,7 +65,7 @@ You can't buy a federated network because there's nothing to buy. The network is
 
 **The road trip example:** "I'm driving to Austin, two seats available" is not an Uber ride. It's a different trust context, different cost model, not served by any existing tool. That's the first use case — low stakes, builds platform habits, creates immediate value within existing trust networks, no regulatory complexity.
 
-When the system works internally, opening to paying external customers is a natural next step. Workers who were volunteering can now earn. The platform stays cooperative because it was built that way from the start.
+When the system works internally, opening to paying external customers is a natural next step. Workers who were volunteering can now earn. The platform stays cooperative because you can't own the base layer, the incentives reroute to equitable share as long as members maintain participation and ownership. But even in the event of participation withdrawl, like excrecise, you just start over.
 
 ---
 
