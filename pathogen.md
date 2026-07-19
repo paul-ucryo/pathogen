@@ -15,6 +15,8 @@ The network is a dependency graph. Trust, routing, access control, and discovery
 
 ## Identity and Access
 
+(Should also include multipath encryption. If all data is distributed across multiple nodes, its resileint against encryption breaks because the full data set is not available to hack. Meaning even quantum systems can't break the encryption because the data is physically not there. You need to compromise at least 2 systems of a known set).
+
 Membership is defined by keys, not usernames or accounts. Onboarding a team member means handing them a keypair and a gateway into the project network. Offboarding means clipping that gateway from the chain. No accounts to delete, no permissions to audit.
 
 Access is a relationship between networks, not a permission granted to a person. A team member adds the project to their personal network. The project gets a gateway back. The relationship is bidirectional, auditable, and scoped.
