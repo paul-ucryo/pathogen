@@ -1,5 +1,8 @@
 # A Distributed Commons — Notes on a Conversation
 AI wrote this. Much of it is oversimplified and needs proper design to work effectively. But the idea is if outcome is the metric, it avoids capture. As soon as an institution tries to extract from it, it becomes less effecient and someone else can fork a version with the same effeciency removing the extraction.
+
+Since it's a distributed system trust system there's nothing to capture or attack. The only option you have is to build network trust or undermine your own trust authority. The system incentivises trust not attention. So becoming successful means becoming trustworthy and dependable. Extraction and capture undermine that and the system routes elseware according to optimum network health. Like an immune system for agency, equality, and free will.
+
 ## The Network Model
 
 A distributed network defined not by infrastructure but by a cryptographic trust chain. A root keypair defines the network — membership is established by signing keys down from that root. The trust chain is auditable and clippable — compromised nodes can be revoked without affecting the rest.
