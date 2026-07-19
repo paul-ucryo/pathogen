@@ -3,6 +3,8 @@ AI wrote this. Much of it is oversimplified and needs proper design to work effe
 
 Since it's a distributed system trust system there's nothing to capture or attack. The only option you have is to build network trust or undermine your own trust authority. The system incentivises trust not attention. So becoming successful means becoming trustworthy and dependable. Extraction and capture undermine that and the system routes elseware according to optimum network health. Like an immune system for agency, equality, and free will.
 
+Also points of oppertunity are electrification and health services. Meaning small business devoted to solar power, on/off grid and gas to electric conversion of vehicles. These are trainable and 'easy' to turn into low cost startups for to begin buiding job oppertunities for unemployed as well as community health. Health services fall in this line. Becoming a personal trainer, diet coach, and general health advice is in high need and 'easily' transferable online, allowing unemployed or underemployed people to get semi-reliable gigs through the network while learning a trade all from free resources and backed by open trust networks. Just because you don't have healthcare doesn't mean you can't have healthcare. it doesn't solve surgery or rx but the preventative care end is probably more effective then the existing system anyway and doesn't change the access conditions to surgery or rx, only reduces the dependence.
+
 ## The Network Model
 
 A distributed network defined not by infrastructure but by a cryptographic trust chain. A root keypair defines the network — membership is established by signing keys down from that root. The trust chain is auditable and clippable — compromised nodes can be revoked without affecting the rest.
