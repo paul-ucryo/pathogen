@@ -303,11 +303,11 @@ The scene graph is a navigation tool for the semantic space, not a separate data
 
 ---
 
-##Automation
+## Automation
 
 Automation can be constraint driven. Drawing 'potential wells' inside something like 'simulink' gives you a modeling environment for behavior primitives. You can add switches, step functions, catalysts/triggers. Those primitives describe a vast collection of automation topologies currently viewed as 'separate' but actually behave as equivalence classes. You can view your system (say you want to automate key lookup and mounting) as a constraint topology. Linking card handles (callbacks) to geometries of other conditions (password submission acts like a latch for example).
 
-###Potential Wells
+### Potential Wells
 
 ---
 
