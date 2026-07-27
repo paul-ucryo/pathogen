@@ -139,13 +139,15 @@ Trust is incremental: share the routing entry first, share the key when ready.
 
 The card is the UI primitive, analogous to a punch card — a defined set of data and relationships that different rendering contexts interpret differently. Like Tk's widgets or the DOM's elements, the card is what the rendering system reasons over. The rendering context determines what the card looks like and how it behaves, not the card itself.
 
+Every card bottoms out at a file path on a volume. That is the ground truth — no further abstraction below it. You can always ask "where does this actually live" and get a concrete answer: `/home/fs/<domain>/<concern>/<hash>`. That path tells you who owns the data, what kind of data it is, and what specific resource it is. The entire card system, all rendering contexts, all routing and relationship logic — it all resolves to file paths on LUKS volumes.
+
 A card is a reference to a data group with enough metadata to present it meaningfully:
 
 ```
 card.name
 card.description
-card.target        # the artifact — a file, URL, structured data entry, snapshot
-card.children[]    # sub-items, drill-down
+card.target        # file path on a volume — the ground truth
+card.children[]    # list of cards, or inline card data
 card.siblings[]    # same concern level
 card.parent        # what this belongs to
 card.state         # collapsed, preview, expanded, focused
@@ -155,9 +157,17 @@ card.drop()
 
 The target can be anything — a Word document, a web URL, a SolidWorks file, a btrfs snapshot, a structured data entry. The card wrapper is stable, the target is whatever makes sense for that concern. The rendering system doesn't need to know what's inside the target, only how to present the card metadata and link to it.
 
-Drag and drop is just reassigning relationships — moving a card changes its parent or sibling, which is a symlink change in the filesystem. The visual behavior is the renderer's concern, the data change is just routing.
+A directory is just a card that contains a list of other cards. A file can itself be a list of cards with their data inline. The card is the unit at every level.
 
 ### The Deck
+
+A deck is a volume. One to one, no exceptions. There are no nested decks — only cards referencing data in another volume. Volumes don't nest, they reference each other through symlinks, and card references between decks are exactly that.
+
+- Volume = deck
+- File or directory in that volume = card
+- Reference to another volume = card reference to another deck
+
+A deck is self-describing. The volume contains the data, the card relationships, and the rendering hints. Mount the volume anywhere and the rendering context comes with it. Another system mounts it and knows how to display it without external configuration.
 
 The OS UI is a deck organizer. Cards lay out next to each other with varying degrees of expand and collapse. The deck is the working surface — you expand what you need, collapse what you don't. Layout reflects current attention, not a fixed hierarchy.
 
@@ -167,9 +177,26 @@ Natural card states:
 - **Expanded** — full content, children visible, relationships navigable
 - **Focused** — full screen, children laid out as their own deck
 
-Navigation is expansion and collapse, not movement through folders. A domain card expands to show its concerns. A concern card expands to show its items. An item card expands to show content and relationships. The hierarchy is there, zoom level is how you traverse it.
+Navigation is expansion and collapse, not movement through folders. The deck state itself is lightweight — which cards are expanded and how they're arranged. That state lives on the client volume. The data lives wherever it lives.
 
-The deck state itself is lightweight — which cards are expanded and how they're arranged. That state lives on the client volume. The data lives wherever it lives.
+The only thing that crosses deck boundaries is references — a card pointing to a card in another deck. That reference is a path to a file on another volume, which is a symlink. The rendering system follows it if the target deck is mounted, shows a dead reference if it isn't.
+
+### Primitive Operations
+
+Data management across the entire card system reduces to a small set of primitive operations:
+
+- **create** — new card in a deck
+- **move** — reassign parent/sibling, which is a symlink change
+- **reference** — point to a card in another deck
+- **expand/collapse** — change card state
+- **drag/drop** — move or reference depending on context
+- **follow** — traverse a reference to another deck
+
+That is essentially it. Everything else is the rendering context interpreting those operations differently. Drag and drop in a kanban reassigns a concern. The same operation in a CAD environment repositions a sub-assembly. In a game engine it means picking up an object. The operation is identical, the rendering context gives it meaning.
+
+Button presses in a game are card interactions at high frequency. A keypress follows a reference to an action card, executes it, updates state. The game loop is the rendering context cycling through card states very fast. Input handling, data management, and rendering all reason over the same primitive set. There is no special game input system, no special CAD interaction model, no special form handling for web. Just card operations interpreted by the active rendering context.
+
+The complexity ceiling of what you can build is how sophisticated your rendering context is, not how complex your data primitives are. The primitives stay simple all the way up.
 
 ### Rendering Contexts
 
@@ -183,11 +210,13 @@ The same card primitive renders differently depending on context. The card API i
 
 A CAD model is a card whose target is geometry data. In a parts ordering context the same card renders as a line item with quantity and price. Same data, different rendering context.
 
-The menu system inside a CAD environment runs the same code as accessing data in an order form on a website. A button is a card with a target that's an action. A dropdown is a card whose children are options. UI chrome and the data it operates on are the same primitive — cards all the way down.
+The menu system inside a CAD environment runs the same code as accessing data in an order form on a website. A button is a card with a target that is an action. A dropdown is a card whose children are options. UI chrome and the data it operates on are the same primitive — cards all the way down.
 
 ### Relationship to the Volume System
 
 Because cards map directly onto the filesystem structure there is no translation layer. A card is a directory entry with metadata. Children are symlinks. The deck is a graphical traversal of what already exists in the volume structure.
+
+The system is inspectable at every level without the UI being present. If you can mount the volume you can see exactly what is there and where everything points. The UI is a convenience, not a requirement for understanding what the system contains.
 
 New artifact types are just new card targets. New views are just new rendering contexts. The card API and the volume structure are stable — complexity lives in the renderers, not in the data model.
 
