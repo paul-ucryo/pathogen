@@ -303,6 +303,14 @@ The scene graph is a navigation tool for the semantic space, not a separate data
 
 ---
 
+##Automation
+
+Automation can be constraint driven. Drawing 'potential wells' inside something like 'simulink' gives you a modeling environment for behavior primitives. You can add switches, step functions, catalysts/triggers. Those primitives describe a vast collection of automation topologies currently viewed as 'separate' but actually behave as equivalence classes. You can view your system (say you want to automate key lookup and mounting) as a constraint topology. Linking card handles (callbacks) to geometries of other conditions (password submission acts like a latch for example).
+
+###Potential Wells
+
+---
+
 ## Summary
 
 The system is a dependency graph of LUKS volumes connected by symlinks, routed by CTXT/ROUTE environment variables, synced by btrfs send/recv, and networked by Wireguard. Each layer uses the same key primitive. Security is cryptographic at every boundary. Complexity matches actual coordination need — a solo user has one volume and no overhead, a large distributed team has many volumes and rich routing, the mechanism is identical throughout.
