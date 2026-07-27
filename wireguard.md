@@ -236,6 +236,73 @@ The initial UI is a deck of these concern collections. Cards within a concern ar
 
 ---
 
+## Rendering, Input, and Semantic Space
+
+### Hit Detection as Universal Input Primitive
+
+Hit detection is the universal input primitive across all rendering contexts. Whether it is:
+
+- A mouse click on a button — did this coordinate intersect this card's bounding region
+- A key press — did this input intersect the focused card's input handler
+- A cursor in a text field — where in the card's text does this position land
+- A bullet in a game — did this trajectory intersect this card's collision volume
+- A tool path in CAD — did this geometry intersect this feature
+
+It is all the same operation. A ray or point tested against a card's defined region. The card defines its hit volume, the rendering context defines what coordinate space that is in — 2D screen space, 3D world space, text buffer space — and the hit test is uniform across all of them.
+
+Overflow handling is equally universal — what happens when a card's content exceeds its defined region. Scroll, clip, wrap, collapse. The same four options whether handling text overflow in an input field, geometry clipping in a CAD viewport, or a game object leaving the play area.
+
+The rendering system's core responsibilities reduce to:
+
+- Maintain card regions in the active coordinate space
+- Test inputs against those regions
+- Handle overflow at region boundaries
+- Update card state based on results
+
+Everything else — game physics, text editing, button clicks, CAD interaction — is the rendering context defining what coordinate space and what overflow means for that context. The mechanism is the same throughout.
+
+### Search as Hit Detection in Semantic Space
+
+Search is just hit detection in semantic space. Instead of a ray in 3D world space or a point in screen space, a query is cast through the graph of semantic relationships and tested for intersection.
+
+A search query is a trajectory with direction and weight — it hits some cards more solidly than others based on how well their semantic region overlaps the query vector. Relevance is hit strength. Filtering is defining the collision volume more narrowly.
+
+Because the semantic graph is just card relationships — the same symlinks and references that define the UI structure — search traverses the same graph the renderer traverses, just with different hit geometry. A card's semantic volume is defined by its name, description, relationships, and concern context. The query intersects that volume the same way a mouse click intersects a bounding box.
+
+Faceted search falls out naturally — just adding more constraints to the hit geometry. Cards that intersect both "aluminum" and "order" and have a child that intersects "overdue" is a compound hit test across the semantic graph.
+
+Results are cards, same as everything else. Search output is a deck of cards that passed the hit test, rendered however the active context renders a deck. No special search results UI — just another view over card relationships.
+
+### Phase Diagrams and Projection
+
+The semantic space can be visualized as a phase diagram — cards occupy regions that overlap like phases in a material diagram. A search trajectory passing through the diagram intersects whatever phases it crosses. The diagram makes the semantic structure legible: which concerns cluster together, which cards sit at phase boundaries, which regions are dense with related content.
+
+Changing the filter is rotating the projection angle — looking at the same semantic graph from a different direction so different phases come into view. A budget query projects from one angle and intersects financial cards. The same data projected from a project angle shows the same cards grouped differently. Same graph, different cut through the phase space.
+
+Bubbling is where cards near the boundary of a projection get partially hit — relevant but not central. Strong hits are deep in the intersected phase, weak hits are at the phase boundary. The relevance gradient comes from the geometry without a separate ranking algorithm.
+
+The phase diagram is not a separate search index. It is the card relationship graph rendered in semantic coordinate space instead of screen space. It updates live as cards are added or relationships change because it is just a view of the volume structure.
+
+### 3D Scene Graph and Dimensional Projection
+
+The semantic graph can be rendered as a 3D scene graph — like Blender or a CAD viewport — where card placement and overlap represent information relationships. Each axis is an information dimension: concern type, time, ownership, relevance, phase, or whatever is meaningful for the current task. Three dimensions are chosen to project into viewable space and navigation happens from there.
+
+Card placement in that space defines relationships visually. Two cards that overlap are semantically close in those three dimensions. A card positioned between two others is a mediator — information passes through it. This makes filter and transform layers spatial and inspectable.
+
+Directionality matters. A ray from an action card through a filter card to a target card means "this action is mediated by this filter before reaching this target." Reverse the ray and it means "changes to this target are viewed through this lens." Same cards, same positions, different traversal direction, different meaning. Like a lens that behaves differently depending on which side the light enters.
+
+The full semantic graph may be n-dimensional but only three dimensions are legible at a time. Changing which three to project onto is rotating the basis vectors — the cards do not move in the full semantic space, you are choosing a different slice to make visible. Switch from concern/time/owner to concern/relevance/phase and the same cards rearrange into a different meaningful layout. The constraint of three dimensions is a feature not a limitation — it forces a choice about what information matters right now, and that choice is itself navigable.
+
+You can shape cards such that their overlaps represent areas of concern:
+- A card positioned in the path of an action filters that action before it reaches its target
+- A card positioned between a change and an observer mediates what that observer sees
+- The cartesian axes are different information paths
+- Rotating the projection changes which paths are foregrounded
+
+The scene graph is a navigation tool for the semantic space, not a separate data structure. The same card relationships, always — just a choice of which three dimensions to surface at any moment.
+
+---
+
 ## Summary
 
 The system is a dependency graph of LUKS volumes connected by symlinks, routed by CTXT/ROUTE environment variables, synced by btrfs send/recv, and networked by Wireguard. Each layer uses the same key primitive. Security is cryptographic at every boundary. Complexity matches actual coordination need — a solo user has one volume and no overhead, a large distributed team has many volumes and rich routing, the mechanism is identical throughout.
