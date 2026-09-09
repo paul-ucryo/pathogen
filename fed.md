@@ -144,7 +144,66 @@ losetup -d $LOOP
 
 Once unmounted the domain is cryptographically sealed. The encrypted volume can be moved, copied, or hosted anywhere.
 
-## VZFS — Vector/Delta ZFS Strategy
+## UI — Four Region Layout
+
+### Regions
+
+The UI is four named regions:
+
+```
+┌─────────────────────────────┐
+│ env                         │  ← environment header (url, title, geometry)
+├──────────────┬──────────────┤
+│ im           │ re           │  ← node editor / rendered output
+│ (graph)      │ (wysiwyg)    │
+├──────────────┴──────────────┤
+│ bind                        │  ← binding footer (status, active mounts)
+└─────────────────────────────┘
+```
+
+- **re** — the rendered content. Whatever the current domain produces as output — a webpage, a document, a data view. This is the wysiwyg face.
+- **im** — a node editor over the graph that generates the rendered state. The raw domain graph, editable as nodes and edges. Changes here propagate to `re` in real time.
+- **env** — the environment header. Defines setup geometry — url bar, document title, active identity, mount state. The context in which the current domain is being viewed.
+- **bind** — the binding footer. Status of active bindings — which services are mounted, which snapshots are current, which branches are open.
+
+### Layout as a Domain
+
+The four regions are just named slots. A style page tells the system the layout independently of content:
+
+```json
+{
+  "layout": {
+    "env": { "region": "header", "height": "2rem" },
+    "im":  { "region": "left",   "width": "50%" },
+    "re":  { "region": "right",  "width": "50%" },
+    "bind":{ "region": "footer", "height": "2rem" }
+  }
+}
+```
+
+The layout is a domain descriptor like any other. Swap the style page, the same content reflows into a different geometry. A mobile layout, a presentation layout, a terminal layout — all just different style descriptors over the same four regions.
+
+### Simultaneous Editor and WYSIWYG
+
+`im` and `re` are two views of the same graph state. `im` is the data editor — the graph in its native form, nodes and edges, addresses and bindings. `re` is the rendered projection of that graph through whatever driver the domain declares.
+
+Any data type with a driver into the four panels becomes simultaneously editable and renderable:
+
+- a markdown document — `im` is the source graph, `re` is the rendered html
+- a website — `im` is the dom/config graph, `re` is the live page
+- a database — `im` is the schema and record graph, `re` is a table or form view
+- a codebase — `im` is the ast or file graph, `re` is the syntax highlighted source
+- a federation — `im` is the domain graph, `re` is the namespace view
+
+The driver is just a function from graph to rendered output. Writing a driver for a new data type brings it into the editor for free.
+
+### Everything is a Driver
+
+The regions are not special — they are just named mount points in the UI namespace. A driver populates them by binding content into the slots. The same binding mechanism that mounts services into `/fed/domain/bind/` mounts content into `re`, `im`, `env`, `bind`.
+
+So the UI is itself a domain. The style page is a domain descriptor. The content is a domain. The editor is a domain. The whole thing composes the same way the filesystem does — names over cryptographic identities, bindings as the composition mechanism, the rendered state as the projection of the graph through its drivers.
+
+## VZFS — Vector(delta) ZFS Strategy
 
 ### Computation as a Distributed Delta System
 
