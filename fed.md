@@ -143,3 +143,135 @@ losetup -d $LOOP
 ```
 
 Once unmounted the domain is cryptographically sealed. The encrypted volume can be moved, copied, or hosted anywhere.
+
+## VZFS — Virtual ZFS Strategy
+
+### Computation as a Distributed System
+
+Computation is not different from storage — it is just another domain capability. A local station, a remote service, a blog, a project — all are domains. The distinction is in what they bind and how they federate.
+
+### Domain Subclassing
+
+Domains are subclassable by what they contain and what they bind:
+
+- **federation** — a domain devoted to coordinating other domains. Holds references to member domains, manages routing and access rules, acts as the coordination layer.
+- **station** — a domain representing a local runtime instance. Describes the physical and logical resources of a machine: cpu, storage, network gateway.
+- **project / site** — a domain subscribed to one or more federated networks. Carries its own content and service bindings.
+- **journal / blog** — a domain subscribing to federated content networks. Content is just a snapshot stream.
+
+A station is described as a domain graph. For example:
+
+```json
+{
+  "_": "fs:/",
+  "label": "work",
+  "dev": {
+    "cpu.0": "",
+    "fs.0": "sda"
+  },
+  "gw": {
+    "wan.dns": "www.sample.fed",
+    "http": "nginx",
+    "bind.0": "fs:/home/work/bind"
+  }
+}
+```
+
+`fs:/` is the local filesystem root as a domain address. The station describes its devices, its gateway, and its bind paths — the folders of domain subscriptions it caches locally.
+
+### Subscriptions and Caching
+
+A subscription is a signed directive telling the local station:
+
+- where to mount the domain locally (`fs:/home/{label}`)
+- what its non-local gateway address is (the public address requests come from/to)
+- who is allowed to create a cache and where (access rules)
+
+A local domain cache with a public gateway means any request for that domain may be answered by the local instance. The distribution system routes based on who has the identity mounted and who can satisfy the request — like any routing mechanism, it needs seed addresses, broadcast rules, and access control.
+
+### VCS as Snapshot Graph
+
+Version control is just a snapshot store. Each ZFS volume is copy-on-write by nature — snapshots are cheap and cryptographically addressed. The VCS structure is a linked list of snapshot hashes:
+
+```json
+{
+  "_.": "sha256:current",
+  "._": "sha256:previous",
+  "next.0": "sha256:branch0",
+  "next.1": "sha256:branch1",
+  "prev.0": "sha256:branch0-parent"
+}
+```
+
+`_.` is the current snapshot hash. `._` is the previous. `next.0`, `next.1` address branches forward. `prev.0` addresses the branch point backward. Both directions of any branch are addressable.
+
+Sync is requesting domain deltas between snapshot hashes:
+
+```bash
+zfs send $current@prev $current@next | curl -X POST http://othernode/fed/$id
+```
+
+The cache hash value is the sync primitive. Merge conflict resolution is matching snapshot timelines and presenting the remaining diff — accept all left, reject all right, or arbitrary granularity down to individual nodes or script logic.
+
+### Volume Descriptors
+
+Each ZFS dataset in the graph carries a descriptor:
+
+```json
+{
+  "label": "/",
+  "acs.0": "sha256",
+  "gw.pub": "www.example.com",
+  "_": "fs:/mount/location",
+  "_.": "sha256:current",
+  "._": "sha256:previous",
+  "gw.bind": "sha256:",
+  "bind": {
+    "bash": "zfs create $(lookup '_.' $current)"
+  },
+  "rel": {
+    "bash": "zfs send $(lookup '_.' $current)"
+  }
+}
+```
+
+`bind` is how you instantiate the volume locally. `rel` is how you release or sync it to another node. Both are just scripts keyed to the snapshot address.
+
+### Sync Targets
+
+Different content types have natural sync strategies:
+
+```json
+{
+  "json": "rfc 6902",
+  "fs": "rsync",
+  "sql": "",
+  "lmdb": ""
+}
+```
+
+JSON patches (RFC 6902) for structured data, rsync for filesystem trees, native replication for databases. The domain carries its own sync strategy as part of its description.
+
+### Station Init
+
+```bash
+{
+  "0": "export lib='/fed'",
+  "1": "mkdir -p ${lib:-.}",
+  "2": "truncate -s 10G /fed/..."
+}
+```
+
+The init sequence is just a domain descriptor — an ordered map of shell expressions. `_.` and `._` as stdin/stdout conventions mean each step is a composable function in the shell environment. The station bootstraps by walking its own descriptor and executing what isn't already present.
+
+### Summary
+
+VZFS treats the filesystem as a distributed computation graph:
+
+- every resource is a domain with a cryptographic address
+- every station is a domain describing its local runtime
+- subscriptions are signed cache directives, not config files
+- VCS is a snapshot graph, addressable in both directions on any branch
+- sync is delta query, not replication
+- merge is diff presentation, not automatic resolution
+- the transport is untrusted, the identity is the trust
