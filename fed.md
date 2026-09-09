@@ -144,9 +144,9 @@ losetup -d $LOOP
 
 Once unmounted the domain is cryptographically sealed. The encrypted volume can be moved, copied, or hosted anywhere.
 
-## VZFS — Virtual ZFS Strategy
+## VZFS — Vector/Delta ZFS Strategy
 
-### Computation as a Distributed System
+### Computation as a Distributed Delta System
 
 Computation is not different from storage — it is just another domain capability. A local station, a remote service, a blog, a project — all are domains. The distinction is in what they bind and how they federate.
 
