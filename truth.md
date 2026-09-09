@@ -42,8 +42,8 @@ The iteration is **spectroscopy over a quadratic measuring basis**.
 
 The convergent/divergent division maps directly onto the two metric orientations:
 
-- **Convergent (in the set):** the point is described in units of itself — integrative. It is a whole unit of this space. The metric has been internalized.
-- **Divergent (outside the set):** the point dissolves into parts — differential. It can only be expressed as a fraction of the measuring basis. It cannot contain its own description.
+- **Convergent (imaginary numbers):** the point is described in units of itself — differential. The metric has been internalized.
+- **Divergent (real numbers):** the point is described by an infinit count — integration. It cannot contain its own description.
 
 ---
 
