@@ -48,7 +48,7 @@ But the theory keeps finding structures that point back to something prior:
 - **S-duality** shows the electric and magnetic descriptions are exactly equivalent. The theory has no way to prefer one. It is sitting at the level of the dipole, prior to the split, without recognizing it.
 - **M-theory** unifies five string theories as different limits of one structure — each a different approach to the same thing from a different pole.
 
-String theory is following the traces of the dipole through the electric charge without being able to resolve back to the source, because its below the noise floor of 'observation'. Here the resolution is the limit at which all observers need to agree on observation. Its a basis set across experience itself.
+String theory is following the traces of the dipole through the electric charge without being able to resolve back to the source, because its below the noise floor of 'observation'. Here the resolution is the limit at which all observers need to agree on observation. Observation being a sort of basis set across experience itself.
 
 ---
 
